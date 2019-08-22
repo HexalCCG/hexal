@@ -8,6 +8,24 @@ Play one monster per turn only.
 
 No other limit for cards played on a turn.
 
+## Card Costs
+
+- Hand discard
+  - Appropriate for aggressive decks that cycle through cards quickly.
+  - Might be unique to the fire element.
+  - Card self-selected so cost can be minor.
+- Deck discard
+  - Primary cost for most cards.
+  - Equivalent to damage.
+  - Card chosen randomly so can be disruptive against unevenly distributed decks.
+  - Appropriate for midrange decks.
+- Discard pile limit
+  - Can be played so long as discard pile has enough cards.
+  - Could be unique to spirit.
+  - Locks powerful cards out of being played until later in the game.
+  - Allows players that are behind to catch up.
+  - More appropriate for control decks that need powerful late-game cards.
+
 ## Card Types
 
 - Monsters
@@ -16,9 +34,17 @@ No other limit for cards played on a turn.
 - Action spell
   - Play during your main phase 1 or 2
   - Play as many as you like
+  - Instant provides an effect and is discarded
+  - Permanent stays on the battlefield
+  - Enchantment attaches to creature
 - Reaction spell
   - Can be played any time in response to another action
   - Resolved as a stack like Magic
+- Item
+  - Played like an action spell but is not a spell
+  - Instant provides an effect and is discarded
+  - Permanent is placed on the battlefield permanently
+  - Equipped is attached to a creature and provides it with an effect
 
 ## Combat
 
