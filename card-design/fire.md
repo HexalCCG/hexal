@@ -43,7 +43,7 @@ Creature - **Serpent of the Forge**
 Hero - **Commander Adela**
 	Cost: channel 5 Fire creatures
 	5 health
-	Your Fire creatures have +1 attack. At the end of your turn, if your opponent took damage this turn, you may draw a card.
+	Your Fire creatures have +1 attack. At the end of your turn, if your opponent took damage this turn, draw a card.
 
 ## Spell - Action Instant
 

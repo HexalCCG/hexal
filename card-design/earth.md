@@ -98,7 +98,7 @@ Item, Permanent - **Chevaux de Frise**
 
 Item, Equipped - **Living Spear**
 	Cost: burn 1 card
-	Equip to a friendly Earth creature. Creatures equipped with this gain +1 attack. When the creature equipping this is destroyed, summon this card as a 1 / 1 (Earth) Living Spear creature.
+	Equip to a friendly creature. Creatures equipped with this gain +1 attack. When the creature equipping this is destroyed, summon this card as a 1 / 1 (Earth) Living Spear creature.
 
 Item, Equipped - **Flower Crown**
 	Cost: none
