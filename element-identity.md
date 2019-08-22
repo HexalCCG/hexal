@@ -4,7 +4,7 @@
 
 The most aggressive element. High tempo. Uses self-damaging spells. Simple spells and small creatures.
 
-Unique feature: hand discard as a cost.
+Unique feature: creature sacrifice
 
 ## Earth - Green
 

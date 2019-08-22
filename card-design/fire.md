@@ -1,9 +1,5 @@
 # Card Design - Fire
 
-- Vanilla creatures
-- Direct damage spells
-- Creatures that can attack right away
-
 ## Creature - Small
 
 Creature - **Zealous Knight**
@@ -73,7 +69,7 @@ Spell, Action Permanent - **Thunderstorm**
 
 Spell, Action Enchantment - **Burning Aura**
 	Cost: none
-	Enchant a creature. It gains +1 attack.
+	Enchant a creature. It gains +1/+1.
 
 Spell, Action Enchantment - **Acceleration Runes**
 	Cost: burn 2 cards
@@ -97,7 +93,7 @@ Item, Instant - **Fire Crystal**
 
 Item, Instant - **Hot Ash**
 	Cost: none
-	When channeling a Fire card on your turn, you may channel this card from your hand instead.
+	When channelling a Fire card on your turn, you may channel this card from your hand instead.
 
 ## Item - Permanent
 
