@@ -25,7 +25,7 @@ Creature - **Flying Snail**
 	0 / 1
 	Whenever this creature would take damage, it instead takes 1 less damage.
 
-Creature - **Mischevious Monkey**
+Creature - **Mischievous Monkey**
 	Cost: 1 Air
 	1 / 1
 	When this creature enters the battlefield, your opponent discards 1 card at random.
@@ -73,6 +73,14 @@ Spell, Instantaneous - **Disable**
 	Cost: 1 Air
 	Your opponent discards 1 card at random.
 
+Spell, Instantaneous - **Barometric Pulse**
+	Cost: 1 Air
+	Deal 3 damage to all creatures except Air creatures.
+
+Spell, Instantaneous - **Thunderwave**
+	Cost: 2 Air
+	Deal 3 damage to all enemy creatures.
+
 ## Spell - Permanent
 
 Spell, Permanent - **Negate Magic**
@@ -93,11 +101,23 @@ Spell, Field - **Anti-Magic Shell**
 	Cost: 3 Air
 	Counter the first spell each player plays each turn.
 
+Spell, Field - **Overcast**
+	Cost: 0
+	Field spells cost 1 more mana of their element.
+
+Spell, Field - **Hurricane**
+	Cost: 2 Air
+	All Air creatures cost 1 less Air mana.
+
 ## Spell - Enchantment
 
 Spell, Enchantment - **Force Bindings**
 	Cost: 1 Air
 	Enchant a creature. It gains "Cannot attack".
+
+Spell, Enchantment - **Become Ethereal**
+	Cost: 1 Air
+	Enchant a creature. It gains "Cannot attack. Cannot be targeted by attacks."
 
 ## Spell - Reaction
 
@@ -110,10 +130,26 @@ Spell, Reaction - **Planar Redirection**
 	Cast when your opponent plays a creature. Exile it.
 
 Spell, Reaction - **Quicken Spell**
-	Cost: 0 Air
+	Cost: 0
 	You may immediately cast 1 spell as though it had casting time: "Reaction".
 
 ## Item - Instantaneous
+
+Item, Instantaneous - **Draught of the Storm Caller**
+	Cost: 0
+	Search your deck for an Air card. Reveal and draw it, then shuffle your deck.
+
+Item, Instantaneous - **Lesser Mana Potion**
+	Cost: 0
+	Burn 2 cards.
+
+Item, Instantaneous - **Air Talisman**
+	Cost: 0
+	Play when one of your creatures is attacked. Cancel the attack. That creature cannot be targeted by attacks and cannot counterattack until the end of the turn.
+
+Item, Instantaneous - **Bottled Storm**
+	Cost: 0
+	Deal 1 damage to all creatures.
 
 ## Item - Permanent
 
