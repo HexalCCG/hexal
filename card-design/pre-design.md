@@ -2,29 +2,9 @@
 
 ## Turns
 
-Players pay for cards by discarding cards from their hands (or decks?).
-
-Play one monster per turn only.
+Players pay for cards by exiling cards from their hand and discard pile.
 
 No other limit for cards played on a turn.
-
-## Card Costs
-
-- Hand discard
-  - Appropriate for aggressive decks that cycle through cards quickly.
-  - Might be unique to the fire element.
-  - Card self-selected so cost can be minor.
-- Deck discard
-  - Primary cost for most cards.
-  - Equivalent to damage.
-  - Card chosen randomly so can be disruptive against unevenly distributed decks.
-  - Appropriate for midrange decks.
-- Discard pile limit
-  - Can be played so long as discard pile has enough cards.
-  - Could be unique to spirit.
-  - Locks powerful cards out of being played until later in the game.
-  - Allows players that are behind to catch up.
-  - More appropriate for control decks that need powerful late-game cards.
 
 ## Card Types
 
@@ -66,5 +46,5 @@ No other limit for cards played on a turn.
 - Discard
   - Resolved spells, dead monsters, and cards discarded from the deck go in the discard pile
   - Always face up, and can be viewed at any time - but order is preserved
-- Removed from play
-  - Can be thought of as physically destroyed - cannot be interacted with at all
+- Exile
+  - Cannot normally be interacted with

@@ -111,8 +111,13 @@
 - Channelling a card refers to exiling it from either the Player's hand or mana pool. Channelling a card provides 1 mana of the card's element.
 - After a Player plays a card their available mana becomes zero, even if they would have mana left over from channelling extra cards.
 
+## Card Movements
 
-
-
-
-### 
+| Term    | Definition                                                   |
+| ------- | ------------------------------------------------------------ |
+| Channel | Exile a card from your hand or mana pool. Gain 1 mana of the card's element towards the next card you play this turn. |
+| Exile   | Move a card to your exile pile.                              |
+| Burn    | Move the top card of your deck to your mana pool.            |
+| Discard | Move a card from your hand to your mana pool.                |
+| Destroy | Move a card from the battlefield to your mana pool.          |
+| Counter | Exile a spell. Its effect does not occur.                    |

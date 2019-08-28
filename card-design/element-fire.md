@@ -1,108 +1,152 @@
 # Card Design - Fire
 
-## Creature - Small
-
-Creature - **Zealous Knight**
-	Cost:
-	2 / 1
-
-Creature - **Runed Champion**
-	Cost:
-	1 / 1
-	This creature can attack on the same turn it enters the battlefield.
-
-Creature - **Devoted Defender**
-	Cost: channel 1 Fire
-	1 / 3
-	Your other creatures cannot be targetted by attacks.
-
-Creature - **Magma Wyrm**
-	Cost:
-	2 / 2
-	At the start of your turn, burn a card.
-
-## Creature - Big
-
-Creature - **Reckless Stallion**
-	Cost: channel 4 Fire
-	3 / 2
-	This creature can attack on the same turn it enters the battlefield.
-
-Creature - **Fire Warlock**
-	Cost: channel 3 Fire
-	3 / 3
-	Whenever you burn a card, draw a card.
-
-Creature - **Serpent of the Forge**
-	Cost: channel 3 Fire
-	2 / 4
-	When this creature enters the battlefield, destroy 1 target item, and if you do, increase this creature's attack by +1.
-
 ## Hero
 
 Hero - **Commander Adela**
-	Cost: channel 5 Fire
+	Cost: 5 Fire
 	5 health
 	When this hero enters the battlefield, and at the start of your turn, burn a card. If it is a Fire creature, summon it. Your Fire creatures have +1 attack.
 
-## Spell - Action Instant
+## Creatures
 
-Spell, Action Instant - **Firebolt**
-	Cost: none
-	Deal 3 damage to a creature.
+Creature - **Ember Sprite**
+	Cost: 0
+	1 / 1
+	When you burn a card, you may switch it with this card from your hand.
 
-Spell, Action Instant - **Electric Shock**
-	Cost: none
-	Deal 1 damage to a creature, and give it -1 attack until the end of your turn.
+Creature - **Runed Champion**
+	Cost: 0
+	2 / 1
+	When this attacks and kills a creature, it cannot be reduced below 1 health by combat damage this turn.
 
-Spell, Action Instant - **Meteor Shot**
-	Cost: channel 2 Fire
+Creature - **Magma Wyrm**
+	Cost: 0
+	2 / 2
+	At the start of your turn, burn a card.
+
+Creature - **Fire Acolyte**
+	Cost: 1
+	1 / 1
+	When this creature enters the battlefield, summon a 1 / 1 (Fire) Fire Worshipper creature.
+
+Creature - **Zealous Knight**
+	Cost: 1
+	2 / 2
+
+Creature - **Devoted Defender**
+	Cost: 1 Fire
+	1 / 3
+	Your other creatures cannot be targetted by attacks.
+
+Creature - **Serpent of the Forge**
+	Cost: 2 Fire
+	2 / 2
+	When this creature enters the battlefield, destroy a target item.
+
+Creature - **Pyromancer**
+	Cost: 2 Fire
+	3 / 2
+	When this creature is destroyed, deal 1 damage to all creatures.
+
+Creature - **Untamed Fire Spirit**
+	Cost: 2 Fire
+	2 / 2
+	When this creature enters the battlefield, deal 1 damage to a target creature.
+
+Creature - **Fire Warlock**
+	Cost: 3 Fire
+	3 / 3
+	Whenever you play a card, burn a card.
+
+Creature - **Reckless Stallion**
+	Cost: 4 Fire
+	4 / 3
+	This creature can attack on the same turn it enters the battlefield.
+
+## Spell - Instantaneous
+
+Spell, Instantaneous - **Heat Wave**
+	Cost: 1 Fire
+	Deal 1 damage to all enemy creatures. If you control a Fire creature, deal 2 damage instead.
+
+Spell, Instantaneous - **Fireworks**
+	Cost: 1 Fire
+	Deal 3 damage to enemy creatures, one damage at a time, split as you choose.
+
+Spell, Instantaneous - **Meteor Shot**
+	Cost: 2 Fire
 	Deal 5 damage to an enemy creature, and 1 damage to all other enemy creatures.
 
-## Spell - Action Permanent
+Spell, Instantaneous - **Fireball**
+	Cost: 2 Fire
+	Deal 3 damage to an enemy.
+
+Spell, Instantaneous - **Blood to Fire**
+	Cost: 4 Fire
+	Burn the rest of your deck.
+
+Spell, Instantaneous - **Fire Star Rising**
+	Cost: 4 Fire
+	Creatures you control gain +2 attack until the end of this turn.
+
+## Spell - Permanent
+
+## Spell - Field
 
 Spell, Action Permanent - **Thunderstorm**
-	Cost: channel 1 Fire
-	All spells that deal damage to creatures deal +1 extra damage.
+	Cost: 1 Fire
+	All spells deal +1 extra damage.
 
-## Spell - Action Enchantment
+## Spell - Enchantment
 
 Spell, Action Enchantment - **Burning Aura**
-	Cost: none
+	Cost: 0
 	Enchant a creature. It gains +1/+1.
 
 Spell, Action Enchantment - **Acceleration Runes**
-	Cost: none
+	Cost: 0
 	Enchant a creature. It gains "This creature can attack enemy creatures on the same turn it enters the battlefield".
 
 ## Spell - Reaction
 
-Spell, Reaction - **Dark Fire Sacrifice**
-	Cost: burn 1 card
-	Cast this when a friendly creature attacks. Double the creature's attack. After it attacks, destroy it.
+Spell, Reaction - **Firebolt**
+	Cost: 0
+	Cast at any time. Deal 3 damage to a creature.
+
+Spell, Reaction - **Electric Shock**
+	Cost: 0
+	Cast at any time. Deal 1 damage to a creature, and give it -1 attack until the end of the turn.
+
+Spell, Reaction - **Immolate**
+	Cost: 1 Fire
+	Cast at any time. If you control a Fire creature, deal 5 damage to a creature.
 
 Spell, Reaction - **Arcane Artillery**
-	Cost: none
+	Cost: 0
 	Cast this when an enemy creature declares a counterattack. Destroy the creature.
 
-## Item - Instant
+Spell, Reaction - **Dark Fire Sacrifice**
+	Cost: 0 Fire
+	Cast this when a friendly creature attacks. Double the creature's attack. After it attacks, destroy it.
 
-Item, Instant - **Fire Crystal**
-	Cost: none
+## Item - Instantaneous
+
+Item, Instantaneous - **Fire Crystal**
+	Cost: 0
 	Destroy a friendly Fire creature, and if you do, destroy an enemy creature.
 
-Item, Instant - **Hot Ash**
-	Cost: none
-	When channelling a Fire card on your turn, you may channel this card from your hand instead.
+Item, Instantaneous - **Hot Ash**
+	Cost: 0
+	When channelling this card from your hand for a Fire creature , this provides 2 Fire mana.
 
 ## Item - Permanent
 
 Item, Permanent - **Blazing Effigy**
-	Cost: channel 2 Fire
-	At the start of your turn you may destroy a friendly Fire creature and this, and if you do, burn three cards. Summon any Fire creatures discarded.
+	Cost: 2 Fire
+	At the start of your turn you may destroy a friendly Fire creature and this, and if you do, burn three cards. Summon any Fire creatures burned.
 
 ## Item - Equipped
 
 Item, Equipped - **Runic Sabre**
-	Cost: channel 1 Fire
-	Equip to a friendly Fire creature. Creatures equipped with this gain +2 attack.
+	Cost: 0
+	Equip to a friendly Fire creature. It gains +2 attack.

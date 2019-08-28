@@ -1,80 +1,109 @@
 # Card Design - Earth
 
-## Creature - Small 
+## Hero
+
+Hero - **Hivequeen Ngaat**
+	Cost: 4 Earth
+	4 health
+	Your Earth creatures' costs are reduced by 1. Whenever you summon an Earth creature, draw a card.
+
+## Creatures
 
 Creature - **Awakened Vines**
-	Cost: none
-	1 / 3
+	Cost: 0
+	1 / 2
+
+Creature - **Carnivorous Fern**
+	Cost: 0
+	2 / 1
+	At the end of your opponent's turn, if either player controls a damaged creature, you may summon this creature from your hand.
 
 Creature - **Forest Sprite**
-	Cost: none
+	Cost: 0
 	1 / 1
-	You may channel this creature from the battlefield when paying for any Earth creature.
+	While you control another Earth creature, this creature cannot be targeted by attacks or spells.
 
 Creature - **Spore-Infested Boar**
-	Cost: none
+	Cost: 1 Earth
 	2 / 1
 	When this creature is destroyed by combat damage, search your deck for an Earth card. Reveal it to your opponent and draw it, then shuffle your deck.
 
 Creature - **Relentless Eagle**
-	Cost: channel 1 Earth
-	2 / 2
+	Cost: 1 Earth
+	1 / 1
 	The first time this creature is destroyed, resummon it.
 
-Creature - **Mana Sapper**
-	Cost: channel 2 Earth
-	1 / 2
-	When this creature damages an opponent, remove the top card of their discard pile from play, and if you do, draw a card. 
+Creature - **Armoured Crocodile**
+	Cost: 2 Earth
+	2 / 3
 
-## Creature - Big
+Creature - **Mana Sapper**
+	Cost: 2 Earth
+	1 / 2
+	When this creature damages an opponent, exile the top card of their mana pool, and if you do, draw a card. 
+
+Creature - **Evolving Shrub**
+	Cost: 2 Earth
+	0 / 2
+	Earth spells you cast targeting this creature cost nothing.
 
 Creature - **Earth Spiritsinger**
-	Cost: channel 3 Earth
+	Cost: 3 Earth
 	2 / 2
 	Whenever you summon an Earth creature, draw a card.
 
-Creature - **Evolving Shrub**
-	Cost: channel 2 Earth cards
-	0 / 4
-	Earth spells you cast targeting this creature cost nothing.
-
 Creature - **Awakened Oak**
-	Cost: channel 4 Earth
+	Cost: 4 Earth
 	2 / 4
 	Spells your opponent casts that can target this creature must target this creature.
 
-## Hero
+Creature - **Restless Willow**
+	Cost: 4 Earth
+	4 / 3
 
-Hero - **Hivequeen Ngaat**
-	Cost: channel 4 Earth
-	4 health
-	When this hero enters the battlefield, shuffle your discard pile into your deck. Your Earth creatures' channel costs are reduced by 1.
+## Spell - Instantaneous
 
-## Spell - Action Instant
-
-Spell, Action Instant - **Alarm Pheromone**
-	Cost: none
+Spell, Instantaneous - **Alarm Pheromone**
+	Cost: 0
 	If you control an Earth creature, draw two cards.
 
-Spell, Action Instant - **Earthen Reclamation**
-	Cost: channel 2 Earth
-	If you control an Earth creature, destroy a target creature or item.
+Spell, Instantaneous - **Earthen Reclamation**
+	Cost: 2 Earth
+	If you control an Earth creature, destroy a target creature.
 
-## Spell - Action Permanent
+Spell, Instantaneous - **Recycle**
+	Cost: 0
+	Destroy a creature. Your opponent adds the top card of their exile pile to their hand.
 
-Spell, Action Permanent - **Rainstorm**
-	Cost: channel 1 Earth
+## Spell - Permanent
+
+## Spell - Field
+
+Spell, Field - **Rainforest**
+	Cost: 1 Earth
 	Each player draws an additional card at the start of their turns.
 
-## Spell - Action Enchantment
+## Spell - Enchantment
 
-Spell, Action Enchantment - **Seeping Poison**
-	Cost: none
-	Enchant a creature. It gains +2 attack and -1 health.
+Spell, Enchantment - **Contact Poison**
+	Cost: 0
+	Enchant a creature. It gains +2 / -1.
 
-Spell, Action Enchantment - **Ironskin Runes**
-	Cost: channel 1 Earth
+Spell, Enchantment - **Growth**
+	Cost: 0
+	Enchant a creature. It gains +1 / +1.
+
+Spell, Enchantment - **Ironskin Runes**
+	Cost: 1 Earth
 	Enchant a creature. It gains "Whenever this creature would take damage, it instead takes 1 less damage".
+
+Spell, Enchantment - **Entangle**
+	Cost: 1 Earth
+	Enchant a creature. It gains "Cannot attack".
+
+Spell, Enchantment - **Sprite's Blessing**
+	Cost: 2 Earth
+	Enchant a creature. It gains +2 / +2. Search your deck for any "Sprite" cards. Reveal and draw them all.
 
 ## Spell - Reaction
 
@@ -82,24 +111,32 @@ Spell, Reaction - **Savagery**
 	Cost: none
 	Cast this when you declare a counterattack. Give your counterattacking creatures +2 attack this turn.
 
-## Item - Instant
+Spell, Reaction - **Evolve Scales**
+	Cost: 1 Earth
+	Cast when a friendly creature is attacked. Give it +0 / +4 until the end of the turn.
 
-Item, Instant - **Hexed Arrow**
+## Item - Instantaneous
+
+Item, Instantaneous - **Hexed Arrow**
 	Cost: none
 	You cannot play this item and a creature on the same turn. Deal 1 damage to a target creature, and if you do, destroy the creature.
+
+Item, Instantaneous - **Fertiliser**
+	Cost: 1 Earth
+	Search your deck for an Earth enchantment. Reveal and draw it. The next Earth enchantment you play this turn costs 1 less Earth mana.
 
 ## Item - Permanent
 
 Item, Permanent - **Chevaux de Frise**
 	Cost: channel 3 Earth
-	At the start of your opponent's battle phase, you may select one friendly creature. If that creature is attacked this turn, any attacker takes 1 damage in addition to normal combat damage.
+	At the start of your opponent's battle phase, you may select one friendly creature. That creature gains +1 attack until the end of the turn, but cannot counterattack.
 
 ## Item - Equipped
 
 Item, Equipped - **Living Spear**
 	Cost: channel 1 Earth
-	Equip to a friendly creature. Creatures equipped with this gain +1 attack. When the creature equipping this is destroyed, summon this card as a 1 / 1 (Earth) Living Spear creature.
+	Equip to a friendly creature. It has +1 attack. When the creature equipping this is destroyed, summon this card as a 1 / 1 (Earth) Living Spear creature.
 
 Item, Equipped - **Flower Crown**
 	Cost: none
-	Equip to a friendly creature. That creature becomes Earth as long as it has this equipped. Draw a card.
+	Equip to a friendly creature. It becomes Earth. Draw a card.
