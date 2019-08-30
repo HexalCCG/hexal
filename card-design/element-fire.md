@@ -4,7 +4,6 @@
 
 Hero - **Commander Adela**
 	Cost: 5 Fire
-	5 health
 	When this hero enters the battlefield, and at the start of your turn, burn a card. If it is a Fire creature, summon it. Your Fire creatures have +1 attack.
 
 ## Creatures
@@ -25,18 +24,18 @@ Creature - **Magma Wyrm**
 	At the start of your turn, burn a card.
 
 Creature - **Fire Acolyte**
-	Cost: 1
+	Cost: 1 Fire
 	1 / 1
 	When this creature enters the battlefield, summon a 1 / 1 (Fire) Fire Worshipper creature.
 
 Creature - **Zealous Knight**
-	Cost: 1
+	Cost: 1 Fire
 	2 / 2
 
 Creature - **Devoted Defender**
 	Cost: 1 Fire
 	1 / 3
-	Your other creatures cannot be targetted by attacks.
+	Your other creatures cannot be targeted by attacks.
 
 Creature - **Serpent of the Forge**
 	Cost: 2 Fire
@@ -105,7 +104,7 @@ Spell, Action Enchantment - **Burning Aura**
 
 Spell, Action Enchantment - **Acceleration Runes**
 	Cost: 0
-	Enchant a creature. It gains "This creature can attack enemy creatures on the same turn it enters the battlefield".
+	Enchant a creature. It gains "This creature can attack on the same turn it enters the battlefield".
 
 ## Spell - Reaction
 
@@ -115,7 +114,7 @@ Spell, Reaction - **Firebolt**
 
 Spell, Reaction - **Electric Shock**
 	Cost: 0
-	Cast at any time. Deal 1 damage to a creature, and give it -1 attack until the end of the turn.
+	Cast at any time. Deal 1 damage to a creature. It can't attack or counterattack until the end of the turn.
 
 Spell, Reaction - **Immolate**
 	Cost: 1 Fire
@@ -126,7 +125,7 @@ Spell, Reaction - **Arcane Artillery**
 	Cast this when an enemy creature declares a counterattack. Destroy the creature.
 
 Spell, Reaction - **Dark Fire Sacrifice**
-	Cost: 0 Fire
+	Cost: 0
 	Cast this when a friendly creature attacks. Double the creature's attack. After it attacks, destroy it.
 
 ## Item - Instantaneous

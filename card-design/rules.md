@@ -9,7 +9,7 @@
 ## Start of Game
 
 - Flip a coin. The winning player chooses whether to go first or second.
-- If either player's deck contains a "Hero" card, they must reveal it and add it to their opening hand. They may choose to mulligan it like any other opening hand card.
+- If either player's deck contains a "Hero" card, they may reveal it and add it to their opening hand.
 - Both players draw up to 4 cards to make their opening hand. Each player may choose any number of their cards to mulligan. Once both have decided, they place the chosen cards aside and draw that many replacement cards. They then shuffle the put aside cards back into their decks.
 
 ## Turn Structure

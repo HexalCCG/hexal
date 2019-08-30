@@ -1,12 +1,9 @@
 # Card Design - Air
 
-28-30
-
 ## Hero
 
 Hero - **Mikael, Storm Lord**
 	Cost: 6 Air
-	6 Health
 	When you channel cards, shuffle them into your deck instead of exiling them.
 
 ## Creatures

@@ -4,7 +4,6 @@
 
 Hero - **Hivequeen Ngaat**
 	Cost: 4 Earth
-	4 health
 	Your Earth creatures' costs are reduced by 1. Whenever you summon an Earth creature, draw a card.
 
 ## Creatures
@@ -79,7 +78,7 @@ Spell, Instantaneous - **Recycle**
 
 ## Spell - Field
 
-Spell, Field - **Rainforest**
+Spell, Field - **Rainstorm**
 	Cost: 1 Earth
 	Each player draws an additional card at the start of their turns.
 
@@ -99,7 +98,7 @@ Spell, Enchantment - **Ironskin Runes**
 
 Spell, Enchantment - **Entangle**
 	Cost: 1 Earth
-	Enchant a creature. It gains "Cannot attack".
+	Enchant a creature. It gains "Cannot attack or counterattack".
 
 Spell, Enchantment - **Sprite's Blessing**
 	Cost: 2 Earth
@@ -128,13 +127,13 @@ Item, Instantaneous - **Fertiliser**
 ## Item - Permanent
 
 Item, Permanent - **Chevaux de Frise**
-	Cost: channel 3 Earth
+	Cost: 3 Earth
 	At the start of your opponent's battle phase, you may select one friendly creature. That creature gains +1 attack until the end of the turn, but cannot counterattack.
 
 ## Item - Equipped
 
 Item, Equipped - **Living Spear**
-	Cost: channel 1 Earth
+	Cost: 1 Earth
 	Equip to a friendly creature. It has +1 attack. When the creature equipping this is destroyed, summon this card as a 1 / 1 (Earth) Living Spear creature.
 
 Item, Equipped - **Flower Crown**
