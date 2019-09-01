@@ -1,33 +1,26 @@
 import 'package:angular_router/angular_router.dart';
 
-import 'route_paths.dart';
-import 'hero_component.template.dart' as hero_template;
-import 'hero_list_component.template.dart' as hero_list_template;
-import 'dashboard_component.template.dart' as dashboard_template;
-
-export 'route_paths.dart';
+import 'deck_builder/deck_builder_component.template.dart'
+    as deck_builder_template;
+import 'menu/menu_component.template.dart' as menu_template;
 
 class Routes {
-  static final dashboard = RouteDefinition(
-    routePath: RoutePaths.dashboard,
-    component: dashboard_template.DashboardComponentNgFactory,
+  static final menu = RouteDefinition(
+    routePath: RoutePath(path: 'menu'),
+    component: menu_template.MenuComponentNgFactory,
   );
-  static final heroes = RouteDefinition(
-    routePath: RoutePaths.heroes,
-    component: hero_list_template.HeroListComponentNgFactory,
+  static final deck_builder = RouteDefinition(
+    routePath: RoutePath(path: 'build'),
+    component: deck_builder_template.DeckBuilderComponentNgFactory,
   );
-  static final hero = RouteDefinition(
-    routePath: RoutePaths.hero,
-    component: hero_template.HeroComponentNgFactory,
+  static final default_path = RouteDefinition.redirect(
+    path: '',
+    redirectTo: menu.toUrl(),
   );
 
   static final all = <RouteDefinition>[
-    dashboard,
-    heroes,
-    hero,
-    RouteDefinition.redirect(
-      path: '',
-      redirectTo: RoutePaths.dashboard.toUrl(),
-    ),
+    menu,
+    deck_builder,
+    default_path,
   ];
 }

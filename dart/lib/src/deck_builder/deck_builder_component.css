@@ -1,0 +1,25 @@
+.deck-builder-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: 100px auto;
+    grid-template-areas: 
+    "toolbar toolbar toolbar"
+    "library viewer deck";
+}
+.toolbar {
+    grid-area: toolbar;
+    background-color: orangered;
+}
+.library {
+    grid-area: library;
+    background-color: grey;
+}
+.viewer {
+    grid-area: viewer;
+    background-color: cornflowerblue;
+}
+.deck {
+    grid-area: deck;
+    background-color: yellowgreen;
+}
