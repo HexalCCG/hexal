@@ -1,25 +1,279 @@
 .deck-builder-container {
     height: 100%;
     display: grid;
-    grid-template-columns: 100px auto 100px;
-    grid-template-rows: 100px auto;
+    grid-template-columns: 300px auto 300px;
+    grid-template-rows: 60px auto;
     grid-template-areas: 
     "toolbar toolbar toolbar"
     "library viewer deck";
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+    background-color: whitesmoke;
 }
 .toolbar {
     grid-area: toolbar;
     background-color: orangered;
 }
+.toolbar a {
+    cursor: pointer;
+}
+.toolbar .material-icons {
+    color: rgba(0, 0, 0, 0.54);
+    line-height: 60px;
+}
+.toolbar .material-icons:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+.toolbar .left {
+    padding-left: 6px;
+    float: left;
+}
+.toolbar .right {
+    padding-right: 6px;
+    float: right;
+}
 .library {
     grid-area: library;
-    background-color: grey;
+    display: flex;
+    flex-direction: column;
 }
-.viewer {
-    grid-area: viewer;
-    background-color: cornflowerblue;
+.library-elements {
+    width: 100%;
+    height: 40px;
+    flex: 0 0 auto;
+    background-color: white;
 }
+.library-elements .element-icon {
+    height: 100%;
+}
+.library-elements .element-icon img {
+    height: 100%;
+}
+.library-search {
+    width: 100%;
+    height: 40px;
+    flex: 0 0 auto;
+    background-color: gainsboro;
+}
+.library-card-list {
+    width: 100%;
+    flex: 1 1 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.library-card-list::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.library-card-list::-webkit-scrollbar-track
+{
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.library-card-list::-webkit-scrollbar-thumb
+{
+	
+	background-image: -webkit-linear-gradient(45deg,
+	                                          rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
+
+.library-card {
+    width: 100%;
+    height: 40px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 5px auto auto 5px 1fr 10px;
+    grid-template-rows: auto;
+    grid-template-areas: ". cost element . name .";
+    background-color: #F90;
+    color: black;
+}
+.library-card:nth-child(even) {
+    background-color: whitesmoke;
+    color: black;
+}
+.library-card .cost {
+    grid-area: cost;
+}
+.library-card .element {
+    grid-area: element;
+    height: 80%;
+}
+.library-card .name {
+    grid-area: name;
+}
+
 .deck {
     grid-area: deck;
-    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+}
+.deck-header {
+    width: 100%;
+    height: 40px;
+    flex: 0 0 auto;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 10px auto 1fr auto 10px;
+    grid-template-rows: auto;
+    grid-template-areas: ". counter . print .";
+    align-items: center;
+}
+.deck-header .deck-counter {
+    font-size: 24px;
+    grid-area: counter;
+}
+.deck-header .print-counter {
+    font-size: 24px;
+    grid-area: print;
+}
+.deck-border {
+    width: 100%;
+    height: 40px;
+    flex: 0 0 auto;
+    background-color: gainsboro;
+}
+.deck-card-list {
+    width: 100%;
+    flex: 1 1 0px;
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.deck-card-list::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.deck-card-list::-webkit-scrollbar-track
+{
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.deck-card-list::-webkit-scrollbar-thumb
+{
+	background-image: -webkit-linear-gradient(45deg,
+	                                          rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
+
+.deck-card {
+    width: 100%;
+    height: 40px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 5px 10px 32px 5px 1fr auto 10px;
+    grid-template-rows: auto;
+    grid-template-areas: ". cost element . name number .";
+    background-color: rgb(0, 201, 0);
+    color: black;
+}
+.deck-card:nth-child(even) {
+    background-color: whitesmoke;
+    color: black;
+}
+.deck-card .cost {
+    grid-area: cost;
+}
+.deck-card .element {
+    grid-area: element;
+    height: 80%;
+}
+.deck-card .name {
+    grid-area: name;
+}
+.deck-card .number {
+    font-size: 28px;
+    grid-area: number;
+}
+
+
+.viewer {
+    grid-area: viewer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+}
+.viewer-message {
+    color: white;
+}
+.viewer-card {
+    color: black;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    
+    height: 100%;
+    width: 100%;
+    max-height: 600px;
+    max-width: 400px;
+    padding: 15px;
+
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 50px 1fr 30px 1fr 50px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas: 
+    "name name element"
+    ". picture ."
+    "type type type"
+    ". text ."
+    "cost cost ."
+}
+.viewer-card .name {
+    grid-area: name;
+    align-self: center;
+    font-size: 24px;
+}
+.viewer-card .element {
+    grid-area: element;
+    object-fit: contain;
+}
+.viewer-card .picture {
+    grid-area: picture;
+    align-self: center;
+    justify-self: center;
+    object-fit: contain;
+}
+.viewer-card .type {
+    grid-area: type;
+    align-self: center;
+    font-size: 16px;
+}
+.viewer-card .text {
+    grid-area: text;
+    font-size: 16px;
+
+}
+.viewer-card .cost {
+    grid-area: cost;
+    align-self: center;
+}
+
+.invalid {
+    color: red;
 }

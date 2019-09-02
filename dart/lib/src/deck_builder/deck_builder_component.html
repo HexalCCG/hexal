@@ -1,6 +1,71 @@
 <div class="deck-builder-container">
-    <nav class="toolbar"></nav>
-    <div class="library"></div>
-    <div class="viewer"></div>
-    <div class="deck"></div>
+    <nav class="toolbar">
+        <a [routerLink]="Routes.menu.toUrl()" [routerLinkActive]="'active'"><i
+                class=" material-icons md-48 left">arrow_back</i></a>
+        <a><i class="material-icons md-48 right">print</i></a>
+        <a (click)="clearDeck"><i class="material-icons md-48 right">delete</i></a>
+    </nav>
+    <div class="library">
+        <div class="library-elements">
+            <a class="element-icon"><img src="{{ AssetLinks.spiritImage }}"></a>
+            <a class="element-icon"><img src="{{ AssetLinks.fireImage }}"></a>
+            <a class="element-icon"><img src="{{ AssetLinks.airImage }}"></a>
+            <a class="element-icon"><img src="{{ AssetLinks.earthImage }}"></a>
+            <a class="element-icon"><img src="{{ AssetLinks.waterImage }}"></a>
+        </div>
+        <div class="library-search">
+
+        </div>
+        <div class="library-card-list">
+            <div class="library-card" *ngFor="let card of libraryCards" (click)="onAdd(card)"
+                (contextmenu)="onSelect(card, $event)">
+                <span class="cost">{{ card.totalCost }}</span>
+                <img class="element" src="{{ AssetLinks.elementImages[card.element] }}">
+                <span class="name">{{ card.name }}</span>
+            </div>
+        </div>
+    </div>
+    <div class="viewer">
+        <div class="viewer-card" *ngIf="selected != null">
+            <div class="name">
+                {{ selected.name }}
+            </div>
+            <div class="element">
+                <img src="{{ AssetLinks.elementImages[selected.element] }}">
+            </div>
+            <div class="picture">
+
+            </div>
+            <div class="type">
+                {{ selected.typeLine }}
+            </div>
+            <div class="text">
+                {{ selected.text }}
+            </div>
+            <div class="cost">
+                {{ selected.totalCost }}
+            </div>
+        </div>
+        <span class="viewer-message" *ngIf="selected == null">
+            Right-click a card to view
+        </span>
+    </div>
+    <div class="deck">
+        <div class="deck-header">
+            <span class="deck-counter" [class.invalid]="!deckValid">{{ deckSize }} / 30</span>
+            <span class="print-counter">{{ deckSize }} / {{ nextEight(deckSize) }}</span>
+        </div>
+        <div class="deck-border">
+        </div>
+        <div class="deck-card-list">
+            <div class="deck-card" *ngFor="let card of deckCards.keys" (click)="onRemove(card)"
+                (contextmenu)="onSelect(card, $event)">
+                <span class="cost">{{ card.totalCost }}</span>
+                <img class="element" src="{{AssetLinks.elementImages[card.element]}}">
+                <span class="name">{{ card.name }}</span>
+                <span class="number" *ngIf="deckCards[card] > 1"
+                    [class.invalid]="deckCards[card] > 2">x{{ deckCards[card] }}</span>
+            </div>
+        </div>
+    </div>
 </div>
