@@ -2,6 +2,7 @@ import 'package:angular_router/angular_router.dart';
 
 import 'deck_builder/deck_builder_component.template.dart'
     as deck_builder_template;
+import 'browse/browse_component.template.dart' as browse_template;
 import 'menu/menu_component.template.dart' as menu_template;
 import 'pdf/pdf_component.template.dart' as pdf_template;
 
@@ -13,6 +14,10 @@ class Routes {
   static final deck_builder = RouteDefinition(
     routePath: RoutePath(path: 'build'),
     component: deck_builder_template.DeckBuilderComponentNgFactory,
+  );
+  static final browse = RouteDefinition(
+    routePath: RoutePath(path: 'browse'),
+    component: browse_template.BrowseComponentNgFactory,
   );
   static final pdf = RouteDefinition(
     routePath: RoutePath(path: 'pdf/:deck'),

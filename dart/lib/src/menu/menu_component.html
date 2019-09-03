@@ -1,7 +1,10 @@
-<h1>Card Game Name</h1>
-<nav>
-    <a [routerLink]="Routes.deck_builder.toUrl()" [routerLinkActive]="'active'">Build a Deck</a>
-    <a [routerLink]="" [routerLinkActive]="'active'">Browse Cards</a>
-    <a [routerLink]="" [routerLinkActive]="'active'">Rules</a>
-    <a [routerLink]="" [routerLinkActive]="'active'">Info / Credits</a>
-</nav>
+<div class="menu">
+    <h1 class="title">Card Game Name</h1>
+    <nav class="nav">
+        <a class="menu-element" [routerLink]="Routes.deck_builder.toUrl()" [routerLinkActive]="'active'">Build a
+            Deck</a>
+        <a class="menu-element disable">Browse Cards</a>
+        <a class="menu-element disable">Rules</a>
+        <a class="menu-element disable">Info / Credits</a>
+    </nav>
+</div>

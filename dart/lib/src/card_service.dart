@@ -1,7 +1,13 @@
 import 'card.dart';
 
 class CardService {
-  Future<List<Card>> getAll() async => cardList;
+  List<Card> getAll() => cardList;
+
+  Card getById(int id) {
+    return cardList.singleWhere((Card card) {
+      return card.id == id;
+    });
+  }
 
   final cardList = <Card>[
     Card(

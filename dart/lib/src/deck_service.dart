@@ -1,24 +1,49 @@
 import 'dart:convert';
 
+import 'package:angular/angular.dart';
+
 import 'card.dart';
+import 'card_service.dart';
 
+@Component(
+  selector: 'deck-service',
+  template: '',
+  directives: [coreDirectives],
+  providers: [ClassProvider(CardService)],
+  pipes: [commonPipes],
+)
 class DeckService {
-  String generateCode(Map<Card, int> deck) {
-    String x = "";
-    deck.forEach((card, n) {
-      x += card.id.toString();
-      if (n > 1) {
-        x += "x" + n.toString();
-      }
-      x += ",";
-    });
-    List<int> bytes = utf8.encode(x);
-    String r = base64.encode(bytes);
+  final CardService _cardService;
+  DeckService(this._cardService);
 
-    return r;
+  String generateCode(Map<Card, int> deck) {
+    String list = deck.keys.map((card) {
+      return card.id.toString() +
+          ((deck[card] > 1) ? "x" + deck[card].toString() : "");
+    }).join(",");
+
+    List<int> bytes = utf8.encode(list);
+    return base64.encode(bytes);
   }
 
   Map<Card, int> decodeDeck(String code) {
-    return null;
+    List<int> bytes = base64.decode(code);
+    String s = utf8.decode(bytes);
+
+    Map<Card, int> r = Map<Card, int>();
+
+    try {
+      s.split(",").forEach((String a) {
+        print(a);
+        List<String> b = a.split("x");
+        print(b);
+        int n = (b.length == 2) ? int.parse(b[1]) : 1;
+        Card c = _cardService.getById(int.parse(b[0]));
+        r[c] = n;
+      });
+      return r;
+    } catch (e) {
+      return Map<Card, int>();
+    }
   }
 }

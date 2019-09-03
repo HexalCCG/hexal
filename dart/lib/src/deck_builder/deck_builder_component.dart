@@ -3,10 +3,11 @@ import 'dart:html';
 
 import 'package:angular/angular.dart';
 import 'package:angular_router/angular_router.dart';
-import 'package:open_card_game/src/deck_service.dart';
+import 'package:angular_forms/angular_forms.dart';
 
 import '../card.dart';
 import '../card_service.dart';
+import '../deck_service.dart';
 import '../asset_links.dart';
 import '../routes.dart';
 
@@ -14,7 +15,7 @@ import '../routes.dart';
   selector: 'deck-builder',
   templateUrl: 'deck_builder_component.html',
   styleUrls: ['deck_builder_component.css'],
-  directives: [coreDirectives, routerDirectives],
+  directives: [coreDirectives, routerDirectives, formDirectives],
   providers: [ClassProvider(CardService), ClassProvider(DeckService)],
   pipes: [commonPipes],
   exports: [Routes, AssetLinks],
@@ -29,7 +30,7 @@ class DeckBuilderComponent implements OnInit {
   List<Card> libraryCards;
   Map<Card, int> deckCards = SplayTreeMap<Card, int>(compareCards);
 
-  String toolbarMessage = "";
+  String codeBox = "";
 
   Future<void> ngOnInit() async {
     allCards = await _cardService.getAll();
@@ -94,16 +95,18 @@ class DeckBuilderComponent implements OnInit {
     }
   }
 
-  void clearDeck() => deckCards = Map<Card, int>();
+  void clearDeck() {
+    deckCards = Map<Card, int>();
+    codeBox = "";
+  }
 
   void importCode() {
-    toolbarMessage = "Deck code imported";
+    deckCards = _deckService.decodeDeck(codeBox);
   }
 
   void copyCode() {
     if (deckCards.isNotEmpty) {
-      String code = _deckService.generateCode(deckCards);
-      toolbarMessage = "Deck code copied";
+      codeBox = _deckService.generateCode(deckCards);
     }
   }
 

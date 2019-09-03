@@ -17,12 +17,12 @@
 }
 .toolbar {
     grid-area: toolbar;
-    background-color: orangered;
+    background-color: rgba(255, 74, 86, 1);
     padding-left: 6px;
     padding-right: 6px;
     display: grid;
     align-content: center;
-    grid-template-columns: auto 1fr auto 32px auto;
+    grid-template-columns: auto 1fr auto 16px auto;
     grid-template-rows: 1fr;
     grid-template-areas: 
     "back . message . tools";
@@ -40,11 +40,17 @@
 .toolbar .back {
     grid-area: back;
 }
-.toolbar .message {
-    color: rgba(0, 0, 0, 0.54);
+.toolbar .code-box {
+    align-self: center;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 1);
+    outline: 0;
+    text-align:right;
+    font-size: 16px;
+    width: 300px;
+    height: 30px;
     grid-area: message;
-    display: inline-flex;
-    align-items: center;
 }
 .toolbar .tools {
     grid-area: tools;
