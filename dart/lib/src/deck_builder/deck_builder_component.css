@@ -18,6 +18,14 @@
 .toolbar {
     grid-area: toolbar;
     background-color: orangered;
+    padding-left: 6px;
+    padding-right: 6px;
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto 1fr auto 32px auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "back . message . tools";
 }
 .toolbar a {
     cursor: pointer;
@@ -29,13 +37,17 @@
 .toolbar .material-icons:hover {
     color: rgba(0, 0, 0, 0.7);
 }
-.toolbar .left {
-    padding-left: 6px;
-    float: left;
+.toolbar .back {
+    grid-area: back;
 }
-.toolbar .right {
-    padding-right: 6px;
-    float: right;
+.toolbar .message {
+    color: rgba(0, 0, 0, 0.54);
+    grid-area: message;
+    display: inline-flex;
+    align-items: center;
+}
+.toolbar .tools {
+    grid-area: tools;
 }
 .library {
     grid-area: library;
@@ -280,7 +292,7 @@
 }
 .viewer-card .cost span {
     display: inline-flex;
-  align-items: center;
+    align-items: center;
 }
 .viewer-card .cost img {
     height: 100%;

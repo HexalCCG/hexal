@@ -29,6 +29,8 @@ class DeckBuilderComponent implements OnInit {
   List<Card> libraryCards;
   Map<Card, int> deckCards = SplayTreeMap<Card, int>(compareCards);
 
+  String toolbarMessage = "";
+
   Future<void> ngOnInit() async {
     allCards = await _cardService.getAll();
     libraryCards = List<Card>()..addAll(allCards);
@@ -94,11 +96,20 @@ class DeckBuilderComponent implements OnInit {
 
   void clearDeck() => deckCards = Map<Card, int>();
 
+  void importCode() {
+    toolbarMessage = "Deck code imported";
+  }
+
+  void copyCode() {
+    if (deckCards.isNotEmpty) {
+      String code = _deckService.generateCode(deckCards);
+      toolbarMessage = "Deck code copied";
+    }
+  }
+
   void generatePdf() {
     if (deckCards.isNotEmpty) {
       print(_deckService.generateCode(deckCards));
     }
   }
-
-  
 }

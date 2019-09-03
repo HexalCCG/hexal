@@ -1,9 +1,14 @@
 <div class="deck-builder-container">
     <nav class="toolbar">
-        <a [routerLink]="Routes.menu.toUrl()" [routerLinkActive]="'active'"><i
-                class=" material-icons md-48 left">arrow_back</i></a>
-        <a (click)="generatePdf"><i class="material-icons md-48 right">print</i></a>
-        <a (click)="clearDeck"><i class="material-icons md-48 right">delete</i></a>
+        <a class="back" [routerLink]="Routes.menu.toUrl()" [routerLinkActive]="'active'"><i
+                class=" material-icons md-48">arrow_back</i></a>
+        <span class="message">{{ toolbarMessage }}</span>
+        <div class="tools">
+            <a (click)="clearDeck"><i class="material-icons md-48">delete</i></a>
+            <a (click)="importCode"><i class="material-icons md-48">archive</i></a>
+            <a (click)="copyCode"><i class="material-icons md-48">unarchive</i></a>
+            <a (click)="generatePdf"><i class="material-icons md-48">get_app</i></a>
+        </div>
     </nav>
     <div class="library">
         <div class="library-elements">
