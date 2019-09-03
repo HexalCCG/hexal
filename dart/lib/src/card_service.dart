@@ -1,6 +1,6 @@
 import 'card.dart';
 
-class CardList {
+class CardService {
   Future<List<Card>> getAll() async => cardList;
 
   final cardList = <Card>[

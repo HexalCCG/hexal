@@ -1,10 +1,12 @@
+import 'dart:collection';
 import 'dart:html';
 
 import 'package:angular/angular.dart';
 import 'package:angular_router/angular_router.dart';
+import 'package:open_card_game/src/deck_service.dart';
 
 import '../card.dart';
-import '../card_list.dart';
+import '../card_service.dart';
 import '../asset_links.dart';
 import '../routes.dart';
 
@@ -13,30 +15,27 @@ import '../routes.dart';
   templateUrl: 'deck_builder_component.html',
   styleUrls: ['deck_builder_component.css'],
   directives: [coreDirectives, routerDirectives],
-  providers: [ClassProvider(CardList)],
+  providers: [ClassProvider(CardService), ClassProvider(DeckService)],
   pipes: [commonPipes],
   exports: [Routes, AssetLinks],
 )
 class DeckBuilderComponent implements OnInit {
-  final CardList _cardList;
+  final CardService _cardService;
+  final DeckService _deckService;
+  DeckBuilderComponent(this._cardService, this._deckService);
+
   List<Card> allCards;
   Card selected;
   List<Card> libraryCards;
-  Map<Card, int> deckCards = Map<Card, int>();
-
-  DeckBuilderComponent(this._cardList);
-
-  Future<void> _getCards() async {
-    allCards = await _cardList.getAll();
-  }
+  Map<Card, int> deckCards = SplayTreeMap<Card, int>(compareCards);
 
   Future<void> ngOnInit() async {
-    await _getCards();
+    allCards = await _cardService.getAll();
     libraryCards = List<Card>()..addAll(allCards);
     libraryCards.sort(compareCards);
   }
 
-  int compareCards(Card a, Card b) {
+  static int compareCards(Card a, Card b) {
     int c;
     c = a.element.index.compareTo(b.element.index);
     if (c == 0) {
@@ -46,6 +45,28 @@ class DeckBuilderComponent implements OnInit {
       }
     }
     return c;
+  }
+
+  int nextEight(int n) {
+    return (n / 8).ceil() * 8;
+  }
+
+  int get deckSize {
+    return deckCards.values.fold(0, (a, b) => a + b);
+  }
+
+  bool get deckValid {
+    if (deckSize > 30) {
+      return false;
+    } else {
+      return deckCards.values.fold(true, (a, b) {
+        if (!a) {
+          return a;
+        } else {
+          return b <= 2;
+        }
+      });
+    }
   }
 
   void onSelect(Card card, Event event) {
@@ -73,25 +94,11 @@ class DeckBuilderComponent implements OnInit {
 
   void clearDeck() => deckCards = Map<Card, int>();
 
-  int get deckSize {
-    return deckCards.values.fold(0, (a, b) => a + b);
-  }
-
-  bool get deckValid {
-    if (deckSize > 30) {
-      return false;
-    } else {
-      return deckCards.values.fold(true, (a, b) {
-        if (!a) {
-          return a;
-        } else {
-          return b <= 2;
-        }
-      });
+  void generatePdf() {
+    if (deckCards.isNotEmpty) {
+      print(_deckService.generateCode(deckCards));
     }
   }
 
-  int nextEight(int n) {
-    return (n / 8).ceil() * 8;
-  }
+  
 }

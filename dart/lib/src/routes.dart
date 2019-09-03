@@ -3,6 +3,7 @@ import 'package:angular_router/angular_router.dart';
 import 'deck_builder/deck_builder_component.template.dart'
     as deck_builder_template;
 import 'menu/menu_component.template.dart' as menu_template;
+import 'pdf/pdf_component.template.dart' as pdf_template;
 
 class Routes {
   static final menu = RouteDefinition(
@@ -13,6 +14,10 @@ class Routes {
     routePath: RoutePath(path: 'build'),
     component: deck_builder_template.DeckBuilderComponentNgFactory,
   );
+  static final pdf = RouteDefinition(
+    routePath: RoutePath(path: 'pdf/:deck'),
+    component: pdf_template.PdfComponentNgFactory,
+  );
   static final default_path = RouteDefinition.redirect(
     path: '',
     redirectTo: menu.toUrl(),
@@ -21,6 +26,11 @@ class Routes {
   static final all = <RouteDefinition>[
     menu,
     deck_builder,
+    pdf,
     default_path,
   ];
+
+  String getDeck(Map<String, String> parameters) {
+    return parameters['deck'];
+  }
 }

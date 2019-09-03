@@ -81,7 +81,7 @@
 
 .library-card-list::-webkit-scrollbar-thumb
 {
-	
+	background-color: #F90;
 	background-image: -webkit-linear-gradient(45deg,
 	                                          rgba(255, 255, 255, .2) 25%,
 											  transparent 25%,
@@ -170,6 +170,7 @@
 
 .deck-card-list::-webkit-scrollbar-thumb
 {
+    background-color: rgb(0, 201, 0);
 	background-image: -webkit-linear-gradient(45deg,
 	                                          rgba(255, 255, 255, .2) 25%,
 											  transparent 25%,
@@ -225,7 +226,7 @@
     color: black;
     background-color: white;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    
+
     height: 100%;
     width: 100%;
     max-height: 600px;
@@ -272,6 +273,17 @@
 .viewer-card .cost {
     grid-area: cost;
     align-self: center;
+}
+.viewer-card .cost .cost-element {
+    display: flex;
+    align-content: center;
+}
+.viewer-card .cost span {
+    display: inline-flex;
+  align-items: center;
+}
+.viewer-card .cost img {
+    height: 100%;
 }
 
 .invalid {

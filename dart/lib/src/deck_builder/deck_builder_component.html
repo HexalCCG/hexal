@@ -2,7 +2,7 @@
     <nav class="toolbar">
         <a [routerLink]="Routes.menu.toUrl()" [routerLinkActive]="'active'"><i
                 class=" material-icons md-48 left">arrow_back</i></a>
-        <a><i class="material-icons md-48 right">print</i></a>
+        <a (click)="generatePdf"><i class="material-icons md-48 right">print</i></a>
         <a (click)="clearDeck"><i class="material-icons md-48 right">delete</i></a>
     </nav>
     <div class="library">
@@ -43,7 +43,10 @@
                 {{ selected.text }}
             </div>
             <div class="cost">
-                {{ selected.totalCost }}
+                <div *ngFor="let element of selected.cost.keys" class="cost-element">
+                    <span *ngIf="selected.cost[element] > 1">{{ selected.cost[element] }}</span>
+                    <img src="{{ AssetLinks.elementImages[element] }}">
+                </div>
             </div>
         </div>
         <span class="viewer-message" *ngIf="selected == null">
