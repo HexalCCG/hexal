@@ -20,9 +20,16 @@ import '../routes.dart';
   pipes: [commonPipes],
   exports: [Routes, AssetLinks],
 )
-class PdfComponent {
+class PdfComponent implements OnInit {
   final CardService _cardService;
   PdfComponent(this._cardService);
+
+  String iframeUrl = "";
+  bool loaded = false;
+
+  void ngOnInit() {
+    // TODO: implement ngOnInit
+  }
 
   void buildPdf() {
     String data = Uri.base.queryParameters['string'];

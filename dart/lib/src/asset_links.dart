@@ -16,4 +16,10 @@ class AssetLinks {
   static String airImage = elementImages[Element.air];
   static String earthImage = elementImages[Element.earth];
   static String waterImage = elementImages[Element.water];
+
+  static String cardImage(int id) {
+    return "assets/card-images/280x280/" +
+        id.toString().padLeft(3, '0') +
+        ".png";
+  }
 }

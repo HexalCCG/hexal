@@ -39,12 +39,12 @@
                 <img src="{{ AssetLinks.elementImages[selected.element] }}">
             </div>
             <div class="picture">
-                <img src="assets/card-images/280x280.png">
+                <img src="{{ AssetLinks.cardImage(selected.id) }}">
             </div>
             <div class="type">
                 {{ selected.typeLine }}
             </div>
-            <div class="text">
+            <div class=" text">
                 {{ selected.text }}
             </div>
             <div class="cost">
