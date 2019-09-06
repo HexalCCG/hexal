@@ -102,10 +102,12 @@ class DeckBuilderComponent implements OnInit {
   }
 
   void importCode() {
-    deckCards = _deckService.decodeDeck(codeBox);
+    if (codeBox != "") {
+      deckCards = _deckService.decodeDeck(codeBox);
+    }
   }
 
-  void copyCode() {
+  void exportCode() {
     if (deckCards.isNotEmpty) {
       codeBox = _deckService.generateCode(deckCards);
     }
@@ -114,9 +116,8 @@ class DeckBuilderComponent implements OnInit {
   void generatePdf() {
     if (deckCards.isNotEmpty) {
       String c = _deckService.generateCode(deckCards);
-      _router.navigate(Routes.pdf.toUrl(),
-          NavigationParams(queryParameters: {'deck': '${c}'}));
-      //_router.navigate(Routes.pdf.toUrl());
+      print(c);
+      _router.navigate(Routes.pdf.toUrl({"deck": '$c'}));
     }
   }
 }

@@ -1,6 +1,7 @@
-import 'dart:html';
+import 'dart:html' hide Location;
 import 'dart:convert';
 
+import 'package:angular/security.dart';
 import 'package:open_card_game/src/card_service.dart';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart';
@@ -22,24 +23,26 @@ import '../routes.dart';
   pipes: [commonPipes],
   exports: [Routes, AssetLinks],
 )
-class PdfComponent implements OnInit {
+class PdfComponent implements OnActivate {
   final CardService _cardService;
   final DeckService _deckService;
-  PdfComponent(this._cardService, this._deckService);
+  final Location _location;
+  final DomSanitizationService _sanitizationService;
+  PdfComponent(this._cardService, this._deckService, this._location,
+      this._sanitizationService);
 
-  String iframeUrl = "";
+  SafeResourceUrl iframeUrl;
   bool loaded = false;
 
-  void ngOnInit() async {
-    /*
-    String deckCode = Uri.base.queryParameters['deck'];
-    List<Card> deck = _deckService.unmap(_deckService.decodeDeck(deckCode));
-    iframeUrl = await buildPdf(deck);
+  @override
+  void onActivate(_, RouterState current) async {
+    List<Card> cardList =
+        _deckService.unmap(_deckService.decodeDeck(current.parameters['deck']));
+    iframeUrl = await buildPdf(cardList);
     loaded = true;
-    */
   }
 
-  Future<String> buildPdf(List<Card> cards) async {
+  Future<SafeResourceUrl> buildPdf(List<Card> cards) async {
     final pdf = Document();
 
     pdf.addPage(Page(
@@ -50,8 +53,7 @@ class PdfComponent implements OnInit {
           ); // Center
         })); // Page
 
-    String url = "data:application/pdf;base64," + base64.encode(pdf.save());
-
-    return url;
+    return _sanitizationService.bypassSecurityTrustResourceUrl(
+        "data:application/pdf;base64," + base64.encode(pdf.save()));
   }
 }

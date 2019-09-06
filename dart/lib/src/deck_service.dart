@@ -44,9 +44,7 @@ class DeckService {
 
     try {
       s.split(",").forEach((String a) {
-        print(a);
         List<String> b = a.split("x");
-        print(b);
         int n = (b.length == 2) ? int.parse(b[1]) : 1;
         Card c = _cardService.getById(int.parse(b[0]));
         r[c] = n;
