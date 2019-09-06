@@ -20,7 +20,7 @@ class Routes {
     component: browse_template.BrowseComponentNgFactory,
   );
   static final pdf = RouteDefinition(
-    routePath: RoutePath(path: 'pdf/:deck'),
+    routePath: RoutePath(path: 'pdf'),
     component: pdf_template.PdfComponentNgFactory,
   );
   static final default_path = RouteDefinition.redirect(
@@ -34,8 +34,4 @@ class Routes {
     pdf,
     default_path,
   ];
-
-  String getDeck(Map<String, String> parameters) {
-    return parameters['deck'];
-  }
 }

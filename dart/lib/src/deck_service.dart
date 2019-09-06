@@ -26,6 +26,16 @@ class DeckService {
     return base64.encode(bytes);
   }
 
+  List<Card> unmap(Map<Card, int> deck) {
+    List<Card> r = List<Card>();
+    deck.keys.forEach((key) {
+      for (int i = 0; i < deck[key]; i++) {
+        r.add(key);
+      }
+    });
+    return r;
+  }
+
   Map<Card, int> decodeDeck(String code) {
     List<int> bytes = base64.decode(code);
     String s = utf8.decode(bytes);

@@ -23,7 +23,8 @@ import '../routes.dart';
 class DeckBuilderComponent implements OnInit {
   final CardService _cardService;
   final DeckService _deckService;
-  DeckBuilderComponent(this._cardService, this._deckService);
+  final Router _router;
+  DeckBuilderComponent(this._cardService, this._deckService, this._router);
 
   List<Card> allCards;
   Card selected;
@@ -112,7 +113,10 @@ class DeckBuilderComponent implements OnInit {
 
   void generatePdf() {
     if (deckCards.isNotEmpty) {
-      print(_deckService.generateCode(deckCards));
+      String c = _deckService.generateCode(deckCards);
+      _router.navigate(Routes.pdf.toUrl(),
+          NavigationParams(queryParameters: {'deck': '${c}'}));
+      //_router.navigate(Routes.pdf.toUrl());
     }
   }
 }
