@@ -25,7 +25,7 @@
             <div class="library-card" *ngFor="let card of libraryCards" (click)="onAdd(card)"
                 (contextmenu)="onSelect(card, $event)">
                 <span class="cost">{{ card.totalCost }}</span>
-                <img class="element" src="{{ AssetLinks.elementImages[card.element] }}">
+                <img class="element" src="{{ card.elementImage }}">
                 <span class="name">{{ card.name }}</span>
             </div>
         </div>
@@ -36,10 +36,10 @@
                 {{ selected.name }}
             </div>
             <div class="element">
-                <img src="{{ AssetLinks.elementImages[selected.element] }}">
+                <img src="{{ selected.elementImage }}">
             </div>
             <div class="picture">
-                <img src="{{ AssetLinks.cardImage(selected.id) }}">
+                <img src="{{ selected.image }}">
             </div>
             <div class="type">
                 {{ selected.typeLine }}
@@ -69,7 +69,7 @@
             <div class="deck-card" *ngFor="let card of deckCards.keys" (click)="onRemove(card)"
                 (contextmenu)="onSelect(card, $event)">
                 <span class="cost">{{ card.totalCost }}</span>
-                <img class="element" src="{{AssetLinks.elementImages[card.element]}}">
+                <img class="element" src="{{card.elementImage}}">
                 <span class="name">{{ card.name }}</span>
                 <span class="number" *ngIf="deckCards[card] > 1"
                     [class.invalid]="deckCards[card] > 2">x{{ deckCards[card] }}</span>

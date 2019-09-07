@@ -1,3 +1,4 @@
+import 'package:open_card_game/src/asset_links.dart';
 import 'package:open_card_game/src/localisation.dart';
 
 enum Element { fire, earth, air, water, spirit }
@@ -31,5 +32,13 @@ class Card {
       r += " - " + Localisation.cardDuration[cardDuration];
     }
     return r;
+  }
+
+  String get image {
+    return AssetLinks.cardImage(id);
+  }
+
+  String get elementImage {
+    return AssetLinks.elementImages[element];
   }
 }
