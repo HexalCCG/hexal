@@ -36,9 +36,9 @@ class DeckBuilderComponent implements OnInit {
   String codeBox = "";
 
   Future<void> ngOnInit() async {
+    await _cardService.init();
     allCards = await _cardService.getAll();
-    libraryCards = List<Card>()..addAll(allCards);
-    libraryCards.sort(compareCards);
+    reloadLibrary();
   }
 
   static int compareCards(Card a, Card b) {
@@ -141,7 +141,7 @@ class DeckBuilderComponent implements OnInit {
     libraryCards = List<Card>()..addAll(allCards);
     if (selectedElement != null) {
       libraryCards.removeWhere((Card card) {
-        return card.element != Card.elementFromString(selectedElement);
+        return card.element != _cardService.elementFromString(selectedElement);
       });
     }
     libraryCards.sort(compareCards);

@@ -1,0 +1,22 @@
+﻿ID,Name,Element,Type,Duration,Cost,Attack,Health,Text
+0,Awakened Oak,Earth,Creature,None,4e,2,4,Spells your opponent casts that can target this creature must target this.
+1,Evolve Scales,Earth,Spell,Reaction,1e,,,Cast when a friendly creature is attacked. Give it +0 / +4 until end of turn.
+2,Contact Poison,Earth,Spell,Enchantment,,,,Enchant a creature. It gains +2 / -1.
+3,Recycle,Earth,Spell,None,,,,Destroy a creature. Your opponent adds the top card of their exile pile to their hand.
+4,Alarm Pheromone,Earth,Spell,None,,,,"If you control an [Earth] creature, draw 2 cards."
+5,Hexed Arrow,Earth,Item,None,,,,"You cannot play this and a creature on the same turn. Deal 1 damage to a creature, and if it takes damage destroy it."
+6,Armoured Crocodile,Earth,Creature,None,2e,2,3,
+7,Rainstorm,Earth,Spell,Field,1e,,,Each player draws an additional card at the start of their turns.
+8,,Earth,,,,,,
+9,,Earth,,,,,,
+10,,Earth,,,,,,
+11,,Earth,,,,,,
+12,,Earth,,,,,,
+13,,Earth,,,,,,
+14,,Earth,,,,,,
+15,,Earth,,,,,,
+16,,Earth,,,,,,
+17,,Earth,,,,,,
+18,,Earth,,,,,,
+19,,Earth,,,,,,
+20,,Earth,,,,,,

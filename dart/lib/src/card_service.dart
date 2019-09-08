@@ -1,7 +1,40 @@
+import 'dart:core';
+
+import 'package:csv/csv.dart';
+import 'package:open_card_game/src/asset_links.dart';
+import 'package:http/http.dart' as http;
+
 import 'card.dart';
 
 class CardService {
-  List<Card> getAll() => cardList;
+  List<Card> cardList;
+
+  Future<void> init() async {
+    String csv = await http.read(AssetLinks.cardData);
+    List<List<dynamic>> rows =
+        const CsvToListConverter().convert(csv).skip(1).toList();
+
+    cardList = rows.map((List<dynamic> rowData) {
+      return parseRowData(rowData);
+    }).toList();
+  }
+
+  List<Card> getAll() {
+    return cardList;
+  }
+
+  Card parseRowData(List<dynamic> data) {
+    return Card(
+        data[0],
+        data[1],
+        elementFromString(data[2].toLowerCase()),
+        typeFromString(data[3].toLowerCase()),
+        durationFromString(data[4].toLowerCase()),
+        costFromString(data[5]),
+        (data[6] == "") ? null : data[6],
+        (data[7] == "") ? null : data[7],
+        data[8]);
+  }
 
   Card getById(int id) {
     return cardList.singleWhere((Card card) {
@@ -9,216 +42,126 @@ class CardService {
     });
   }
 
-  final cardList = <Card>[
-    Card(
-        0,
-        "Awakened Oak",
-        Element.earth,
-        Type.creature,
-        CardDuration.none,
-        {Element.earth: 4},
-        {Stat.attack: 2, Stat.health: 4},
-        "Spells your opponent casts that can target this creature must target this."),
-    Card(
-        1,
-        "Evolve Scales",
-        Element.earth,
-        Type.spell,
-        CardDuration.reaction,
-        {Element.earth: 1},
-        {},
-        "Cast when a friendly creature is attacked. Give it +0 / +4 until end of turn."),
-    Card(
-        2,
-        "Contact Poison",
-        Element.earth,
-        Type.spell,
-        CardDuration.enchantment,
-        {},
-        {},
-        "Enchant a creature. It gains +2 / -1."),
-    Card(3, "Recycle", Element.earth, Type.spell, CardDuration.none, {}, {},
-        "Destroy a creature. Your opponent adds the top card of their exile pile to their hand."),
-    Card(4, "Alarm Pheromone", Element.earth, Type.spell, CardDuration.none, {},
-        {}, "If you control an [Earth] creature, draw 2 cards."),
-    Card(5, "Hexed Arrow", Element.earth, Type.item, CardDuration.none, {}, {},
-        "You cannot play this and a creature on the same turn. Deal 1 damage to a creature, and if it takes damage destroy it."),
-    Card(
-        6,
-        "Armoured Crocodile",
-        Element.earth,
-        Type.creature,
-        CardDuration.none,
-        {Element.earth: 2},
-        {Stat.attack: 2, Stat.health: 3},
-        ""),
-    Card(
-        7,
-        "Rainstorm",
-        Element.earth,
-        Type.spell,
-        CardDuration.field,
-        {Element.earth: 1},
-        {},
-        "Each player draws an additional card at the start of their turns."),
-    Card(
-        8,
-        "Forest Sprite",
-        Element.earth,
-        Type.creature,
-        CardDuration.none,
-        {},
-        {Stat.attack: 1, Stat.health: 1},
-        "While you control another [Earth] creature, this cannot be targeted by attacks or spells."),
-    Card(
-        9,
-        "Relentless Eagle",
-        Element.earth,
-        Type.creature,
-        CardDuration.none,
-        {Element.earth: 1},
-        {Stat.attack: 1, Stat.health: 1},
-        "The first time this creature is destroyed, resummon it."),
-    Card(
-        10,
-        "Spore-Infested Boar",
-        Element.earth,
-        Type.creature,
-        CardDuration.none,
-        {Element.earth: 1},
-        {Stat.attack: 2, Stat.health: 1},
-        "When this is destroyed by combat damage, search your deck for an [Earth] card, reveal and draw it, and shuffle your deck."),
-    Card(11, "Restless Willow", Element.earth, Type.creature, CardDuration.none,
-        {Element.earth: 4}, {Stat.attack: 4, Stat.health: 3}, ""),
-    Card(12, "Awakened Vines", Element.earth, Type.creature, CardDuration.none,
-        {}, {Stat.attack: 1, Stat.health: 2}, ""),
-    Card(
-        13,
-        "Carnivorous Fern",
-        Element.earth,
-        Type.creature,
-        CardDuration.none,
-        {},
-        {Stat.attack: 2, Stat.health: 1},
-        "At the end of your opponent's turn, if either player controls a damaged creature, you may summon this from your hand."),
-    Card(
-        14,
-        "Living Spear",
-        Element.earth,
-        Type.item,
-        CardDuration.equipment,
-        {Element.earth: 1},
-        {},
-        "Equip to a friendly creature. Equipped creature gains +1 / +0. When equipped creature is destroyed, summon this as a 1 / 1 [Earth] Living Spear creature."),
-    Card(
-        15,
-        "Hivequeen Ngaat",
-        Element.earth,
-        Type.hero,
-        CardDuration.none,
-        {Element.earth: 4},
-        {},
-        "Your [Earth] creatures have their costs reduced by [Earth]. When you summon an [Earth] creature, draw a card."),
-    Card(
-        16,
-        "Chevaux de Frise",
-        Element.earth,
-        Type.item,
-        CardDuration.permanent,
-        {Element.earth: 3},
-        {},
-        "At the start of your opponent's battle phase, you may select a friendly creature. It gains +1 / +0 and \"Cannot counterattack.\" until end of turn."),
-    Card(
-        17,
-        "Flower Crown",
-        Element.earth,
-        Type.item,
-        CardDuration.equipment,
-        {},
-        {},
-        "Equip to a friendly creature. It becomes [Earth]. Draw a card."),
-    Card(
-        18,
-        "Savagery",
-        Element.earth,
-        Type.spell,
-        CardDuration.reaction,
-        {},
-        {},
-        "Cast when you declare a counterattack. Give your creatures +2 / +0 until end of turn."),
-    Card(
-        19,
-        "Earthen Reclamation",
-        Element.earth,
-        Type.spell,
-        CardDuration.none,
-        {Element.earth: 2},
-        {},
-        "If you control an [Earth] creature, destroy a creature."),
-    Card(
-        20,
-        "Ironskin Runes",
-        Element.earth,
-        Type.spell,
-        CardDuration.enchantment,
-        {Element.earth: 1},
-        {},
-        "Enchant a creature. It gains \"Whenever this would take damage, it takes 1 less\""),
-    Card(
-        21,
-        "Earth Spiritsinger",
-        Element.earth,
-        Type.creature,
-        CardDuration.none,
-        {Element.earth: 3},
-        {Stat.attack: 2, Stat.health: 2},
-        "Whenever you summon an [Earth] creature, draw a card."),
-    Card(
-        22,
-        "Sprite's Blessing",
-        Element.earth,
-        Type.spell,
-        CardDuration.enchantment,
-        {Element.earth: 2},
-        {},
-        "Enchant a creature. It gains +2 / +2. Search your deck for any \"sprite\" cards. Reveal and draw them all."),
-    Card(
-        23,
-        "Mana Sapper",
-        Element.earth,
-        Type.creature,
-        CardDuration.none,
-        {Element.earth: 2},
-        {Stat.attack: 1, Stat.health: 2},
-        "When this creature damages an opponent, exile the top card of their mana pool, and if you do draw a card."),
-    Card(
-        24,
-        "Evolving Shrub",
-        Element.earth,
-        Type.creature,
-        CardDuration.none,
-        {Element.earth: 2},
-        {Stat.attack: 0, Stat.health: 2},
-        "[Earth] spells you cast targeting this cost nothing."),
-    Card(
-        25,
-        "Entangle",
-        Element.earth,
-        Type.spell,
-        CardDuration.enchantment,
-        {Element.earth: 1},
-        {},
-        "Enchant a creature. It gains \"Cannot attack or counterattack.\""),
-    Card(26, "Growth", Element.earth, Type.spell, CardDuration.enchantment, {},
-        {}, "Enchant a creature. It gains +1 / +1."),
-    Card(
-        27,
-        "Fertiliser",
-        Element.earth,
-        Type.item,
-        CardDuration.none,
-        {Element.earth: 1},
-        {},
-        "Search your deck for an [Earth] enchantment. Reveal and draw it. The next [Earth] enchantment you play this turn costs [Earth] less.")
-  ];
+  String stringToElement(Element e) {
+    switch (e) {
+      case Element.fire:
+        return "fire";
+        break;
+      case Element.earth:
+        return "earth";
+        break;
+      case Element.air:
+        return "air";
+        break;
+      case Element.water:
+        return "water";
+        break;
+      case Element.spirit:
+        return "spirit";
+        break;
+      default:
+        return null;
+    }
+  }
+
+  Element elementFromString(String s) {
+    switch (s) {
+      case "fire":
+        return Element.fire;
+        break;
+      case "earth":
+        return Element.earth;
+        break;
+      case "air":
+        return Element.air;
+        break;
+      case "water":
+        return Element.water;
+        break;
+      case "spirit":
+        return Element.spirit;
+        break;
+      default:
+        return null;
+    }
+  }
+
+  Type typeFromString(String s) {
+    switch (s) {
+      case "creature":
+        return Type.creature;
+        break;
+      case "spell":
+        return Type.spell;
+        break;
+      case "item":
+        return Type.item;
+        break;
+      case "hero":
+        return Type.hero;
+        break;
+      default:
+        return null;
+    }
+  }
+
+  CardDuration durationFromString(String s) {
+    switch (s) {
+      case "none":
+        return CardDuration.none;
+        break;
+      case "reaction":
+        return CardDuration.reaction;
+        break;
+      case "enchantment":
+        return CardDuration.enchantment;
+        break;
+      case "equipment":
+        return CardDuration.equipment;
+        break;
+      case "field":
+        return CardDuration.field;
+        break;
+      case "permanent":
+        return CardDuration.permanent;
+        break;
+      default:
+        return null;
+    }
+  }
+
+  Map<Element, int> costFromString(String s) {
+    Map<Element, int> result = Map<Element, int>();
+    List<String> list = s.split(" ");
+
+    list.forEach((item) {
+      Element e = parseElementLetter(item.substring(item.length - 1));
+      int n = int.parse(item.substring(0, item.length - 1));
+      result[e] = n;
+    });
+
+    return result;
+  }
+
+  Element parseElementLetter(String letter) {
+    switch (letter) {
+      case "s":
+        return Element.spirit;
+        break;
+      case "a":
+        return Element.air;
+        break;
+      case "w":
+        return Element.water;
+        break;
+      case "f":
+        return Element.fire;
+        break;
+      case "e":
+        return Element.earth;
+        break;
+      default:
+        return null;
+    }
+  }
 }

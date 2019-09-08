@@ -17,6 +17,8 @@ class AssetLinks {
   static String earthImage = elementImages[Element.earth];
   static String waterImage = elementImages[Element.water];
 
+  static String cardData = "/assets/data/cards.csv";
+
   static String cardImage(int id) {
     return "assets/card-images/280x280/" +
         id.toString().padLeft(3, '0') +
