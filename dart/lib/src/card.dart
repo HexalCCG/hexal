@@ -34,6 +34,16 @@ class Card {
     return r;
   }
 
+  String get statsLine {
+    if (stats[Stat.attack] != null && stats[Stat.health] != null) {
+      return stats[Stat.attack].toString() +
+          " / " +
+          stats[Stat.health].toString();
+    } else {
+      return "";
+    }
+  }
+
   String get image {
     return AssetLinks.cardImage(id);
   }
