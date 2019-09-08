@@ -1,22 +1,83 @@
 ﻿ID,Name,Element,Type,Duration,Cost,Attack,Health,Text
-0,Awakened Oak,Earth,Creature,None,4e,2,4,Spells your opponent casts that can target this creature must target this.
-1,Evolve Scales,Earth,Spell,Reaction,1e,,,Cast when a friendly creature is attacked. Give it +0 / +4 until end of turn.
+0,Awakened Oak,Earth,Creature,,4e,2,4,Spells your opponent casts that can target this creature must target this.
+1,Evolve Scales,Earth,Spell,Reaction,1e,,,Cast when a friendly creature is attacked. Give it +0 / +4 until the end of turn.
 2,Contact Poison,Earth,Spell,Enchantment,,,,Enchant a creature. It gains +2 / -1.
-3,Recycle,Earth,Spell,None,,,,Destroy a creature. Your opponent adds the top card of their exile pile to their hand.
-4,Alarm Pheromone,Earth,Spell,None,,,,"If you control an [Earth] creature, draw 2 cards."
-5,Hexed Arrow,Earth,Item,None,,,,"You cannot play this and a creature on the same turn. Deal 1 damage to a creature, and if it takes damage destroy it."
-6,Armoured Crocodile,Earth,Creature,None,2e,2,3,
+3,Recycle,Earth,Spell,,,,,Destroy a creature. Your opponent adds the top card of their exile pile to their hand.
+4,Alarm Pheromone,Earth,Spell,,,,,"If you control an [Earth] creature, draw 2 cards."
+5,Hexed Arrow,Earth,Item,,,,,"You cannot play this and a creature on the same turn. Deal 1 damage to a creature, and if it takes damage destroy it."
+6,Armoured Crocodile,Earth,Creature,,2e,2,3,
 7,Rainstorm,Earth,Spell,Field,1e,,,Each player draws an additional card at the start of their turns.
-8,,Earth,,,,,,
-9,,Earth,,,,,,
-10,,Earth,,,,,,
-11,,Earth,,,,,,
-12,,Earth,,,,,,
-13,,Earth,,,,,,
-14,,Earth,,,,,,
-15,,Earth,,,,,,
-16,,Earth,,,,,,
-17,,Earth,,,,,,
-18,,Earth,,,,,,
-19,,Earth,,,,,,
-20,,Earth,,,,,,
+8,Forest Sprite,Earth,Creature,,,1,1,"While you control another [Earth] creature, this cannot be targeted by attacks or spells."
+9,Relentless Eagle,Earth,Creature,,1e,1,1,"The first time this creature is destroyed, resummon it."
+10,Spore-Infested Boar,Earth,Creature,,1e,2,1,"When this is destroyed by combat damage, search your deck for an [Earth] card, reveal and draw it, and shuffle your deck."
+11,Restless Willow,Earth,Creature,,4e,4,3,
+12,Awakened Vines,Earth,Creature,,,1,2,
+13,Carnivorous Fern,Earth,Creature,,,2,1,"At the end of your opponent's turn, if either player controls a damaged creature, you may summon this from your hand."
+14,Living Spear,Earth,Item,Equipment,1e,,,"Equip to a friendly creature. Equipped creature gains +1 / +0. When equipped creature is destroyed, summon this as a 1 / 1 [Earth] Living Spear creature."
+15,Hivequeen Ngaat,Earth,Hero,,4e,,,"Your [Earth] creatures have their costs reduced by [Earth]. When you summon an [Earth] creature, draw a card."
+16,Chevaux de Frise,Earth,Item,Permanent,3e,,,"At the start of your opponent's battle phase, you may select a friendly creature. It gains +1 / +0 and ""Cannot counterattack"" until end of turn."
+17,Flower Crown,Earth,Item,Equipment,,,,Equip to a friendly creature. It becomes [Earth]. Draw a card.
+18,Savagery,Earth,Spell,Reaction,,,,Cast when you declare a counterattack. Give your creatures +2 / +0 until end of turn.
+19,Earthen Reclamation,Earth,Spell,,2e,,,"If you control an [Earth] creature, destroy a creature."
+20,Ironskin Runes,Earth,Spell,Enchantment,1e,,,"Enchant a creature. It gains ""Whenever this would take damage, it takes 1 less""."
+21,Earth Spiritsinger,Earth,Creature,,3e,2,2,"Whenever you summon an [Earth] creature, draw a card."
+22,Sprite's Blessing,Earth,Spell,Enchantment,2e,,,"Enchant a creature. It gains +2 / +2. Search your deck for any ""sprite"" cards. Reveal and draw them all."
+23,Mana Sapper,Earth,Creature,,2e,1,2,"When this creature damages an opponent, exile the top card of their mana pool, and if you do draw a card."
+24,Evolving Shrub,Earth,Creature,,2e,0,2,[Earth] spells you cast targeting this cost nothing.
+25,Entangle,Earth,Spell,Enchantment,1e,,,"Enchant a creature. It gains ""Cannot attack or counterattack""."
+26,Growth,Earth,Spell,Enchantment,,,,Enchant a creature. It gains +1 / +1.
+27,Fertiliser,Earth,Item,,1e,,,Search your deck for an [Earth] enchantment. Reveal and draw it. The next [Earth] enchantment you play this turn costs [Earth] less.
+28,Commander Adela,Fire,Hero,,5f,,,"When this hero enters the battlefield, and at the start of your turn, burn a card. If it is a [Fire] creature, summon it. Your [Fire] creatures have +1 / +0."
+29,Blazing Effigy,Fire,Item,Permanent,2f,,,"At the start of your turn, if you control a [Fire] creature, destroy a friendly [Fire] creature and this. If you do, burn 3 cards, and summon any [Fire] creatures burned."
+30,Fire Star Rising,Fire,Spell,,4f,,,[Fire] creatures you control gain +2 / +0 until end of turn.
+31,Runed Champion,Fire,Creature,,,2,1,"When this is destroyed by combat damage, burn a card."
+32,Fire Acolyte,Fire,Creature,,1f,1,1,"When this creature enters the battlefield, summon a 1 / 1 [Fire] Fire Worshipper creature."
+33,Zealous Knight,Fire,Creature,,1f,2,2,
+34,Fireball,Fire,Spell,,2f,,,Deal 3 damage to an enemy.
+35,Magma Wyrm,Fire,Creature,,,2,2,"At the start of your turn, burn a card."
+36,Untamed Fire Spirit,Fire,Creature,,2f,2,2,"When this enters the battlefield, deal 1 damage to a creature."
+37,Runic Sabre,Fire,Item,Equipment,,,,Equip to a friendly Fire creature. Equipped creature gains +2 / +0.
+38,Reckless Stallion,Fire,Creature,,4f,4,3,Can attack the same turn it enters the battlefield.
+39,Heat Wave,Fire,Spell,,1f,,,"Deal 1 damage to all enemy creatures. If you control a [Fire] creature, deal 2 instead."
+40,Firebolt,Fire,Spell,Reaction,,,,Cast at any time. Deal 3 damage to a creature.
+41,Thunderstorm,Fire,Spell,Field,1f,,,All spells deal +1 damage.
+42,Devoted Defender,Fire,Creature,,1f,1,3,Your other creatures cannot be targeted with attacks.
+43,Fireworks,Fire,Spell,,1f,,,"Deal 3 damage to enemy creatures, one at a time, split as you choose."
+44,Meteor Shot,Fire,Spell,,2f,,,"Deal 5 damage to an enemy creature, and 1 damage to all other enemy creatures."
+45,Ember Sprite,Fire,Creature,,,1,1,"After you burn a card, you may switch it with this card from your hand."
+46,Immolate,Fire,Spell,Reaction,1f,,,"Cast at any time. If you control a [Fire] creature, deal 5 damage to a creature."
+47,Fire Warlock,Fire,Creature,,3f,3,3,"Whenever you play a card, burn a card."
+48,Pyromancer,Fire,Creature,,2f,3,2,"When this is destroyed, deal 1 damage to all creatures."
+49,Dark Fire Sacrifice,Fire,Spell,Reaction,,,,"Cast when a friendly creature attacks. Double the creature's attack. At the end of combat, destroy it."
+50,Burning Aura,Fire,Spell,Enchantment,,,,Enchant a creature. It gains +1 / +1.
+51,Hot Ash,Fire,Spell,,,,,"You may channel this from your hand. When paying for a [Fire] creature, this provides 2 [Fire]."
+52,Serpent of the Forge,Fire,Creature,,2f,2,2,"When this enters the battlefield, destroy an item."
+53,Electric Shock,Fire,Spell,Reaction,,,,Cast at any time. Deal 1 damage to a creature. It cannot attack or counterattack until end of turn.
+54,Fire Crystal,Fire,Spell,,,,,"Destroy a friendly creature, and if you do, destroy an enemy creature."
+55,Acceleration Runes,Fire,Spell,Enchantment,,,,"Enchant a creature. It gains ""Can attack the same turn this enters the battlefield""."
+56,Arcane Artillery,Fire,Spell,Reaction,,,,Cast when an enemy creature declares a counterattack. Destroy the creature.
+57,Blood to Fire,Fire,Spell,,4f,,,"Draw until you have 7 cards in hand, then burn the rest of your deck. Put this card on the top of your deck."
+58,"Novhu, The Kraken",Water,Hero,,8w,,,"At the start of your turn, deal 2 damage to your opponent."
+59,"Lissa, Spirit of the Fountain",Water,Hero,,6w,,,"At the start of your turn, restore 2 health to yourself."
+60,Slime,Water,Creature,,,1,2,
+61,Freeze,Water,Spell,Enchantment,,,,"Enchant a creature. Set its attack to 0. At the start of your turn destroy this, unless a [Water] field spell is active."
+62,Selfless Mermaid,Water,Creature,,2w,2,3,"When this is destroyed, restore all friendly creatures to full health."
+63,Water Witch,Water,Creature,,3w,3,3,"Whenever a friendly creature survives an attack, restore 1 health to it."
+64,Arcane Defender,Water,Creature,,,0,3,"Your other creatures cannot be targeted with attacks. At the start of your turn, shuffle this into your deck."
+65,Vengeful Mermaid,Water,Creature,,2w,3,2,When this enters the battlefield destroy a damaged creature.
+66,Herald of The Kraken,Water,Creature,,4w,4,3,"If your deck contains ""Novhu, The Kraken"", reveal and draw it, then shuffle your deck."
+67,Enchanted Trident,Water,Item,Enchantment,1w,,,"Equip to a friendly creature. It gains +2 / +1. When the creature is destroyed, return this to your hand."
+68,Regenerative Shielding,Water,Spell,Permanent,3w,,,"Whenever you exile cards due to battle damage, add the first to your mana pool instead."
+69,Water Sprite,Water,Creature,,,1,1,"When your opponent declares an attack, you may summon this from your hand as the new target."
+70,Shield,Water,Spell,Reaction,,,,Cast when an enemy creature attacks. Reduce the attack's damage by 3.
+71,Lesser Healing,Water,Spell,,2w,,,Restore 3 health to yourself.
+72,Greater Healing,Water,Spell,,3w,,,Restore 5 health to yourself.
+73,Snowstorm,Water,Spell,Field,1w,,,All creatures have -1 / -0.
+74,Frozen Avenger,Water,Creature,,1w,1,2,"When a friendly creature is destroyed, you may summon this from your hand."
+75,Witch's Cat,Water,Creature,,1w,2,2,
+76,Inflict Wounds,Water,Spell,,2w,,,Deal 5 damage to a creature.
+77,Restoration,Water,Spell,Reaction,2w,,,Cast when a friendly creature is destroyed. Resummon it.
+78,Enchanted Seahorse,Water,Creature,,4w,1,4,"When this enters the battlefield, restore 3 health to yourself."
+79,Arcane Barrier,Water,Spell,Permanent,1w,,,"Attacks that deal 2 or less damage to you deal 0 damage. When you take damage, destroy this."
+80,Imprison,Water,Spell,,2w,,,Exile a creature.
+81,Refresh,Water,Spell,,,,,Search your mana pool for a [Water] card. Reveal and add it to your hand.

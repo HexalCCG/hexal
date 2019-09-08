@@ -44,8 +44,8 @@ class PdfComponent implements OnActivate {
 
   @override
   void onActivate(_, RouterState current) async {
-    List<Card> cardList =
-        _deckService.unmap(_deckService.decodeDeck(current.parameters['deck']));
+    List<Card> cardList = await _deckService
+        .unmap(await _deckService.decodeDeck(current.parameters['deck']));
     iframeUrl = await buildPdf(cardList);
     loaded = true;
   }

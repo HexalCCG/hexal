@@ -9,17 +9,20 @@ import 'card.dart';
 class CardService {
   List<Card> cardList;
 
-  Future<void> init() async {
+  Future<List<Card>> loadCards() async {
     String csv = await http.read(AssetLinks.cardData);
     List<List<dynamic>> rows =
         const CsvToListConverter().convert(csv).skip(1).toList();
 
-    cardList = rows.map((List<dynamic> rowData) {
+    return rows.map((List<dynamic> rowData) {
       return parseRowData(rowData);
     }).toList();
   }
 
-  List<Card> getAll() {
+  Future<List<Card>> getAll() async {
+    if (cardList == null) {
+      cardList = await loadCards();
+    }
     return cardList;
   }
 
@@ -36,8 +39,9 @@ class CardService {
         data[8]);
   }
 
-  Card getById(int id) {
-    return cardList.singleWhere((Card card) {
+  Future<Card> getById(int id) async {
+    List<Card> list = await getAll();
+    return list.singleWhere((Card card) {
       return card.id == id;
     });
   }
@@ -107,9 +111,6 @@ class CardService {
 
   CardDuration durationFromString(String s) {
     switch (s) {
-      case "none":
-        return CardDuration.none;
-        break;
       case "reaction":
         return CardDuration.reaction;
         break;
@@ -125,21 +126,23 @@ class CardService {
       case "permanent":
         return CardDuration.permanent;
         break;
+      case "none":
+      case "":
       default:
-        return null;
+        return CardDuration.none;
     }
   }
 
   Map<Element, int> costFromString(String s) {
     Map<Element, int> result = Map<Element, int>();
-    List<String> list = s.split(" ");
-
-    list.forEach((item) {
-      Element e = parseElementLetter(item.substring(item.length - 1));
-      int n = int.parse(item.substring(0, item.length - 1));
-      result[e] = n;
-    });
-
+    if (s != "") {
+      List<String> list = s.split("|");
+      list.forEach((item) {
+        Element e = parseElementLetter(item.substring(item.length - 1));
+        int n = int.parse(item.substring(0, item.length - 1));
+        result[e] = n;
+      });
+    }
     return result;
   }
 

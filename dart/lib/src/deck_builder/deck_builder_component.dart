@@ -36,7 +36,6 @@ class DeckBuilderComponent implements OnInit {
   String codeBox = "";
 
   Future<void> ngOnInit() async {
-    await _cardService.init();
     allCards = await _cardService.getAll();
     reloadLibrary();
   }
@@ -152,9 +151,9 @@ class DeckBuilderComponent implements OnInit {
     codeBox = "";
   }
 
-  void importCode() {
+  void importCode() async {
     if (codeBox != "") {
-      deckCards = _deckService.decodeDeck(codeBox);
+      deckCards = await _deckService.decodeDeck(codeBox);
     }
   }
 

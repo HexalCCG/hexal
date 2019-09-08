@@ -36,22 +36,19 @@ class DeckService {
     return r;
   }
 
-  Map<Card, int> decodeDeck(String code) {
+  Future<Map<Card, int>> decodeDeck(String code) async {
     List<int> bytes = base64.decode(code);
     String s = utf8.decode(bytes);
 
     Map<Card, int> r = Map<Card, int>();
 
-    try {
-      s.split(",").forEach((String a) {
-        List<String> b = a.split("x");
-        int n = (b.length == 2) ? int.parse(b[1]) : 1;
-        Card c = _cardService.getById(int.parse(b[0]));
-        r[c] = n;
-      });
-      return r;
-    } catch (e) {
-      return Map<Card, int>();
-    }
+    Iterable<Future<MapEntry<Card, int>>> p =
+        s.split(",").map((String a) async {
+      List<String> b = a.split("x");
+      int n = (b.length == 2) ? int.parse(b[1]) : 1;
+      Card c = await _cardService.getById(int.parse(b[0]));
+      return MapEntry<Card, int>(c, n);
+    });
+    return Map.fromEntries(await Future.wait(p));
   }
 }
