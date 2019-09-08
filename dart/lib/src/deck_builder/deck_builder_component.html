@@ -53,6 +53,9 @@
                     <img src="{{ AssetLinks.elementImages[element] }}">
                 </div>
             </div>
+            <div class="stats">
+              {{ selected.statsLine }}
+          </div>
         </div>
         <span class="viewer-message" *ngIf="selected == null">
             Right-click a card to view
