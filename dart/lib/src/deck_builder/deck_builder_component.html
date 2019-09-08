@@ -12,11 +12,11 @@
     </nav>
     <div class="library">
         <div class="library-elements">
-            <a class="element-icon"><img src="{{ AssetLinks.spiritImage }}"></a>
-            <a class="element-icon"><img src="{{ AssetLinks.fireImage }}"></a>
-            <a class="element-icon"><img src="{{ AssetLinks.airImage }}"></a>
-            <a class="element-icon"><img src="{{ AssetLinks.earthImage }}"></a>
-            <a class="element-icon"><img src="{{ AssetLinks.waterImage }}"></a>
+            <a class="element-icon" [class.disabled]="selectedElement != 'spirit' && selectedElement != null" (click)="libraryElement('spirit')" ><img src="{{ AssetLinks.spiritImage }}"></a>
+            <a class="element-icon" [class.disabled]="selectedElement != 'fire' && selectedElement != null" (click)="libraryElement('fire')"><img src="{{ AssetLinks.fireImage }}"></a>
+            <a class="element-icon" [class.disabled]="selectedElement != 'air' && selectedElement != null" (click)="libraryElement('air')"><img src="{{ AssetLinks.airImage }}"></a>
+            <a class="element-icon" [class.disabled]="selectedElement != 'earth' && selectedElement != null" (click)="libraryElement('earth')"><img src="{{ AssetLinks.earthImage }}"></a>
+            <a class="element-icon" [class.disabled]="selectedElement != 'water' && selectedElement != null" (click)="libraryElement('water')"><img src="{{ AssetLinks.waterImage }}"></a>
         </div>
         <div class="library-search">
 

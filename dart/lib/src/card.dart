@@ -51,4 +51,48 @@ class Card {
   String get elementImage {
     return AssetLinks.elementImages[element];
   }
+
+  static String elementString(Element e) {
+    switch (e) {
+      case Element.fire:
+        return "fire";
+        break;
+      case Element.earth:
+        return "earth";
+        break;
+      case Element.air:
+        return "air";
+        break;
+      case Element.water:
+        return "water";
+        break;
+      case Element.spirit:
+        return "spirit";
+        break;
+      default:
+        return null;
+    }
+  }
+
+  static Element elementFromString(String s) {
+    switch (s) {
+      case "fire":
+        return Element.fire;
+        break;
+      case "earth":
+        return Element.earth;
+        break;
+      case "air":
+        return Element.air;
+        break;
+      case "water":
+        return Element.water;
+        break;
+      case "spirit":
+        return Element.spirit;
+        break;
+      default:
+        return null;
+    }
+  }
 }

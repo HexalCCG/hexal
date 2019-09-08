@@ -65,6 +65,9 @@
   flex: 0 0 auto;
   background-color: white;
 }
+.library-elements .disabled {
+  filter: brightness(50%);
+}
 .library-elements .element-icon {
   height: 100%;
 }

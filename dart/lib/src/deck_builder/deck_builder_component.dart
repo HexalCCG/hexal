@@ -4,6 +4,7 @@ import 'dart:html';
 import 'package:angular/angular.dart';
 import 'package:angular_router/angular_router.dart';
 import 'package:angular_forms/angular_forms.dart';
+import 'package:open_card_game/src/card.dart';
 
 import '../card.dart';
 import '../card_service.dart';
@@ -28,6 +29,7 @@ class DeckBuilderComponent implements OnInit {
 
   List<Card> allCards;
   Card selected;
+  String selectedElement;
   List<Card> libraryCards;
   Map<Card, int> deckCards = SplayTreeMap<Card, int>(compareCards);
 
@@ -94,6 +96,55 @@ class DeckBuilderComponent implements OnInit {
         deckCards.remove(card);
       }
     }
+  }
+
+  void libraryElement(String string) {
+    if (string == "spirit") {
+      if (selectedElement == "spirit") {
+        selectedElement = null;
+      } else {
+        selectedElement = "spirit";
+      }
+    }
+    if (string == "fire") {
+      if (selectedElement == "fire") {
+        selectedElement = null;
+      } else {
+        selectedElement = "fire";
+      }
+    }
+    if (string == "air") {
+      if (selectedElement == "air") {
+        selectedElement = null;
+      } else {
+        selectedElement = "air";
+      }
+    }
+    if (string == "earth") {
+      if (selectedElement == "earth") {
+        selectedElement = null;
+      } else {
+        selectedElement = "earth";
+      }
+    }
+    if (string == "water") {
+      if (selectedElement == "water") {
+        selectedElement = null;
+      } else {
+        selectedElement = "water";
+      }
+    }
+    reloadLibrary();
+  }
+
+  void reloadLibrary() {
+    libraryCards = List<Card>()..addAll(allCards);
+    if (selectedElement != null) {
+      libraryCards.removeWhere((Card card) {
+        return card.element != Card.elementFromString(selectedElement);
+      });
+    }
+    libraryCards.sort(compareCards);
   }
 
   void clearDeck() {
