@@ -11,7 +11,7 @@ import 'package:angular_router/angular_router.dart';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart';
 
-import '../asset_links.dart';
+import '../asset_service.dart';
 import '../card.dart';
 import '../deck_service.dart';
 import '../routes.dart';
@@ -21,19 +21,26 @@ import '../routes.dart';
   templateUrl: 'pdf_component.html',
   styleUrls: ['pdf_component.css'],
   directives: [coreDirectives, routerDirectives],
-  providers: [ClassProvider(CardService), ClassProvider(DeckService)],
+  providers: [
+    ClassProvider(CardService),
+    ClassProvider(DeckService),
+    ClassProvider(AssetService)
+  ],
   pipes: [commonPipes],
-  exports: [Routes, AssetLinks],
+  exports: [Routes, AssetService],
 )
 class PdfComponent implements OnActivate {
   final CardService _cardService;
   final DeckService _deckService;
+  final AssetService _assetService;
   final Location _location;
   final DomSanitizationService _sanitizationService;
-  PdfComponent(this._cardService, this._deckService, this._location,
-      this._sanitizationService);
+  PdfComponent(this._cardService, this._deckService, this._assetService,
+      this._location, this._sanitizationService);
 
   SafeResourceUrl iframeUrl;
+  int cardsLoaded = 0;
+  int cardNumber = 0;
   bool loaded = false;
 
   static double cm = PdfPageFormat.cm;
@@ -46,6 +53,7 @@ class PdfComponent implements OnActivate {
   void onActivate(_, RouterState current) async {
     List<Card> cardList = await _deckService
         .unmap(await _deckService.decodeDeck(current.parameters['deck']));
+    cardNumber = cardList.length;
     iframeUrl = await buildPdf(cardList);
     loaded = true;
   }
@@ -82,7 +90,7 @@ class PdfComponent implements OnActivate {
   }
 
   Future<Container> buildCard(Document pdf, Card card) async {
-    return Container(
+    Container result = await Container(
         padding: EdgeInsets.all(10),
         decoration: BoxDecoration(
             border:
@@ -100,7 +108,7 @@ class PdfComponent implements OnActivate {
                   maxHeight: 24,
                   maxWidth: 24,
                   child: Image(await getImage(
-                      pdf, AssetLinks.elementImages[card.element])))),
+                      pdf, AssetService.elementImages[card.element])))),
           Positioned(
               left: 30,
               right: 30,
@@ -109,7 +117,7 @@ class PdfComponent implements OnActivate {
                   child: LimitedBox(
                       maxHeight: 100,
                       child: Image(await getImage(
-                          pdf, AssetLinks.cardImage(card.id)))))),
+                          pdf, AssetService.cardImage(card.id)))))),
           Positioned(
               left: 10,
               top: 160,
@@ -148,6 +156,8 @@ class PdfComponent implements OnActivate {
                             fontWeight: FontWeight.bold, fontSize: 14))
                   ]))
         ]));
+    cardsLoaded += 1;
+    return result;
   }
 
   Future<List<Widget>> buildCostRow(
@@ -160,7 +170,7 @@ class PdfComponent implements OnActivate {
       result.add(LimitedBox(
           maxHeight: 16,
           maxWidth: 16,
-          child: Image(await getImage(pdf, AssetLinks.elementImages[key]))));
+          child: Image(await getImage(pdf, AssetService.elementImages[key]))));
       return result;
     });
     List<List<Widget>> b = await Future.wait(a);

@@ -2,7 +2,7 @@ import 'dart:core';
 
 import 'card.dart';
 
-class AssetLinks {
+class AssetService {
   static Map<Element, String> elementImages = {
     Element.spirit: "assets/icons/element-spirit.png",
     Element.fire: "assets/icons/element-fire.png",
@@ -17,11 +17,11 @@ class AssetLinks {
   static String earthImage = elementImages[Element.earth];
   static String waterImage = elementImages[Element.water];
 
-  static String cardData = "/assets/data/cards.csv";
-
   static String cardImage(int id) {
     return "assets/card-images/280x280/" +
         id.toString().padLeft(3, '0') +
         ".png";
   }
+
+  static String cardData = "/assets/data/cards.csv";
 }

@@ -1,4 +1,5 @@
 <div *ngIf="!loaded">
-    Loading...
+    Loading...<br>
+    {{ cardsLoaded }} / {{ cardNumber }} loaded.
 </div>
 <iframe *ngIf="loaded" id="pdf_iframe" frameborder="0" [src]="iframeUrl"></iframe>

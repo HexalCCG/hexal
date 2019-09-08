@@ -9,7 +9,7 @@ import 'package:open_card_game/src/card.dart';
 import '../card.dart';
 import '../card_service.dart';
 import '../deck_service.dart';
-import '../asset_links.dart';
+import '../asset_service.dart';
 import '../routes.dart';
 
 @Component(
@@ -19,7 +19,7 @@ import '../routes.dart';
   directives: [coreDirectives, routerDirectives, formDirectives],
   providers: [ClassProvider(CardService), ClassProvider(DeckService)],
   pipes: [commonPipes],
-  exports: [Routes, AssetLinks],
+  exports: [Routes, AssetService],
 )
 class DeckBuilderComponent implements OnInit {
   final CardService _cardService;

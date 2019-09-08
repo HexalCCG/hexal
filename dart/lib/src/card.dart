@@ -1,4 +1,4 @@
-import 'package:open_card_game/src/asset_links.dart';
+import 'package:open_card_game/src/asset_service.dart';
 import 'package:open_card_game/src/localisation.dart';
 
 enum Element { fire, earth, air, water, spirit }
@@ -43,10 +43,10 @@ class Card {
   }
 
   String get image {
-    return AssetLinks.cardImage(id);
+    return AssetService.cardImage(id);
   }
 
   String get elementImage {
-    return AssetLinks.elementImages[element];
+    return AssetService.elementImages[element];
   }
 }

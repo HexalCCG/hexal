@@ -1,7 +1,7 @@
 import 'dart:core';
 
 import 'package:csv/csv.dart';
-import 'package:open_card_game/src/asset_links.dart';
+import 'package:open_card_game/src/asset_service.dart';
 import 'package:http/http.dart' as http;
 
 import 'card.dart';
@@ -10,7 +10,7 @@ class CardService {
   List<Card> cardList;
 
   Future<List<Card>> loadCards() async {
-    String csv = await http.read(AssetLinks.cardData);
+    String csv = await http.read(AssetService.cardData);
     List<List<dynamic>> rows =
         const CsvToListConverter().convert(csv).skip(1).toList();
 
