@@ -1,10 +1,8 @@
 import 'dart:html' hide Location;
 import 'dart:convert';
-import 'package:http/http.dart' as http;
 
 import 'package:angular/security.dart';
 import 'package:image/image.dart' as img;
-import 'package:open_card_game/src/card_service.dart';
 
 import 'package:angular/angular.dart';
 import 'package:angular_router/angular_router.dart';
@@ -13,6 +11,7 @@ import 'package:pdf/widgets.dart';
 
 import '../asset_service.dart';
 import '../card.dart';
+import '../card_service.dart';
 import '../deck_service.dart';
 import '../routes.dart';
 
@@ -30,13 +29,11 @@ import '../routes.dart';
   exports: [Routes, AssetService],
 )
 class PdfComponent implements OnActivate {
-  final CardService _cardService;
   final DeckService _deckService;
   final AssetService _assetService;
-  final Location _location;
   final DomSanitizationService _sanitizationService;
-  PdfComponent(this._cardService, this._deckService, this._assetService,
-      this._location, this._sanitizationService);
+  PdfComponent(
+      this._deckService, this._assetService, this._sanitizationService);
 
   SafeResourceUrl iframeUrl;
   int cardsLoaded = 0;
@@ -178,7 +175,7 @@ class PdfComponent implements OnActivate {
   }
 
   Future<PdfImage> getImage(Document pdf, String location) async {
-    img.Image image = img.decodeImage(await http.readBytes(location));
+    img.Image image = await _assetService.loadImage(location);
     return PdfImage(pdf.document,
         image: image.data.buffer.asUint8List(),
         width: image.width,

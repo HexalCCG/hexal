@@ -2,15 +2,16 @@ import 'dart:core';
 
 import 'package:csv/csv.dart';
 import 'package:open_card_game/src/asset_service.dart';
-import 'package:http/http.dart' as http;
 
 import 'card.dart';
 
 class CardService {
+  CardService(this._assetService);
+  final AssetService _assetService;
   List<Card> cardList;
 
   Future<List<Card>> loadCards() async {
-    String csv = await http.read(AssetService.cardData);
+    String csv = await _assetService.getCardData();
     List<List<dynamic>> rows =
         const CsvToListConverter().convert(csv).skip(1).toList();
 
@@ -136,7 +137,7 @@ class CardService {
   Map<Element, int> costFromString(String s) {
     Map<Element, int> result = Map<Element, int>();
     if (s != "") {
-      List<String> list = s.split("|");
+      List<String> list = s.split(",");
       list.forEach((item) {
         Element e = parseElementLetter(item.substring(item.length - 1));
         int n = int.parse(item.substring(0, item.length - 1));

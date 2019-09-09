@@ -1,8 +1,14 @@
 import 'dart:core';
+import 'package:http/http.dart';
+
+import 'package:image/image.dart';
 
 import 'card.dart';
 
 class AssetService {
+  Map<String, Future<Image>> imageMap = Map<String, Future<Image>>();
+  Future<String> cardData;
+
   static Map<Element, String> elementImages = {
     Element.spirit: "assets/icons/element-spirit.png",
     Element.fire: "assets/icons/element-fire.png",
@@ -23,5 +29,20 @@ class AssetService {
         ".png";
   }
 
-  static String cardData = "/assets/data/cards.csv";
+  static String cardDataLocation = "assets/data/cards.csv";
+
+  Future<String> getCardData() {
+    if (cardData == null) {
+      cardData = read(cardDataLocation);
+    }
+    return cardData;
+  }
+
+  Future<Image> loadImage(String location) {
+    if (!imageMap.containsKey(location)) {
+      imageMap[location] =
+          readBytes(location).then((data) => decodeImage(data));
+    }
+    return imageMap[location];
+  }
 }

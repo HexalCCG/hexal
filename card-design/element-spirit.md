@@ -1,5 +1,18 @@
 # Card Design - Spirit
 
+Ideas:
+
+Command - creature attacks a target?
+Sleep - no creatures can attack
+Hold person - prevent attacks
+Locate object - search for an item
+Mind spike
+Dominate creature
+Lunar communion
+Power word Kill
+Time Stop
+Wish
+
 ## Hero
 
 ## Creatures
@@ -8,6 +21,8 @@ Creature - **Spirit Sprite**
 	Cost: 0
 	1 / 1
 	When this creature enters the battlefield, reveal a random card from each player's hand.
+
+
 
 ## Spell - Instantaneous
 
@@ -24,23 +39,15 @@ Spell, Instantaneous - **Sense Emotion**
 	Your opponent reveals the number of cards of each Element in their hand.
 
 Spell, Instantaneous - **Sense Thoughts**
-	Cost: 2 Spirit
+	Cost: 1 Spirit
 	View your opponent's hand.	
 
 ## Spell - Permanent
 
 Spell, Permanent - **Geas**
-	Cost: 3 Spirit
-	Name a card. Your opponent cannot play cards with that name.
+	Cost: 2 Spirit
+	Name a non-Hero card. Your opponent cannot play cards with that name.
 
-## Spell - Field
+# Element Combos
 
-## Spell - Enchantment
-
-## Spell - Reaction
-
-## Item - Instantaneous
-
-## Item - Permanent
-
-## Item - Equipped
+## Water-Air

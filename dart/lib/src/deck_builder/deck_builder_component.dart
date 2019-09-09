@@ -17,7 +17,11 @@ import '../routes.dart';
   templateUrl: 'deck_builder_component.html',
   styleUrls: ['deck_builder_component.css'],
   directives: [coreDirectives, routerDirectives, formDirectives],
-  providers: [ClassProvider(CardService), ClassProvider(DeckService)],
+  providers: [
+    ClassProvider(CardService),
+    ClassProvider(DeckService),
+    ClassProvider(AssetService)
+  ],
   pipes: [commonPipes],
   exports: [Routes, AssetService],
 )
@@ -166,7 +170,6 @@ class DeckBuilderComponent implements OnInit {
   void generatePdf() {
     if (deckCards.isNotEmpty) {
       String c = _deckService.generateCode(deckCards);
-      print(c);
       _router.navigate(Routes.pdf.toUrl({"deck": '$c'}));
     }
   }

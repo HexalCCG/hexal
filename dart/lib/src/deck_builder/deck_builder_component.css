@@ -276,6 +276,7 @@
 .viewer-card .cost {
   grid-area: cost;
   align-self: center;
+  display: flex;
 }
 .viewer-card .cost .cost-element {
   display: flex;

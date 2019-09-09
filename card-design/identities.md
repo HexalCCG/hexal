@@ -55,3 +55,28 @@ Weaknesses:
 ## Spirit
 
 Card information. Multi-element synergy.
+
+# Magic Schools
+
+## Fire
+
+- Evocation
+
+## Earth
+
+- Transmutation
+
+## Water
+
+- Abjuration
+- Necromancy
+
+## Air
+
+- Conjuration
+- Illusion
+
+## Spirit
+
+- Divination
+- Enchantment
