@@ -53,7 +53,7 @@ class PdfComponent implements OnActivate {
 
   String pdfName = "Card Game Name Deck";
   PdfPageFormat format =
-      PdfPageFormat(pageWidth, pageHeight, marginAll: 21 * mm);
+      PdfPageFormat(pageWidth, pageHeight, marginAll: 15 * mm);
 
   @override
   void onActivate(_, RouterState current) async {
@@ -116,7 +116,7 @@ class PdfComponent implements OnActivate {
           Positioned(
               left: 0,
               right: 0,
-              top: 6 * mm,
+              top: 8 * mm,
               child: Center(
                   child: LimitedBox(
                       maxHeight: 35 * mm,
@@ -125,14 +125,14 @@ class PdfComponent implements OnActivate {
           Positioned(
               left: 2 * mm,
               right: 2 * mm,
-              top: 42 * mm,
+              top: 46 * mm,
               child: LimitedBox(
                   maxHeight: 10 * mm,
                   child: Text(card.typeLine,
                       style: TextStyle(
                           fontWeight: FontWeight.bold, fontSize: 8)))),
           Positioned(
-              top: 46 * mm,
+              top: 52 * mm,
               left: 0,
               right: 0,
               child: Paragraph(
@@ -159,7 +159,7 @@ class PdfComponent implements OnActivate {
                   children: [
                     Text(card.statsLine,
                         style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 10))
+                            fontWeight: FontWeight.bold, fontSize: 14))
                   ]))
         ]));
     cardsLoaded += 1;
