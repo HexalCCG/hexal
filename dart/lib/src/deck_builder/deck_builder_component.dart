@@ -56,8 +56,9 @@ class DeckBuilderComponent implements OnInit {
     return c;
   }
 
-  int nextEight(int n) {
-    return (n / 8).ceil() * 8;
+  int nextMultiple(int n) {
+    int multiple = 9;
+    return (n / multiple).ceil() * multiple;
   }
 
   int get deckSize {

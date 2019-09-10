@@ -60,7 +60,7 @@
   <div class="deck">
     <div class="deck-header">
       <span class="deck-counter" [class.invalid]="!deckValid">{{ deckSize }} / 30</span>
-      <span class="print-counter">{{ deckSize }} / {{ nextEight(deckSize) }}</span>
+      <span class="print-counter">{{ deckSize }} / {{ nextMultiple(deckSize) }}</span>
     </div>
     <div class="deck-border"></div>
     <div class="deck-card-list">

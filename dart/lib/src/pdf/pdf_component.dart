@@ -40,11 +40,20 @@ class PdfComponent implements OnActivate {
   int cardNumber = 0;
   bool loaded = false;
 
-  static double cm = PdfPageFormat.cm;
-  static double totalWidth = 29.7 * cm;
-  static double totalHeight = 21.0 * cm;
-  static double cardWidth = totalWidth / 4;
-  static double cardHeight = totalHeight / 2;
+  static final double mm = PdfPageFormat.cm / 10;
+  static final double pageHeight = 297 * mm;
+  static final double pageWidth = 210 * mm;
+
+  static final int hCards = 3;
+  static final int vCards = 3;
+  static final int pCards = hCards * vCards;
+
+  static final double cardWidth = pageWidth / hCards;
+  static final double cardHeight = pageHeight / vCards;
+
+  String pdfName = "Card Game Name Deck";
+  PdfPageFormat format =
+      PdfPageFormat(pageWidth, pageHeight, marginAll: 21 * mm);
 
   @override
   void onActivate(_, RouterState current) async {
@@ -56,10 +65,7 @@ class PdfComponent implements OnActivate {
   }
 
   Future<SafeResourceUrl> buildPdf(List<Card> cards) async {
-    Document pdf = Document(title: "Card Game Name Deck");
-
-    PdfPageFormat format = PdfPageFormat.a4.landscape
-        .copyWith(marginBottom: 0, marginTop: 0, marginLeft: 0, marginRight: 0);
+    Document pdf = Document(title: pdfName);
 
     List<Future<Container>> c = cards.map((card) {
       return buildCard(pdf, card);
@@ -68,17 +74,18 @@ class PdfComponent implements OnActivate {
     List<Container> cardContainers =
         List<Container>.from(await futures, growable: true);
 
-    while (cardContainers.length % 8 != 0) {
+    while (cardContainers.length % pCards != 0) {
       cardContainers.add(Container());
     }
-    int pages = (cardContainers.length / 8).ceil();
+    int pages = (cardContainers.length / pCards).ceil();
     for (int p = 0; p < pages; p++) {
-      Iterable<Container> pageCards = cardContainers.skip(p * 8).take(8);
+      Iterable<Container> pageCards =
+          cardContainers.skip(p * pCards).take(pCards);
       pdf.addPage(Page(
           pageFormat: format,
           build: (Context context) => GridView(
-              direction: Axis.horizontal,
-              crossAxisCount: 2,
+              direction: Axis.vertical,
+              crossAxisCount: hCards,
               children: pageCards.toList())));
     }
 
@@ -88,7 +95,7 @@ class PdfComponent implements OnActivate {
 
   Future<Container> buildCard(Document pdf, Card card) async {
     Container result = await Container(
-        padding: EdgeInsets.all(10),
+        padding: EdgeInsets.all(2 * mm),
         decoration: BoxDecoration(
             border:
                 BoxBorder(left: true, right: true, top: true, bottom: true)),
@@ -97,38 +104,40 @@ class PdfComponent implements OnActivate {
               left: 0,
               top: 0,
               child: Text(card.name,
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13))),
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 10))),
           Positioned(
               right: 0,
               top: 0,
               child: LimitedBox(
-                  maxHeight: 24,
-                  maxWidth: 24,
+                  maxHeight: 6 * mm,
+                  maxWidth: 6 * mm,
                   child: Image(await getImage(
                       pdf, AssetService.elementImages[card.element])))),
           Positioned(
-              left: 30,
-              right: 30,
-              top: 40,
+              left: 0,
+              right: 0,
+              top: 6 * mm,
               child: Center(
                   child: LimitedBox(
-                      maxHeight: 100,
+                      maxHeight: 35 * mm,
                       child: Image(await getImage(
                           pdf, AssetService.cardImage(card.id)))))),
           Positioned(
-              left: 10,
-              top: 160,
+              left: 2 * mm,
+              right: 2 * mm,
+              top: 42 * mm,
               child: LimitedBox(
-                  maxHeight: 20,
+                  maxHeight: 10 * mm,
                   child: Text(card.typeLine,
-                      style: TextStyle(fontWeight: FontWeight.bold)))),
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold, fontSize: 8)))),
           Positioned(
-              top: 180,
+              top: 46 * mm,
               left: 0,
               right: 0,
               child: Paragraph(
                   text: card.text,
-                  style: TextStyle(lineSpacing: 0),
+                  style: TextStyle(lineSpacing: 0, fontSize: 8),
                   textAlign: TextAlign.left,
                   margin: EdgeInsets.zero,
                   padding: EdgeInsets.zero)),
@@ -150,7 +159,7 @@ class PdfComponent implements OnActivate {
                   children: [
                     Text(card.statsLine,
                         style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 14))
+                            fontWeight: FontWeight.bold, fontSize: 10))
                   ]))
         ]));
     cardsLoaded += 1;
