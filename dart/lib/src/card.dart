@@ -49,4 +49,8 @@ class Card {
   String get elementImage {
     return AssetService.elementImages[element];
   }
+
+  String get searchableText {
+    return id.toString() + " " + name + " " + typeLine + " " + text;
+  }
 }

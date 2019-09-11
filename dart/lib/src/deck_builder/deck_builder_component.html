@@ -17,12 +17,16 @@
       <a class="element-icon" [class.disabled]="selectedElement != 'earth' && selectedElement != null" (click)="libraryElement('earth')"><img src="{{ AssetService.earthImage }}"/></a>
       <a class="element-icon" [class.disabled]="selectedElement != 'water' && selectedElement != null" (click)="libraryElement('water')"><img src="{{ AssetService.waterImage }}"/></a>
     </div>
-    <div class="library-search"></div>
+    <div class="library-toolbar">
+      <input type="text" class="search" [(ngModel)]="searchBox" (keyup)="filterLibrary()" />
+      <i class="material-icons md-48 search-icon">search</i>
+    </div>
     <div class="library-card-list">
       <div class="library-card" *ngFor="let card of libraryCards" (click)="onAdd(card)" (contextmenu)="onSelect(card, $event)">
         <span class="cost">{{ card.totalCost }}</span>
         <img class="element" src="{{ card.elementImage }}" />
         <span class="name">{{ card.name }}</span>
+        <img class="image" src="{{ card.image }}" />
       </div>
     </div>
   </div>

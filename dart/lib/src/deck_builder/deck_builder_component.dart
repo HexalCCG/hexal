@@ -1,4 +1,5 @@
 import 'dart:collection';
+import 'dart:core';
 import 'dart:html';
 
 import 'package:angular/angular.dart';
@@ -38,22 +39,11 @@ class DeckBuilderComponent implements OnInit {
   Map<Card, int> deckCards = SplayTreeMap<Card, int>(compareCards);
 
   String codeBox = "";
+  String searchBox = "";
 
   Future<void> ngOnInit() async {
     allCards = await _cardService.getAll();
-    reloadLibrary();
-  }
-
-  static int compareCards(Card a, Card b) {
-    int c;
-    c = a.element.index.compareTo(b.element.index);
-    if (c == 0) {
-      c = a.totalCost.compareTo(b.totalCost);
-      if (c == 0) {
-        c = a.name.compareTo(b.name);
-      }
-    }
-    return c;
+    filterLibrary();
   }
 
   int nextMultiple(int n) {
@@ -103,52 +93,52 @@ class DeckBuilderComponent implements OnInit {
   }
 
   void libraryElement(String string) {
-    if (string == "spirit") {
-      if (selectedElement == "spirit") {
-        selectedElement = null;
-      } else {
-        selectedElement = "spirit";
-      }
+    if (selectedElement == string) {
+      selectedElement = null;
+    } else {
+      selectedElement = string;
     }
-    if (string == "fire") {
-      if (selectedElement == "fire") {
-        selectedElement = null;
-      } else {
-        selectedElement = "fire";
-      }
-    }
-    if (string == "air") {
-      if (selectedElement == "air") {
-        selectedElement = null;
-      } else {
-        selectedElement = "air";
-      }
-    }
-    if (string == "earth") {
-      if (selectedElement == "earth") {
-        selectedElement = null;
-      } else {
-        selectedElement = "earth";
-      }
-    }
-    if (string == "water") {
-      if (selectedElement == "water") {
-        selectedElement = null;
-      } else {
-        selectedElement = "water";
-      }
-    }
-    reloadLibrary();
+    filterLibrary();
   }
 
-  void reloadLibrary() {
+  void filterLibrary() {
     libraryCards = List<Card>()..addAll(allCards);
     if (selectedElement != null) {
       libraryCards.removeWhere((Card card) {
         return card.element != _cardService.elementFromString(selectedElement);
       });
     }
+    if (searchBox != "") {
+      libraryCards.retainWhere((Card card) {
+        return card.searchableText
+            .toLowerCase()
+            .replaceAll(RegExp(r'\W+'), '')
+            .contains(searchBox.toLowerCase().replaceAll(RegExp(r'\W+'), ''));
+      });
+    }
     libraryCards.sort(compareCards);
+  }
+
+  static int compareCards(Card a, Card b) {
+    int c;
+
+    c = a.element.index.compareTo(b.element.index);
+    if (c != 0) {
+      return c;
+    }
+
+    if ((a.type == Type.hero) && !(b.type == Type.hero)) {
+      return 1;
+    } else if (!(a.type == Type.hero) && (b.type == Type.hero)) {
+      return -1;
+    }
+
+    c = a.totalCost.compareTo(b.totalCost);
+    if (c != 0) {
+      return c;
+    }
+
+    return a.name.compareTo(b.name);
   }
 
   void clearDeck() {

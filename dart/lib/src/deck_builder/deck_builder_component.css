@@ -74,11 +74,34 @@
 .library-elements .element-icon img {
   height: 100%;
 }
-.library-search {
+.library-toolbar {
   width: 100%;
   height: 40px;
   flex: 0 0 auto;
   background-color: gainsboro;
+
+  display: grid;
+  align-items: center;
+  grid-template-columns: 8px 1fr 32px 8px;
+  grid-template-rows: auto;
+  grid-template-areas: '. box icon .';
+}
+.library-toolbar .search {
+  grid-area: box;
+  border: none;
+  background-color: whitesmoke;
+  color: black;
+  outline: 0;
+  text-align: left;
+  font-size: 24px;
+  width: 100%;
+  height: 24px;
+  margin: auto;
+}
+.library-toolbar .search-icon {
+  grid-area: icon;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 40px;
 }
 .library-card-list {
   width: 100%;
@@ -107,15 +130,13 @@
   height: 40px;
   display: grid;
   align-items: center;
-  grid-template-columns: 5px 10px 32px 5px 1fr 10px;
+  grid-template-columns: 5px 10px 32px 5px 1fr 40px 5px;
   grid-template-rows: auto;
-  grid-template-areas: '. cost element . name .';
-  background-color: #f90;
-  color: black;
-}
-.library-card:nth-child(even) {
+  grid-template-areas: '. cost element . name image .';
   background-color: whitesmoke;
   color: black;
+  border-bottom: solid;
+  border-color: gainsboro;
 }
 .library-card .cost {
   grid-area: cost;
@@ -126,6 +147,10 @@
 }
 .library-card .name {
   grid-area: name;
+}
+.library-card .image {
+  grid-area: image;
+  height: 80%;
 }
 
 .deck {
