@@ -1,7 +1,7 @@
 import 'package:open_card_game/src/asset_service.dart';
 import 'package:open_card_game/src/localisation.dart';
 
-enum Element { fire, earth, air, water, spirit }
+enum Element { fire, earth, air, water, spirit, real }
 enum Type { creature, spell, item, hero }
 enum CardDuration { none, reaction, enchantment, equipment, field, permanent }
 

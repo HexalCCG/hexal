@@ -152,6 +152,9 @@ class CardService {
       case "s":
         return Element.spirit;
         break;
+      case "r":
+        return Element.real;
+        break;
       case "a":
         return Element.air;
         break;

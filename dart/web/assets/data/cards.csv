@@ -1,4 +1,4 @@
-ID,Name,Element,Type,Duration,Cost,Attack,Health,Text
+﻿ID,Name,Element,Type,Duration,Cost,Attack,Health,Text
 0,Hivequeen Ngaat,Earth,Hero,,4e,,,"Your [Earth] creatures have their costs reduced by [Earth]. When you summon an [Earth] creature, draw a card."
 1,Sage Brennas,Earth,Hero,,4e,,,"Whenever you draw a card, you may instead search your deck for a card of your choice. Do not reveal it."
 2,Ash Sprite,Earth,Creature,,,1,1,Can provide either [Earth] or [Fire] when channeled.
@@ -128,7 +128,7 @@ ID,Name,Element,Type,Duration,Cost,Attack,Health,Text
 126,Witch's Hat,Water,Item,Enchantment,1w,,,"Equip to a friendly creature. It gains ""your spells cost [Water] less""."
 127,Holy Water,Water,Item,,2w,,,Deal 2 damage to an enemy creature. Restore 2 health to yourself.
 128,Lissa's Tear,Water,Item,,2w,,,"Summon a [Water] creature with cost 2 [Water] or less from your mana pool. Search your deck for ""Lissa, Spirit of the Fountain""."
-129,"Lian, Master Sorcerer",Air,Hero,,4a,,,Your spells cost [Any] less.
+129,"Lian, Gem Of The South",Air,Hero,,4a,,,Your spells cost [Any] less.
 130,"Mikael, Storm Lord",Air,Hero,,4a,,,"When you channel cards, shuffle them into your deck instead of exiling them."
 131,Air Octopus,Air,Creature,,,1,2,
 132,Cloud Sprite,Air,Creature,,,1,1,"When your opponent casts a spell with a target, you may summon this creature from your hand as the new target."
@@ -188,5 +188,6 @@ ID,Name,Element,Type,Duration,Cost,Attack,Health,Text
 186,Geas,Spirit,Spell,Permanent,2s,,,Name a non-Hero card. Your opponent cannot play cards with that name.
 187,Dominate Creature,Spirit,Spell,Enchantment,3s,,,Enchant a creature. Take control of it.
 188,Time Stop,Spirit,Spell,,4s,,,Take another turn after this one.
-189,Wish,Spirit,Spell,,4s,,,Banish all creatures. Both players discard their hands. Draw 3 cards.
+189,Wish,Spirit,Spell,,4s,,,Exile all creatures. Both players discard their hands. Draw 3 cards.
 190,Spirit Blade,Spirit,Item,Equipment,1s,,,Channel X [Any]. Equip to a friendly creature. It gains +X / +0.
+191,Human Man,Earth,Creature,,"1e,1r",2,2,Oioi.

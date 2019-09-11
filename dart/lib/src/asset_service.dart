@@ -14,7 +14,8 @@ class AssetService {
     Element.fire: "assets/icons/element-fire.png",
     Element.air: "assets/icons/element-air.png",
     Element.earth: "assets/icons/element-earth.png",
-    Element.water: "assets/icons/element-water.png"
+    Element.water: "assets/icons/element-water.png",
+    Element.real: "assets/icons/element-real.png"
   };
 
   static String spiritImage = elementImages[Element.spirit];
@@ -24,11 +25,15 @@ class AssetService {
   static String waterImage = elementImages[Element.water];
 
   static String cardImage(int id) {
+    if (id > maxID) {
+      return "assets/card-images/280x280/placeholder.png";
+    }
     return "assets/card-images/280x280/" +
         id.toString().padLeft(3, '0') +
         ".png";
   }
 
+  static int maxID = 190;
   static String cardDataLocation = "assets/data/cards.csv";
 
   Future<String> getCardData() {
