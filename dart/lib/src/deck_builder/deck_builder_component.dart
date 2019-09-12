@@ -40,6 +40,7 @@ class DeckBuilderComponent implements OnInit {
 
   String codeBox = "";
   String searchBox = "";
+  bool deckCardLimit = false;
 
   Future<void> ngOnInit() async {
     allCards = await _cardService.getAll();
@@ -55,18 +56,35 @@ class DeckBuilderComponent implements OnInit {
     return deckCards.values.fold(0, (a, b) => a + b);
   }
 
-  bool get deckValid {
+  bool deckValid() {
     if (deckSize > 30) {
       return false;
-    } else {
-      return deckCards.values.fold(true, (a, b) {
-        if (!a) {
-          return a;
-        } else {
-          return b <= 2;
-        }
+    }
+    if (deckCards.keys.fold(0, (i, Card v) {
+          if (v.type == Type.hero) {
+            return i + deckCards[v];
+          } else {
+            return i;
+          }
+        }) >
+        1) {
+      return false;
+    }
+    return deckCards.keys.every((Card v) {
+      return deckCards[v] <= 2;
+    });
+  }
+
+  bool additionValid(Card addition) {
+    if (deckSize >= 30) {
+      return false;
+    }
+    if (addition.type == Type.hero) {
+      return deckCards.keys.every((Card v) {
+        return v.type != Type.hero;
       });
     }
+    return deckCards[addition] == null || deckCards[addition] < 2;
   }
 
   void onSelect(Card card, Event event) {
@@ -75,6 +93,12 @@ class DeckBuilderComponent implements OnInit {
   }
 
   void onAdd(Card card) {
+    if (deckCardLimit) {
+      if (!additionValid(card)) {
+        return;
+      }
+    }
+
     if (deckCards.containsKey(card)) {
       deckCards[card] += 1;
     } else {
@@ -89,6 +113,12 @@ class DeckBuilderComponent implements OnInit {
       } else {
         deckCards.remove(card);
       }
+    }
+  }
+
+  void deckToolbarToggle(String setting) {
+    if (setting == "cardlimit") {
+      deckCardLimit = !deckCardLimit;
     }
   }
 

@@ -138,6 +138,9 @@
   border-bottom: solid;
   border-color: gainsboro;
 }
+.library-card.library-card-disabled {
+  background-color: rgba(0, 0, 0, 0.4);
+}
 .library-card .cost {
   grid-area: cost;
 }
@@ -173,15 +176,40 @@
   font-size: 24px;
   grid-area: counter;
 }
+.deck-counter-invalid {
+  color: red;
+}
 .deck-header .print-counter {
   font-size: 24px;
   grid-area: print;
 }
-.deck-border {
+.deck-toolbar {
   width: 100%;
   height: 40px;
   flex: 0 0 auto;
   background-color: gainsboro;
+
+  display: grid;
+  align-items: center;
+  grid-template-columns: 4px 32px 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: '. limit .';
+}
+.deck-toolbar .card-limit {
+  grid-area: limit;
+  height: 32px;
+  align-self: center;
+}
+.deck-toolbar .card-limit i {
+  font-size: 32px;
+}
+.deck-toolbar-disabled {
+  color: rgba(0, 0, 0, 0.54);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.4);
+}
+.deck-toolbar-enabled {
+  color: rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.7);
 }
 .deck-card-list {
   width: 100%;
@@ -319,8 +347,4 @@
   align-self: center;
   font-size: 24px;
   font-weight: bold;
-}
-
-.invalid {
-  color: red;
 }

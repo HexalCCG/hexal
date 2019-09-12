@@ -22,7 +22,7 @@
       <i class="material-icons md-48 search-icon">search</i>
     </div>
     <div class="library-card-list">
-      <div class="library-card" *ngFor="let card of libraryCards" (click)="onAdd(card)" (contextmenu)="onSelect(card, $event)">
+      <div class="library-card" *ngFor="let card of libraryCards" [class.library-card-disabled]="deckCardLimit && !additionValid(card)" (click)="onAdd(card)" (contextmenu)="onSelect(card, $event)">
         <span class="cost">{{ card.totalCost }}</span>
         <img class="element" src="{{ card.elementImage }}" />
         <span class="name">{{ card.name }}</span>
@@ -63,16 +63,20 @@
   </div>
   <div class="deck">
     <div class="deck-header">
-      <span class="deck-counter" [class.invalid]="!deckValid">{{ deckSize }} / 30</span>
+      <span class="deck-counter" [class.deck-counter-invalid]="!deckValid() && deckCardLimit">{{ deckSize }} / 30</span>
       <span class="print-counter">{{ deckSize }} / {{ nextMultiple(deckSize) }}</span>
     </div>
-    <div class="deck-border"></div>
+    <div class="deck-toolbar">
+      <a class="card-limit" (click)="deckToolbarToggle('cardlimit')">
+        <i class="material-icons md-48" [class.deck-toolbar-enabled]="deckCardLimit" [class.deck-toolbar-disabled]="!deckCardLimit">done_all</i>
+      </a>
+    </div>
     <div class="deck-card-list">
       <div class="deck-card" *ngFor="let card of deckCards.keys" (click)="onRemove(card)" (contextmenu)="onSelect(card, $event)">
         <span class="cost">{{ card.totalCost }}</span>
         <img class="element" src="{{ card.elementImage }}" />
         <span class="name">{{ card.name }}</span>
-        <span class="number" *ngIf="deckCards[card] > 1" [class.invalid]="deckCards[card] > 2">x{{ deckCards[card] }}</span>
+        <span class="number" *ngIf="deckCards[card] > 1">x{{ deckCards[card] }}</span>
       </div>
     </div>
   </div>
