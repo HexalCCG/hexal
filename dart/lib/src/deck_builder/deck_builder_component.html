@@ -11,11 +11,11 @@
   </nav>
   <div class="library">
     <div class="library-elements">
-      <a class="element-icon" [class.disabled]="selectedElement != 'spirit' && selectedElement != null" (click)="libraryElement('spirit')"><img src="{{ AssetService.spiritImage }}"/></a>
-      <a class="element-icon" [class.disabled]="selectedElement != 'fire' && selectedElement != null" (click)="libraryElement('fire')"><img src="{{ AssetService.fireImage }}"/></a>
-      <a class="element-icon" [class.disabled]="selectedElement != 'air' && selectedElement != null" (click)="libraryElement('air')"><img src="{{ AssetService.airImage }}"/></a>
-      <a class="element-icon" [class.disabled]="selectedElement != 'earth' && selectedElement != null" (click)="libraryElement('earth')"><img src="{{ AssetService.earthImage }}"/></a>
-      <a class="element-icon" [class.disabled]="selectedElement != 'water' && selectedElement != null" (click)="libraryElement('water')"><img src="{{ AssetService.waterImage }}"/></a>
+      <a class="element-icon" [class.disabled]="selectedElement != 'spirit' && selectedElement != null" (click)="libraryElement('spirit')"><img src="assets/icons/element-spirit.png"/></a>
+      <a class="element-icon" [class.disabled]="selectedElement != 'fire' && selectedElement != null" (click)="libraryElement('fire')"><img src="assets/icons/element-fire.png"/></a>
+      <a class="element-icon" [class.disabled]="selectedElement != 'air' && selectedElement != null" (click)="libraryElement('air')"><img src="assets/icons/element-air.png"/></a>
+      <a class="element-icon" [class.disabled]="selectedElement != 'earth' && selectedElement != null" (click)="libraryElement('earth')"><img src="assets/icons/element-earth.png"/></a>
+      <a class="element-icon" [class.disabled]="selectedElement != 'water' && selectedElement != null" (click)="libraryElement('water')"><img src="assets/icons/element-water.png"/></a>
     </div>
     <div class="library-toolbar">
       <input type="text" class="search" [(ngModel)]="searchBox" (keyup)="filterLibrary()" />

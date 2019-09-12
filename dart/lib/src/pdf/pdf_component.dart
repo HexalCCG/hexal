@@ -40,6 +40,11 @@ class PdfComponent implements OnActivate {
   int cardNumber = 0;
   bool loaded = false;
 
+  TextStyle title;
+  TextStyle typeLine;
+  TextStyle cardText;
+  TextStyle statsLine;
+
   static final double mm = PdfPageFormat.cm / 10;
   static final double pageHeight = 297 * mm;
   static final double pageWidth = 210 * mm;
@@ -66,6 +71,13 @@ class PdfComponent implements OnActivate {
 
   Future<SafeResourceUrl> buildPdf(List<Card> cards) async {
     Document pdf = Document(title: pdfName);
+    Font firaRegular = await getFont("assets/fonts/FiraSans-Regular.ttf");
+    Font firaBold = await getFont("assets/fonts/FiraSans-Bold.ttf");
+
+    title = TextStyle(font: firaBold, fontSize: 10);
+    typeLine = TextStyle(font: firaBold, fontSize: 8);
+    cardText = TextStyle(font: firaRegular, lineSpacing: 2, fontSize: 8);
+    statsLine = TextStyle(font: firaBold, fontSize: 14);
 
     List<Future<Container>> c = cards.map((card) {
       return buildCard(pdf, card);
@@ -100,11 +112,7 @@ class PdfComponent implements OnActivate {
             border:
                 BoxBorder(left: true, right: true, top: true, bottom: true)),
         child: Stack(children: [
-          Positioned(
-              left: 0,
-              top: 0,
-              child: Text(card.name,
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 10))),
+          Positioned(left: 0, top: 0, child: Text(card.name, style: title)),
           Positioned(
               right: 0,
               top: 0,
@@ -128,16 +136,14 @@ class PdfComponent implements OnActivate {
               top: 46 * mm,
               child: LimitedBox(
                   maxHeight: 10 * mm,
-                  child: Text(card.typeLine,
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold, fontSize: 8)))),
+                  child: Text(card.typeLine, style: typeLine))),
           Positioned(
               top: 52 * mm,
               left: 0,
               right: 0,
               child: Paragraph(
                   text: card.text,
-                  style: TextStyle(lineSpacing: 0, fontSize: 8),
+                  style: cardText,
                   textAlign: TextAlign.left,
                   margin: EdgeInsets.zero,
                   padding: EdgeInsets.zero)),
@@ -156,11 +162,7 @@ class PdfComponent implements OnActivate {
               child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   crossAxisAlignment: CrossAxisAlignment.end,
-                  children: [
-                    Text(card.statsLine,
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 14))
-                  ]))
+                  children: [Text(card.statsLine, style: statsLine)]))
         ]));
     cardsLoaded += 1;
     return result;
@@ -210,5 +212,9 @@ class PdfComponent implements OnActivate {
         image: image.data.buffer.asUint8List(),
         width: image.width,
         height: image.height);
+  }
+
+  Future<Font> getFont(String location) async {
+    return _assetService.loadFont(location);
   }
 }

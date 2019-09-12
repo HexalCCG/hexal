@@ -36,11 +36,11 @@ class DeckBuilderComponent implements OnInit {
   Card selected;
   String selectedElement;
   List<Card> libraryCards;
-  Map<Card, int> deckCards = SplayTreeMap<Card, int>(compareCards);
+  Map<Card, int> deckCards = SplayTreeMap<Card, int>(CardService.compareCards);
 
   String codeBox = "";
   String searchBox = "";
-  bool deckCardLimit = false;
+  bool deckCardLimit = true;
 
   Future<void> ngOnInit() async {
     allCards = await _cardService.getAll();
@@ -134,8 +134,8 @@ class DeckBuilderComponent implements OnInit {
   void filterLibrary() {
     libraryCards = List<Card>()..addAll(allCards);
     if (selectedElement != null) {
-      libraryCards.removeWhere((Card card) {
-        return card.element != _cardService.elementFromString(selectedElement);
+      libraryCards.retainWhere((Card card) {
+        return card.element == CardService.elementFromString(selectedElement);
       });
     }
     if (searchBox != "") {
@@ -146,29 +146,7 @@ class DeckBuilderComponent implements OnInit {
             .contains(searchBox.toLowerCase().replaceAll(RegExp(r'\W+'), ''));
       });
     }
-    libraryCards.sort(compareCards);
-  }
-
-  static int compareCards(Card a, Card b) {
-    int c;
-
-    c = a.element.index.compareTo(b.element.index);
-    if (c != 0) {
-      return c;
-    }
-
-    if ((a.type == Type.hero) && !(b.type == Type.hero)) {
-      return 1;
-    } else if (!(a.type == Type.hero) && (b.type == Type.hero)) {
-      return -1;
-    }
-
-    c = a.totalCost.compareTo(b.totalCost);
-    if (c != 0) {
-      return c;
-    }
-
-    return a.name.compareTo(b.name);
+    libraryCards.sort(CardService.compareCards);
   }
 
   void clearDeck() {

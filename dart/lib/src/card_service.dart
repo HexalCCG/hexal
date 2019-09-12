@@ -27,7 +27,14 @@ class CardService {
     return cardList;
   }
 
-  Card parseRowData(List<dynamic> data) {
+  Future<Card> getById(int id) async {
+    List<Card> list = await getAll();
+    return list.singleWhere((Card card) {
+      return card.id == id;
+    });
+  }
+
+  static Card parseRowData(List<dynamic> data) {
     return Card(
         data[0],
         data[1],
@@ -40,14 +47,7 @@ class CardService {
         data[8]);
   }
 
-  Future<Card> getById(int id) async {
-    List<Card> list = await getAll();
-    return list.singleWhere((Card card) {
-      return card.id == id;
-    });
-  }
-
-  String stringToElement(Element e) {
+  static String stringToElement(Element e) {
     switch (e) {
       case Element.fire:
         return "fire";
@@ -69,7 +69,7 @@ class CardService {
     }
   }
 
-  Element elementFromString(String s) {
+  static Element elementFromString(String s) {
     switch (s) {
       case "fire":
         return Element.fire;
@@ -91,7 +91,7 @@ class CardService {
     }
   }
 
-  Type typeFromString(String s) {
+  static Type typeFromString(String s) {
     switch (s) {
       case "creature":
         return Type.creature;
@@ -110,7 +110,7 @@ class CardService {
     }
   }
 
-  CardDuration durationFromString(String s) {
+  static CardDuration durationFromString(String s) {
     switch (s) {
       case "reaction":
         return CardDuration.reaction;
@@ -134,7 +134,7 @@ class CardService {
     }
   }
 
-  Map<Element, int> costFromString(String s) {
+  static Map<Element, int> costFromString(String s) {
     Map<Element, int> result = Map<Element, int>();
     if (s != "") {
       List<String> list = s.split(",");
@@ -147,7 +147,7 @@ class CardService {
     return result;
   }
 
-  Element parseElementLetter(String letter) {
+  static Element parseElementLetter(String letter) {
     switch (letter) {
       case "s":
         return Element.spirit;
@@ -170,5 +170,27 @@ class CardService {
       default:
         return null;
     }
+  }
+
+  static int compareCards(Card a, Card b) {
+    int c;
+
+    c = a.element.index.compareTo(b.element.index);
+    if (c != 0) {
+      return c;
+    }
+
+    if ((a.type == Type.hero) && !(b.type == Type.hero)) {
+      return 1;
+    } else if (!(a.type == Type.hero) && (b.type == Type.hero)) {
+      return -1;
+    }
+
+    c = a.totalCost.compareTo(b.totalCost);
+    if (c != 0) {
+      return c;
+    }
+
+    return a.name.compareTo(b.name);
   }
 }

@@ -1,12 +1,15 @@
 import 'dart:core';
+import 'dart:typed_data';
 import 'package:http/http.dart';
 
 import 'package:image/image.dart';
+import 'package:pdf/widgets.dart' hide Image;
 
 import 'card.dart';
 
 class AssetService {
   Map<String, Future<Image>> imageMap = Map<String, Future<Image>>();
+  Map<String, Future<Font>> fontMap = Map<String, Future<Font>>();
   Future<String> cardData;
 
   static Map<Element, String> elementImages = {
@@ -17,12 +20,6 @@ class AssetService {
     Element.water: "assets/icons/element-water.png",
     Element.real: "assets/icons/element-real.png"
   };
-
-  static String spiritImage = elementImages[Element.spirit];
-  static String fireImage = elementImages[Element.fire];
-  static String airImage = elementImages[Element.air];
-  static String earthImage = elementImages[Element.earth];
-  static String waterImage = elementImages[Element.water];
 
   static String cardImage(int id) {
     if (id > maxID) {
@@ -49,5 +46,13 @@ class AssetService {
           readBytes(location).then((data) => decodeImage(data));
     }
     return imageMap[location];
+  }
+
+  Future<Font> loadFont(String location) {
+    if (!fontMap.containsKey(location)) {
+      fontMap[location] = readBytes(location)
+          .then((data) => Font.ttf(data.buffer.asByteData()));
+    }
+    return fontMap[location];
   }
 }
