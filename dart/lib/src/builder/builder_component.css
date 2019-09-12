@@ -1,4 +1,4 @@
-.deck-builder-container {
+.container {
   height: 100%;
   display: grid;
   grid-template-columns: 300px auto 300px;

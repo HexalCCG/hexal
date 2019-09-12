@@ -16,7 +16,7 @@ import '../deck_service.dart';
 import '../routes.dart';
 
 @Component(
-  selector: 'pdf_component',
+  selector: 'pdf',
   templateUrl: 'pdf_component.html',
   styleUrls: ['pdf_component.css'],
   directives: [coreDirectives, routerDirectives],

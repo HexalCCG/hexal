@@ -14,9 +14,9 @@ import '../asset_service.dart';
 import '../routes.dart';
 
 @Component(
-  selector: 'deck-builder',
-  templateUrl: 'deck_builder_component.html',
-  styleUrls: ['deck_builder_component.css'],
+  selector: 'builder',
+  templateUrl: 'builder_component.html',
+  styleUrls: ['builder_component.css'],
   directives: [coreDirectives, routerDirectives, formDirectives],
   providers: [
     ClassProvider(CardService),
@@ -26,11 +26,11 @@ import '../routes.dart';
   pipes: [commonPipes],
   exports: [Routes, AssetService],
 )
-class DeckBuilderComponent implements OnInit {
+class BuilderComponent implements OnInit {
   final CardService _cardService;
   final DeckService _deckService;
   final Router _router;
-  DeckBuilderComponent(this._cardService, this._deckService, this._router);
+  BuilderComponent(this._cardService, this._deckService, this._router);
 
   List<Card> allCards;
   Card selected;

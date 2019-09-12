@@ -10,7 +10,7 @@ import '../routes.dart';
 export '../routes.dart';
 
 @Component(
-  selector: 'card-browse',
+  selector: 'browse',
   templateUrl: 'browse_component.html',
   styleUrls: ['browse_component.css'],
   directives: [coreDirectives, routerDirectives, formDirectives],

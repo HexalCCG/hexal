@@ -1,5 +1,4 @@
 import 'dart:core';
-import 'dart:typed_data';
 import 'package:http/http.dart';
 
 import 'package:image/image.dart';

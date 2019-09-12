@@ -6,7 +6,7 @@ import '../routes.dart';
 export '../routes.dart';
 
 @Component(
-  selector: 'ocg-menu',
+  selector: 'menu',
   templateUrl: 'menu_component.html',
   styleUrls: ['menu_component.css'],
   directives: [coreDirectives, routerDirectives],
