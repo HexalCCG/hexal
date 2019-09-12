@@ -23,26 +23,24 @@
       <div class="name">
         {{ card.name }}
       </div>
-      <div class="element">
-        <img src="{{ card.elementImage }}" />
-      </div>
-      <div class="picture">
-        <img src="{{ card.image }}" />
-      </div>
+      <img src="{{ card.elementImage }}" class="element" />
+      <img src="{{ card.image }}" class="picture" />
       <div class="type">
         {{ card.typeLine }}
       </div>
       <div class="text">
         {{ card.text }}
       </div>
-      <div class="cost">
-        <div *ngFor="let element of card.cost.keys" class="cost-element">
-          <span *ngIf="card.cost[element] > 1">{{ card.cost[element] }}</span>
-          <img src="{{ AssetService.elementImages[element] }}" />
+      <div class="bottom">
+        <div class="cost">
+          <div *ngFor="let element of card.cost.keys" class="cost-element">
+            <span *ngIf="card.cost[element] > 1">{{ card.cost[element] }}</span>
+            <img src="{{ AssetService.elementImages[element] }}" />
+          </div>
         </div>
-      </div>
-      <div class="stats">
-        {{ card.statsLine }}
+        <div class="stats">
+          {{ card.statsLine }}
+        </div>
       </div>
     </div>
   </div>

@@ -65,6 +65,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }
 .browse::-webkit-scrollbar {
   width: 15px;
@@ -91,67 +94,60 @@
   height: 300px;
   width: 210px;
   padding: 5px;
+  margin-top: 10px;
 
   display: grid;
   grid-template-columns: 25px 1fr 25px;
-  grid-template-rows: 25px 1fr 15px 1fr 25px;
+  grid-template-rows: 25px 100px 15px 1fr 25px;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
   grid-template-areas:
     'name name element'
     '. picture .'
     'type type type'
-    '. text .'
-    'cost cost stats';
+    'text text text'
+    'bottom bottom bottom';
 }
 .card .name {
   grid-area: name;
-  align-self: center;
-  font-size: 24px;
+  font-size: 15px;
+  font-weight: bold;
 }
 .card .element {
   grid-area: element;
-  object-fit: contain;
+  height: 100%;
 }
 .card .picture {
   grid-area: picture;
-  align-self: stretch;
-  justify-self: stretch;
-}
-.card .picture img {
+  justify-self: center;
   height: 100%;
-  width: 100%;
-  max-height: 280px;
-  object-fit: contain;
 }
 .card .type {
   grid-area: type;
   align-self: center;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: bold;
 }
 .card .text {
   grid-area: text;
-  font-size: 16px;
+  font-size: 13px;
 }
-.card .cost {
+.card .bottom {
+  grid-area: bottom;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto;
+  grid-template-areas: 'cost . stats';
+}
+.card .bottom .cost {
   grid-area: cost;
-  align-self: center;
   display: flex;
 }
-.card .cost .cost-element {
-  display: flex;
-  align-content: center;
+.card .bottom img {
+  height: 16px;
 }
-.card .cost span {
-  display: inline-flex;
-  align-items: center;
-}
-.card .cost img {
-  height: 100%;
-}
-.card .stats {
+.card .bottom .stats {
   grid-area: stats;
-  align-self: center;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: bold;
 }
