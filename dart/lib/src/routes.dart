@@ -5,6 +5,7 @@ import 'builder/builder_component.template.dart' as builder_template;
 import 'pdf/pdf_component.template.dart' as pdf_template;
 import 'browse/browse_component.template.dart' as browse_template;
 import 'rules/rules_component.template.dart' as rules_template;
+import 'info/info_component.template.dart' as info_template;
 
 class Routes {
   static final default_path = RouteDefinition.redirect(
@@ -31,6 +32,10 @@ class Routes {
     routePath: RoutePath(path: 'rules'),
     component: rules_template.RulesComponentNgFactory,
   );
+  static final info = RouteDefinition(
+    routePath: RoutePath(path: 'info'),
+    component: info_template.InfoComponentNgFactory,
+  );
 
   static final all = <RouteDefinition>[
     default_path,
@@ -38,6 +43,7 @@ class Routes {
     builder,
     pdf,
     browse,
-    rules
+    rules,
+    info
   ];
 }
