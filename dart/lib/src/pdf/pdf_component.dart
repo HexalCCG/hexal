@@ -166,6 +166,8 @@ class PdfComponent implements OnActivate {
     return result;
   }
 
+  // Simplified cost row
+  /*
   Future<List<Widget>> buildCostRow(
       Document pdf, Map<Element, int> cost) async {
     Iterable<Future<List<Widget>>> a = cost.keys.map((key) async {
@@ -177,6 +179,25 @@ class PdfComponent implements OnActivate {
           maxHeight: 16,
           maxWidth: 16,
           child: Image(await getImage(pdf, AssetService.elementImages[key]))));
+      return result;
+    });
+    List<List<Widget>> b = await Future.wait(a);
+    return b.expand((pair) => pair).toList();
+  }
+  */
+
+  // Expanded cost row
+  Future<List<Widget>> buildCostRow(
+      Document pdf, Map<Element, int> cost) async {
+    Iterable<Future<List<Widget>>> a = cost.keys.map((key) async {
+      List<Widget> result = List<Widget>();
+      for (int i = 0; i < cost[key]; i++) {
+        result.add(LimitedBox(
+            maxHeight: 16,
+            maxWidth: 16,
+            child:
+                Image(await getImage(pdf, AssetService.elementImages[key]))));
+      }
       return result;
     });
     List<List<Widget>> b = await Future.wait(a);
