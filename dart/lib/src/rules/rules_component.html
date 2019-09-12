@@ -2,5 +2,78 @@
   <div class="toolbar">
     <a class="back" [routerLink]="Routes.menu.toUrl()" [routerLinkActive]="'active'"><i class=" material-icons md-48">arrow_back</i></a>
   </div>
-  Rules
+  <div class="rules-scroll">
+    <div class="rules-text">
+      <h1>Introduction</h1>
+      <p>
+        A game of Card Game Name represents a battle between two powerful witches. They draw on the power of five magical elements to summon creatures and cast spells.<br>
+        This game is intended to be played with nothing more than a deck of 30 cards per player. 
+      </p>
+
+      <h1>Decks</h1>
+      <p>
+        Each player begins the game with a deck of exactly 30 cards. They can be any combination of elements or types, as long as they follow the following rules:
+        <ul>
+          <li>Decks cannot contain more than 2 copies of a card with the same name.</li>
+          <li>Decks cannot contain any more than 1 "Hero" type card, regardless of the cards' names.</li>
+        </ul>
+        The cards remaining in a player's deck represent the magical power they have left. Once a player runs out of cards, they lose the game!
+      </p>
+
+      <h1>The Battlefield</h1>
+
+      <h1>Card Anatomy</h1>
+      <div class="image">
+        <img src="assets/rules/card-anatomy.png">
+      </div>
+      <h2>Name</h2>
+      <p>
+        The name of a card. No more than 2 cards with the same name are allowed in a deck.
+      </p>
+      <h2>Type</h2>
+      <p>
+        <ul>
+          <li>Creature cards summon creatures to fight for you.</li>
+          <li>Spell cards can have instant effects (e.g. a quick Firebolt destroying an enemy creature), or exist permanently as spells (providing an ongoing effect) or enchantments (giving creatures extra effects).</li>
+          <li>Items can exist permanently on the battlefield or be equipped to creatures providing effects similar to spells.</li>
+          <li>Hero cards represent powerful allies that provide ongoing benefits unless destroyed by your opponent.</li>
+        </ul>
+      </p>
+      <h2>Cost</h2>
+      <p>
+        The cost of a card is the amount of mana you must channel in order to play it. The five element symbols (Fire, Earth, Air, Water, and Spirit) represent one mana each of their element, and the Real symbol (the second symbol of the cost of this card) represents one mana of any element except Spirit.
+      </p>
+      <h2>Element</h2>
+      <p>
+        When channeled, a card provides one mana of its element. Some card effects also reference the elements of other cards.
+      </p>
+      <h2>Card Text</h2>
+      <p>
+        A card's text describes a special effect it has. Instructions are performed when a card is played, and ongoing effects continue as long as the card is on the battlefield.
+      </p>
+      <h2>Stats</h2>
+      <p>
+        Creatures have stats that represent their fighting ability. They are written as [Attack] / [Health]. Attack is the amount of damage a creature will deal to its target or attacker in combat. Health is the amount of damage a creature must take in a turn to be destroyed.
+      </p>
+
+      <h1>Winning and Losing</h1>
+      <p>When a player is dealt damage, they </p>
+
+
+      <p>
+        - Flip a coin. The winning player chooses whether to go first or second. - Both players draw up to 4 cards to make their opening hand. Each player may choose any number of their cards to mulligan. Once both have decided, they place the chosen cards aside and draw that many replacement cards. They then shuffle the put aside cards back into their decks.
+      </p>
+      <h1>Turn Structure</h1>
+      <p>
+        #### Start - "Start of Turn" effects occur. #### Draw - Draw 1 card from your deck. #### Main 1 - Play as many spells, creatures, items, or heroes as you like. #### Battle - Each creature may either attack or counterattack only once per turn. Creatures may only attack or counterattack if they have been under their owner's control since the start of the turn. - The player whose turn it is makes a round of attacks, which is followed by a round of counterattacks by the opponent. - Select a creature you control, and a target for it to attack (enemy creatures, or the enemy Player if they control no creatures). - The attacker and the target deal their attack values in damage to each other. If either is reduced to 0 HP they are destroyed. - Repeat for as many of your creatures as you wish. - Once the attacking player is finished making attacks, the opposing player may make counterattacks if they control creatures. - The process for counterattacking is the same as described for
+        attacks. #### Main 2 - Same as Main 1. #### End - "End of Turn" effects occur. - If the Player whose turn it is is holding more than 7 cards, they must discard cards one at a time until they have 7 or less cards. - All living creatures that took damage this turn heal back up to full health.
+      </p>
+      <p>
+        ## Winning and Losing - When a Player takes damage, they must exile cards from their deck one at a time up to the amount of damage taken. If they must exile a card this way but have an empty deck, they lose the game. - If a Player must draw a card but has an empty deck, they lose the game. - If both players lose the game at the same time (as a result of the same stack resolution) the game is a draw. - Either Player may at any time concede, immediately losing the game. - If the game is interrupted at any time by an external factor, the game immediately ends in a draw. ## The Stack - Visit MTG rules for this. ## Board Zones #### Hand - Each Player holds a hand of cards that are not visible to the other Player. #### Deck - Each Player begins with a deck of exactly 30 cards. #### Mana Pool - A Player's mana pool represents excess power they have stored while casting spells. - The mana pools of both players can be inspected at any time by either player, but the order of cards may
+        not be changed. - When a card is "destroyed", discarded from a Player's hand or deck, or (in the case of "instantaneous" cards) resolved, it goes to its Player's mana pool. #### Exile - Exiled cards are removed from play and cannot be used. - The exile piles of both players can be inspected at any time by either player, but the order of cards may not be changed. - Channelling a card exiles it. #### Battlefield - Both Players own a battlefield of creatures, the items and enchantments equipped to them, permanent items and spells, and heroes. All these cards are publicly visible and can be inspected at any time by either player. ## Card Breakdown #### Element - A card's element is represented in the top right of the card. It is one of Fire, Water, Earth, Air, and Spirit. #### Speed - A Player may play any cards from their hand during the Main phases of their turn. - "Reaction" spells may be played at any time, on either player's turn. #### Stats - A creature's statistics can be
+        found in the bottom right of the card. - They are represented as (attack) / (health). #### Cost - A card's cost is represented by symbols in the bottom left of the card. A number followed by an element symbol represents that number of mana of that element. An element symbol with no number represents 1 mana of that element. ## Mana - If a player wishes to play a card with a mana cost, they must have enough mana of the right type to play it. - Channelling a card refers to exiling it from either the Player's hand or mana pool. Channelling a card provides 1 mana of the card's element. - After a Player plays a card their available mana becomes zero, even if they would have mana left over from channelling extra cards. ## Card Movements | Term | Definition | | ------- | ------------------------------------------------------------ | | Channel | Exile a card from your hand or mana pool. Gain 1 mana of the card's element towards the next card you play this turn. | | Exile | Move a card
+        to your exile pile. | | Burn | Move the top card of your deck to your mana pool. | | Discard | Move a card from your hand to your mana pool. | | Destroy | Move a card from the battlefield to your mana pool. | | Counter | Exile a spell. Its effect does not occur. |
+      </p>
+    </div>
+  </div>
 </div>

@@ -6,3 +6,4 @@
 - Cannot be cheated out through Fire transposition.
 - Uniquely powerful creatures.
 
+## 
