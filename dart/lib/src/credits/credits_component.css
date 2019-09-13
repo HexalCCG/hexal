@@ -6,7 +6,6 @@
 }
 .toolbar {
   flex: 0 0 60px;
-  background-color: rgba(255, 74, 86, 1);
   padding-left: 6px;
   padding-right: 10px;
   display: grid;
@@ -17,20 +16,20 @@
 }
 .toolbar .back {
   grid-area: back;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(255, 255, 255, 0.54);
 }
 .toolbar .back i {
   line-height: 60px;
 }
 .toolbar .back:hover {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 .toolbar .title {
   grid-area: title;
   line-height: 60px;
   font-size: 24px;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(255, 255, 255, 0.54);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
