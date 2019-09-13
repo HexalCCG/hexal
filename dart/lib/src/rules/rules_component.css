@@ -49,6 +49,11 @@
 .rules-text .image-container {
   margin: auto;
 }
+.rules-text .image-container img {
+  object-fit: contain;
+  max-height: 300px;
+  width: 100%;
+}
 
 h1 {
   color: rgba(0, 0, 0, 0.7);

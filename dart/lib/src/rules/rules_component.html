@@ -21,9 +21,22 @@
       </p>
 
       <h1>The Battlefield</h1>
+      <div class="image-container">
+        <img src="assets/rules/battlefield.png">
+      </div>
+      <h2>Deck</h2>
+      <p>Contains your deck. At the start of your turn, draw a card from here. If you run out of cards, you lose.</p>
+      <h2>Mana</h2>
+      <p>After cards are played or destroyed, they enter your mana pool. Channel cards from here to pay for more expensive spells.</p>
+      <h2>Exile</h2>
+      <p>Channeled cards are placed here.</p>
+      <h2>Creatures</h2>
+      <p>Place creatures you control here. You can control any number of creatures.</p>
+      <h2>Spells / Items</h2>
+      <p>Place permanent spells and items you control here (including field spells).</p>
 
       <h1>Card Anatomy</h1>
-      <div class="image">
+      <div class="image-container">
         <img src="assets/rules/card-anatomy.png">
       </div>
       <h2>Name</h2>
@@ -56,24 +69,42 @@
         Creatures have stats that represent their fighting ability. They are written as [Attack] / [Health]. Attack is the amount of damage a creature will deal to its target or attacker in combat. Health is the amount of damage a creature must take in a turn to be destroyed.
       </p>
 
+      <h1>Gameplay</h1>
+      <h2>Start of Game</h2>
+      <p>
+        Randomly determine a player to start. Both players draw 4 cards from their decks. Both players choose any number of cards from their opening hand to replace. They set those aside and draw back up to 4 cards, then shuffle the set aside cards into their decks.
+      </p>
+      <h2>Turn Structure</h2>
+      <p>
+        Play alternates between players. Each turn is composed of phases that cannot be skipped or re-ordered.
+      </p>
+      <h3>Start of Turn</h3>
+      <p>Your start of turn effects occur. If more than one occur, your effects occur before your opponent's. You may determine the order of your effects.</p>
+      <p>After all start of turn effects, draw a card.</p>
+      <h3>Main Phase I</h3>
+      <p>
+        Play any cards from your hand. The only cards that can be played outside of your Main phases are Reaction spells.
+      </p>
+      <h3>Battle</h3>
+      <p>Only creatures that have been under their owner's control since the start of this turn may participate in battle (attacking or counterattacking).</p>
+      <p>
+        Select a creature you control, and a target for it to attack (enemy creatures, or the enemy Player if they control no creatures that can can be targeted with attacks). The attacker deals its attack in damage to the target, and then the target deals its attack in damage to the attacker. If either is reduced to 0 HP they are destroyed. Repeat for as many of your creatures as you wish. Once you are done attacking, you cannot make any more attacks. Your opponent can make counterattacks. This functions exactly the same as attacking.
+      </p>
+      <h3>Main Phase II</h3>
+      <p>The same as Main phase I.</p>
+      <h3>End of Turn</h3>
+      <p>Your end of turn effects occur. Ordering is decided the same as for "start of turn" effects.</p>
+      <p>If you are holding more than 7 cards, exile cards from your hand one at a time until you have 7 or less cards in hand.</p>
+      <p>Finally, all living creatures return to full health.</p>
+
       <h1>Winning and Losing</h1>
-      <p>When a player is dealt damage, they </p>
-
-
-      <p>
-        - Flip a coin. The winning player chooses whether to go first or second. - Both players draw up to 4 cards to make their opening hand. Each player may choose any number of their cards to mulligan. Once both have decided, they place the chosen cards aside and draw that many replacement cards. They then shuffle the put aside cards back into their decks.
-      </p>
-      <h1>Turn Structure</h1>
-      <p>
-        #### Start - "Start of Turn" effects occur. #### Draw - Draw 1 card from your deck. #### Main 1 - Play as many spells, creatures, items, or heroes as you like. #### Battle - Each creature may either attack or counterattack only once per turn. Creatures may only attack or counterattack if they have been under their owner's control since the start of the turn. - The player whose turn it is makes a round of attacks, which is followed by a round of counterattacks by the opponent. - Select a creature you control, and a target for it to attack (enemy creatures, or the enemy Player if they control no creatures). - The attacker and the target deal their attack values in damage to each other. If either is reduced to 0 HP they are destroyed. - Repeat for as many of your creatures as you wish. - Once the attacking player is finished making attacks, the opposing player may make counterattacks if they control creatures. - The process for counterattacking is the same as described for
-        attacks. #### Main 2 - Same as Main 1. #### End - "End of Turn" effects occur. - If the Player whose turn it is is holding more than 7 cards, they must discard cards one at a time until they have 7 or less cards. - All living creatures that took damage this turn heal back up to full health.
-      </p>
-      <p>
-        ## Winning and Losing - When a Player takes damage, they must exile cards from their deck one at a time up to the amount of damage taken. If they must exile a card this way but have an empty deck, they lose the game. - If a Player must draw a card but has an empty deck, they lose the game. - If both players lose the game at the same time (as a result of the same stack resolution) the game is a draw. - Either Player may at any time concede, immediately losing the game. - If the game is interrupted at any time by an external factor, the game immediately ends in a draw. ## The Stack - Visit MTG rules for this. ## Board Zones #### Hand - Each Player holds a hand of cards that are not visible to the other Player. #### Deck - Each Player begins with a deck of exactly 30 cards. #### Mana Pool - A Player's mana pool represents excess power they have stored while casting spells. - The mana pools of both players can be inspected at any time by either player, but the order of cards may
-        not be changed. - When a card is "destroyed", discarded from a Player's hand or deck, or (in the case of "instantaneous" cards) resolved, it goes to its Player's mana pool. #### Exile - Exiled cards are removed from play and cannot be used. - The exile piles of both players can be inspected at any time by either player, but the order of cards may not be changed. - Channelling a card exiles it. #### Battlefield - Both Players own a battlefield of creatures, the items and enchantments equipped to them, permanent items and spells, and heroes. All these cards are publicly visible and can be inspected at any time by either player. ## Card Breakdown #### Element - A card's element is represented in the top right of the card. It is one of Fire, Water, Earth, Air, and Spirit. #### Speed - A Player may play any cards from their hand during the Main phases of their turn. - "Reaction" spells may be played at any time, on either player's turn. #### Stats - A creature's statistics can be
-        found in the bottom right of the card. - They are represented as (attack) / (health). #### Cost - A card's cost is represented by symbols in the bottom left of the card. A number followed by an element symbol represents that number of mana of that element. An element symbol with no number represents 1 mana of that element. ## Mana - If a player wishes to play a card with a mana cost, they must have enough mana of the right type to play it. - Channelling a card refers to exiling it from either the Player's hand or mana pool. Channelling a card provides 1 mana of the card's element. - After a Player plays a card their available mana becomes zero, even if they would have mana left over from channelling extra cards. ## Card Movements | Term | Definition | | ------- | ------------------------------------------------------------ | | Channel | Exile a card from your hand or mana pool. Gain 1 mana of the card's element towards the next card you play this turn. | | Exile | Move a card
-        to your exile pile. | | Burn | Move the top card of your deck to your mana pool. | | Discard | Move a card from your hand to your mana pool. | | Destroy | Move a card from the battlefield to your mana pool. | | Counter | Exile a spell. Its effect does not occur. |
-      </p>
+      <p>When a player is dealt damage, they must exile cards from the top of their deck equal to the damage taken. If a player must draw, burn, or exile a card from their deck, but cannot because it is empty, they lose the game.</p>
+      <p>Either player may at any time concede the game.</p>
+      <p>If both players lose the game at the same time, the game is a draw.</p>
+      
+      <h1>Miscellaneous</h1>
+      <p>Burn a card: Add the top card of your deck to your mana pool.</p>
+      <p>Counter: Exile a spell. Its effect does not occur. The player that played it still pays its cost.</p>
     </div>
   </div>
 </div>
