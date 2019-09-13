@@ -7,11 +7,11 @@ import '../routes.dart';
 export '../routes.dart';
 
 @Component(
-  selector: 'info',
-  templateUrl: 'info_component.html',
-  styleUrls: ['info_component.css'],
+  selector: 'credits',
+  templateUrl: 'credits_component.html',
+  styleUrls: ['credits_component.css'],
   directives: [coreDirectives, routerDirectives],
   providers: [ClassProvider(CardService)],
   exports: [Routes],
 )
-class InfoComponent {}
+class CreditsComponent {}

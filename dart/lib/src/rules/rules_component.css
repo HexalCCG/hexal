@@ -11,9 +11,9 @@
   padding-right: 10px;
   display: grid;
   align-items: center;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 1fr auto;
   grid-template-rows: 1fr;
-  grid-template-areas: 'back .';
+  grid-template-areas: 'back . title';
 }
 .toolbar .back {
   color: rgba(0, 0, 0, 0.54);
@@ -24,6 +24,20 @@
 .toolbar .back:hover {
   color: rgba(0, 0, 0, 0.7);
 }
+.toolbar .title {
+  grid-area: title;
+  line-height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.54);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .rules-scroll {
   overflow-x: hidden;
   overflow-y: scroll;
