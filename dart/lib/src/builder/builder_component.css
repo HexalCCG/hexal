@@ -216,7 +216,6 @@
 .deck-card-list {
   width: 100%;
   flex: 1 1 0px;
-
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -232,7 +231,7 @@
 }
 
 .deck-card-list::-webkit-scrollbar-thumb {
-  background-color: rgb(0, 201, 0);
+  background-color: #f90;
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
 }
 
@@ -244,12 +243,10 @@
   grid-template-columns: 5px 10px 32px 5px 1fr auto 10px;
   grid-template-rows: auto;
   grid-template-areas: '. cost element . name number .';
-  background-color: rgb(0, 201, 0);
-  color: black;
-}
-.deck-card:nth-child(even) {
   background-color: whitesmoke;
   color: black;
+  border-bottom: solid;
+  border-color: gainsboro;
 }
 .deck-card .cost {
   grid-area: cost;
