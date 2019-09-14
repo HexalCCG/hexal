@@ -51,13 +51,13 @@
   background-color: white;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 
-  height: 300px;
-  width: 210px;
-  padding: 5px;
+  height: 450px;
+  width: 315px;
+  padding: 10px;
 
   display: grid;
-  grid-template-columns: 25px 1fr 25px;
-  grid-template-rows: 25px 100px 15px 1fr 25px;
+  grid-template-columns: 50px 1fr 50px;
+  grid-template-rows: 50px 150px 15px 1fr 36px;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
   grid-template-areas:
@@ -69,7 +69,7 @@
 }
 .card .name {
   grid-area: name;
-  font-size: 15px;
+  font-size: 24px;
   font-weight: bold;
 }
 .card .element {
@@ -84,12 +84,12 @@
 .card .type {
   grid-area: type;
   align-self: center;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
 }
 .card .text {
   grid-area: text;
-  font-size: 13px;
+  font-size: 18px;
 }
 .card .bottom {
   grid-area: bottom;
@@ -103,10 +103,10 @@
   display: flex;
 }
 .card .bottom img {
-  height: 16px;
+  height: 36px;
 }
 .card .bottom .stats {
   grid-area: stats;
-  font-size: 16px;
+  font-size: 36px;
   font-weight: bold;
 }

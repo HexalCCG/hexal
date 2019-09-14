@@ -130,3 +130,18 @@
   font-size: 16px;
   font-weight: bold;
 }
+@media only screen and (max-width: 700px) {
+  .toolbar {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 6px 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'back . search';
+  }
+  .toolbar .cost {
+    display: none;
+  }
+  .toolbar .elements {
+    display: none;
+  }
+}

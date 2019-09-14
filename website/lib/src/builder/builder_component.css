@@ -21,9 +21,9 @@
   padding-right: 6px;
   display: grid;
   align-content: center;
-  grid-template-columns: auto 1fr auto 16px auto;
+  grid-template-columns: 80px 1fr 16px 210px;
   grid-template-rows: 1fr;
-  grid-template-areas: 'back . message . tools';
+  grid-template-areas: 'back message . tools';
 }
 .toolbar a {
   cursor: pointer;
@@ -39,6 +39,7 @@
   grid-area: back;
 }
 .toolbar .code-box {
+  justify-self: end;
   align-self: center;
   border: none;
   background-color: rgba(255, 255, 255, 0.2);
@@ -46,7 +47,8 @@
   outline: 0;
   text-align: right;
   font-size: 16px;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: 30px;
   grid-area: message;
 }
