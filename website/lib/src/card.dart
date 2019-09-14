@@ -50,7 +50,11 @@ class Card {
     return AssetService.elementImages[element];
   }
 
+  String get paddedId {
+    return id.toString().padLeft(3, "0");
+  }
+
   String get searchableText {
-    return id.toString() + " " + name + " " + typeLine + " " + text;
+    return paddedId + " " + name + " " + typeLine + " " + text;
   }
 }

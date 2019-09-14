@@ -41,6 +41,7 @@ class BuilderComponent implements OnInit {
   String codeBox = "";
   String searchBox = "";
   bool deckCardLimit = true;
+  bool sortById = false;
 
   Future<void> ngOnInit() async {
     allCards = await _cardService.getAll();
@@ -116,9 +117,13 @@ class BuilderComponent implements OnInit {
     }
   }
 
-  void deckToolbarToggle(String setting) {
+  void toggleSetting(String setting) {
     if (setting == "cardlimit") {
       deckCardLimit = !deckCardLimit;
+    }
+    if (setting == "sortId") {
+      sortById = !sortById;
+      filterLibrary();
     }
   }
 
@@ -146,7 +151,11 @@ class BuilderComponent implements OnInit {
             .contains(searchBox.toLowerCase().replaceAll(RegExp(r'\W+'), ''));
       });
     }
-    libraryCards.sort(CardService.compareCards);
+    if (sortById) {
+      libraryCards.sort(CardService.compareId);
+    } else {
+      libraryCards.sort(CardService.compareCards);
+    }
   }
 
   void clearDeck() {

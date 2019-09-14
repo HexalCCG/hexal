@@ -61,11 +61,17 @@
   flex-direction: column;
   align-items: stretch;
 }
-.library-elements {
+.library-status {
   height: 40px;
-  flex: 0 0 auto;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 4px auto 1fr auto 4px;
+  grid-template-rows: 1fr;
+  grid-template-areas: '. elements . tools .';
   background-color: white;
-  padding-left: 4px;
+}
+.library-elements {
+  grid-area: elements;
 }
 .library-elements .disabled {
   filter: brightness(50%);
@@ -78,7 +84,27 @@
   margin-top: 4px;
   margin-bottom: 4px;
 }
-.library-toolbar {
+
+.library-tools {
+  grid-area: tools;
+}
+.library-tools .sortId {
+  height: 32px;
+  align-self: center;
+}
+.library-tools .sortId i {
+  font-size: 32px;
+}
+.library-tools .disabled {
+  color: rgba(0, 0, 0, 0.54);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.4);
+}
+.library-tools .enabled {
+  color: rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.7);
+}
+
+.library-search {
   height: 40px;
   flex: 0 0 auto;
   background-color: gainsboro;
@@ -89,7 +115,7 @@
   grid-template-rows: auto;
   grid-template-areas: '. box icon .';
 }
-.library-toolbar .search {
+.library-search .search {
   grid-area: box;
   border: none;
   background-color: whitesmoke;
@@ -101,11 +127,12 @@
   height: 24px;
   margin: auto;
 }
-.library-toolbar .search-icon {
+.library-search .search-icon {
   grid-area: icon;
   color: rgba(0, 0, 0, 0.54);
   font-size: 40px;
 }
+
 .library-card-list {
   flex: 1 1 0px;
   overflow-x: hidden;
@@ -119,7 +146,7 @@
   align-items: center;
   grid-template-columns: 5px 10px 32px 5px 1fr 40px 5px;
   grid-template-rows: auto;
-  grid-template-areas: '. cost element . name image .';
+  grid-template-areas: '. cost element . name right .';
   background-color: whitesmoke;
   color: black;
   border-bottom: solid;
@@ -138,9 +165,17 @@
 .library-card .name {
   grid-area: name;
 }
-.library-card .image {
-  grid-area: image;
+.library-card .right {
+  grid-area: right;
+}
+.library-card img.right {
   height: 80%;
+}
+.library-card span.right {
+  font-size: 24px;
+  font-weight: bold;
+  align-self: center;
+  justify-self: center;
 }
 
 .deck {

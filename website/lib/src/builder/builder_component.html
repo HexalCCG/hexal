@@ -10,14 +10,21 @@
     </div>
   </nav>
   <div class="library">
-    <div class="library-elements">
-      <a class="element-icon" [class.disabled]="selectedElement != 'spirit' && selectedElement != null" (click)="libraryElement('spirit')"><img src="assets/icons/element-spirit.png"/></a>
-      <a class="element-icon" [class.disabled]="selectedElement != 'fire' && selectedElement != null" (click)="libraryElement('fire')"><img src="assets/icons/element-fire.png"/></a>
-      <a class="element-icon" [class.disabled]="selectedElement != 'air' && selectedElement != null" (click)="libraryElement('air')"><img src="assets/icons/element-air.png"/></a>
-      <a class="element-icon" [class.disabled]="selectedElement != 'earth' && selectedElement != null" (click)="libraryElement('earth')"><img src="assets/icons/element-earth.png"/></a>
-      <a class="element-icon" [class.disabled]="selectedElement != 'water' && selectedElement != null" (click)="libraryElement('water')"><img src="assets/icons/element-water.png"/></a>
+    <div class="library-status">
+      <div class="library-elements">
+        <a class="element-icon" [class.disabled]="selectedElement != 'spirit' && selectedElement != null" (click)="libraryElement('spirit')"><img src="assets/icons/element-spirit.png"/></a>
+        <a class="element-icon" [class.disabled]="selectedElement != 'fire' && selectedElement != null" (click)="libraryElement('fire')"><img src="assets/icons/element-fire.png"/></a>
+        <a class="element-icon" [class.disabled]="selectedElement != 'air' && selectedElement != null" (click)="libraryElement('air')"><img src="assets/icons/element-air.png"/></a>
+        <a class="element-icon" [class.disabled]="selectedElement != 'earth' && selectedElement != null" (click)="libraryElement('earth')"><img src="assets/icons/element-earth.png"/></a>
+        <a class="element-icon" [class.disabled]="selectedElement != 'water' && selectedElement != null" (click)="libraryElement('water')"><img src="assets/icons/element-water.png"/></a>
+      </div>
+      <div class="library-tools">
+        <a class="sortId" (click)="toggleSetting('sortId')">
+          <i class="material-icons md-48" [class.enabled]="sortById" [class.disabled]="!sortById">format_list_numbered_rtl</i>
+        </a>
+      </div>
     </div>
-    <div class="library-toolbar">
+    <div class="library-search">
       <input type="text" class="search" [(ngModel)]="searchBox" (keyup)="filterLibrary()" />
       <i class="material-icons md-48 search-icon">search</i>
     </div>
@@ -26,7 +33,8 @@
         <span class="cost">{{ card.totalCost }}</span>
         <img class="element" src="{{ card.elementImage }}" />
         <span class="name">{{ card.name }}</span>
-        <img class="image" src="{{ card.image }}" />
+        <img *ngIf="!sortById" class="right" src="{{ card.image }}" />
+        <span *ngIf="sortById" class="right">{{ card.paddedId }}</span>
       </div>
     </div>
   </div>
@@ -67,7 +75,7 @@
       <span class="print-counter">{{ deckSize }} / {{ nextMultiple(deckSize) }}</span>
     </div>
     <div class="deck-toolbar">
-      <a class="card-limit" (click)="deckToolbarToggle('cardlimit')">
+      <a class="card-limit" (click)="toggleSetting('cardlimit')">
         <i class="material-icons md-48" [class.deck-toolbar-enabled]="deckCardLimit" [class.deck-toolbar-disabled]="!deckCardLimit">done_all</i>
       </a>
     </div>

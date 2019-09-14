@@ -193,4 +193,8 @@ class CardService {
 
     return a.name.compareTo(b.name);
   }
+
+  static int compareId(Card a, Card b) {
+    return a.id.compareTo(b.id);
+  }
 }
