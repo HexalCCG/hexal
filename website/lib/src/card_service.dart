@@ -86,6 +86,9 @@ class CardService {
       case "spirit":
         return Element.spirit;
         break;
+      case "any":
+        return Element.any;
+        break;
       default:
         return null;
     }

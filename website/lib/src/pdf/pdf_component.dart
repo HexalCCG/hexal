@@ -40,9 +40,12 @@ class PdfComponent implements OnActivate {
   int cardNumber = 0;
   bool loaded = false;
 
+  Document pdf;
+
   TextStyle title;
   TextStyle typeLine;
   TextStyle cardText;
+  TextStyle keyword;
   TextStyle statsLine;
 
   static final double mm = PdfPageFormat.cm / 10;
@@ -70,17 +73,18 @@ class PdfComponent implements OnActivate {
   }
 
   Future<SafeResourceUrl> buildPdf(List<Card> cards) async {
-    Document pdf = Document(title: pdfName);
+    pdf = Document(title: pdfName);
     Font firaRegular = await getFont("assets/fonts/FiraSans-Regular.ttf");
     Font firaBold = await getFont("assets/fonts/FiraSans-Bold.ttf");
 
     title = TextStyle(font: firaBold, fontSize: 10);
     typeLine = TextStyle(font: firaBold, fontSize: 8);
     cardText = TextStyle(font: firaRegular, lineSpacing: 2, fontSize: 8);
+    keyword = TextStyle(font: firaBold, lineSpacing: 2, fontSize: 8);
     statsLine = TextStyle(font: firaBold, fontSize: 14);
 
     List<Future<Container>> c = cards.map((card) {
-      return buildCard(pdf, card);
+      return buildCard(card);
     }).toList();
     Future<List<Container>> futures = Future.wait(c);
     List<Container> cardContainers =
@@ -105,7 +109,7 @@ class PdfComponent implements OnActivate {
         "data:application/pdf;base64," + base64.encode(pdf.save()));
   }
 
-  Future<Container> buildCard(Document pdf, Card card) async {
+  Future<Container> buildCard(Card card) async {
     Container result = await Container(
         padding: EdgeInsets.all(2 * mm),
         decoration: BoxDecoration(
@@ -120,7 +124,7 @@ class PdfComponent implements OnActivate {
                   maxHeight: 6 * mm,
                   maxWidth: 6 * mm,
                   child: Image(await getImage(
-                      pdf, AssetService.elementImages[card.element])))),
+                      AssetService.elementImages[card.element])))),
           Positioned(
               left: 0,
               right: 0,
@@ -128,8 +132,8 @@ class PdfComponent implements OnActivate {
               child: Center(
                   child: LimitedBox(
                       maxHeight: 35 * mm,
-                      child: Image(await getImage(
-                          pdf, AssetService.cardImage(card.id)))))),
+                      child: Image(
+                          await getImage(AssetService.cardImage(card.id)))))),
           Positioned(
               left: 2 * mm,
               right: 2 * mm,
@@ -141,12 +145,7 @@ class PdfComponent implements OnActivate {
               top: 52 * mm,
               left: 0,
               right: 0,
-              child: Paragraph(
-                  text: card.text,
-                  style: cardText,
-                  textAlign: TextAlign.left,
-                  margin: EdgeInsets.zero,
-                  padding: EdgeInsets.zero)),
+              child: await buildCardText(card.text)),
           Positioned(
               left: 0,
               right: 0,
@@ -154,7 +153,7 @@ class PdfComponent implements OnActivate {
               child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.end,
-                  children: await buildCostRow(pdf, card.cost))),
+                  children: await buildCostRow(card.cost))),
           Positioned(
               left: 0,
               right: 0,
@@ -189,16 +188,14 @@ class PdfComponent implements OnActivate {
   */
 
   // Expanded cost row
-  Future<List<Widget>> buildCostRow(
-      Document pdf, Map<Element, int> cost) async {
+  Future<List<Widget>> buildCostRow(Map<Element, int> cost) async {
     Iterable<Future<List<Widget>>> a = cost.keys.map((key) async {
       List<Widget> result = List<Widget>();
       for (int i = 0; i < cost[key]; i++) {
         result.add(LimitedBox(
             maxHeight: 16,
             maxWidth: 16,
-            child:
-                Image(await getImage(pdf, AssetService.elementImages[key]))));
+            child: Image(await getImage(AssetService.elementImages[key]))));
       }
       return result;
     });
@@ -206,7 +203,42 @@ class PdfComponent implements OnActivate {
     return b.expand((pair) => pair).toList();
   }
 
-  Future<PdfImage> getImage(Document pdf, String location) async {
+  Future<RichText> buildCardText(String text) async {
+    List<InlineSpan> result = List<InlineSpan>();
+
+    int p = 0;
+
+    for (int i = 0; i < text.length; i++) {
+      if (text[i] == "<" || text[i] == "[") {
+        if (i > p) {
+          result.add(TextSpan(text: text.substring(p, i)));
+        }
+        p = i + 1;
+      }
+      if (text[i] == ">") {
+        if (i > p) {
+          result.add(TextSpan(text: text.substring(p, i), style: keyword));
+        }
+        p = i + 1;
+      }
+      if (text[i] == "]") {
+        if (i > p) {
+          result.add(WidgetSpan(
+              child: Image(await getImage(AssetService.elementImages[
+                  CardService.elementFromString(
+                      text.substring(p, i).toLowerCase())]))));
+        }
+        p = i + 1;
+      }
+    }
+    if (text.length > p) {
+      result.add(TextSpan(text: text.substring(p, text.length)));
+    }
+
+    return RichText(text: TextSpan(children: result, style: cardText));
+  }
+
+  Future<PdfImage> getImage(String location) async {
     img.Image image = await _assetService.loadImage(location);
     return PdfImage(pdf.document,
         image: image.data.buffer.asUint8List(),

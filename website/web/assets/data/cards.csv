@@ -178,9 +178,9 @@
 176,Sense Emotion,Spirit,Spell,,,,,Your opponent reveals the number of cards of each Element in their hand.
 177,Vision,Spirit,Spell,,,,,View the top 3 cards of your opponent's deck and put them back in the same order.
 178,Sprite Portal,Spirit,Spell,Permanent,"1s,2r",,,"At the end of your turn, add all ""sprite"" cards from your mana pool and exile piles to your hand."
-179,Command,Spirit,Spell,,1r,,,Select a creature. It attacks a creature of your choice.
+179,Command,Spirit,Spell,,1s,,,Select a creature. It attacks a creature of your choice.
 180,Lunar Communion,Spirit,Spell,,1r,,,View the top 3 cards of your deck. Draw 1 and put the others on the bottom of your deck.
-181,Sense Thoughts,Spirit,Spell,,1r,,,View your opponent's hand.
+181,Sense Thoughts,Spirit,Spell,,1s,,,View your opponent's hand.
 182,Mind Spike,Spirit,Spell,Reaction,1s,,,Cast when an enemy creature attacks you. Destroy it.
 183,Hold Person,Spirit,Spell,Enchantment,1s,,,Enchant a creature. Set its attack to 0.
 184,Sleep,Spirit,Spell,Permanent,,,,"Creatures cannot attack. At the start of your turn, if the combined attack of all creatures on the battlefield is greater than or equal to 5, destroy this."
@@ -240,12 +240,12 @@
 238,Detect Magic,Spirit,Spell,,,,,Your opponent reveals the number of spells in their hand.
 239,Locate Creature,Spirit,Spell,,,,,<Search> for a creature.
 240,Resurrection,Spirit,Spell,,"2s,1r",,,Summon a creature from your mana pool or exile pile.
-241,Blink,Spirit,Spell,Enchantment,1s,,,"Enchant a creature. It gains ""has <ethereal> during your opponent's turn""."
+241,Mind Blank,Spirit,Spell,Permanent,"1s,1r",,,Your opponent cannot view cards in your hand and deck by any means.
 242,Gate,Spirit,Spell,Permanent,2s,,,You can pay the elemental mana costs of creatures with [Any].
 243,Enthrall,Spirit,Spell,Permanent,,,,"Your creatures have ""cannot be targeted by attacks""."
-244,Power Word Stun,Spirit,Spell,,1s,,,Your opponent cannot cast spells until the end of their next turn.
-245,Crystal Ball,Spirit,Item,Permanent,"1s,1r",,,"At the end of your turn, <search> for a 0 cost [Spirit] spell. Cast it."
-246,Life-Link Locket,Spirit,Item,Equipment,,,,"Equip to a friendly creature. It gains ""whenever this would take damage, you take that much damage instead""."
-247,Incense of Smoke Monsters,Spirit,Item,,1s,,,"Summon a 0 / 1 [Spirit] Smoke Monster creature token with ""the first time this is destroyed, resummon it""."
-248,Ritual Herbs,Spirit,Item,,,,,You can channel this from your hand. It provides [Spirit][Spirit] when paying for a [Spirit] spell.
-249,Translocation Mine,Spirit,Item,,"1s,1r",,,Shuffle all creatures into their owner's decks.
+244,,Spirit,Item,,,,,
+245,,Spirit,Item,,,,,
+246,,Spirit,Item,,,,,
+247,,Spirit,Item,,,,,
+248,,Spirit,Item,,,,,
+249,Seal World Line,Spirit,Spell,Permanent,,,,"<Search> for a card. Do not reveal it, and place it face-down under this card. When this is destroyed, add the saved card to your hand."
