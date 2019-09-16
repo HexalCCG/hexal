@@ -13,9 +13,8 @@
 - Survivability
 - Second wave for aggressive decks?
 
-## Tokens
+## Ethereal
 
-- More token generation
+- Like flying from mtg
 
-## Cross-Element Synergy
-
+## 

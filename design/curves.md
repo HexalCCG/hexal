@@ -1,20 +1,21 @@
 # Curves
 
-## Creatures
+## By Element
 
-| Element | 0    | 1    | 2    | 3+   |
-| ------- | ---- | ---- | ---- | ---- |
-| Earth   | 6    | 6    | 6    | 2    |
-| Fire    | 5    | 5    | 4    | 2    |
-| Water   | 3    | 3    | 3    | 2    |
-| Air     | 3    | 3    | 4    | 1    |
-| Spirit  | 4    | 1    | 2    | 1    |
+| Element | Creatures | Spells | Items | Heroes | Total |
+| ------- | --------- | ------ | ----- | ------ | ----- |
+| Earth   | 20        | 14     | 6     | 2      | 42    |
+| Fire    | 15        | 19     | 8     | 2      | 44    |
+| Water   | 11        | 24     | 4     | 2      | 41    |
+| Air     | 11        | 21     | 4     | 2      | 38    |
+| Spirit  | 8         | 16     | 1     | 1      | 26    |
 
 
 
-## All Elements Need:
+## Spirit
 
-- Permanent spell removal
-  - 
-- Field spell
-- Item destruction
+- 15 creatures
+- 30 spells
+- 3 items
+- 2 heroes
+

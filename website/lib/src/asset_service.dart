@@ -17,7 +17,7 @@ class AssetService {
     Element.air: "assets/icons/element-air.png",
     Element.earth: "assets/icons/element-earth.png",
     Element.water: "assets/icons/element-water.png",
-    Element.real: "assets/icons/element-real.png"
+    Element.any: "assets/icons/element-any.png"
   };
 
   static String cardImage(int id) {

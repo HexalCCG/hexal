@@ -1,0 +1,36 @@
+# Rule Definitions
+
+- Continuous effects
+- Triggered effects
+- Imperative effects
+- Requirements (010)
+- Enchantment
+- Token creation
+- Resummoning (011)
+- Damage reduction (029)
+- Additional draw (030)
+- Search
+- Burn
+- Quoted text
+- Restrictions (040)
+- Effect targeting (073)
+- Spell damage (071)
+- Fire summon (078)
+- Healing (088)
+- Reaction cast at any time (103)
+- Cannot attack (103)
+- Damage vs destruction (111)
+- Cost reduction element (129)
+- Converted mana cost (143)
+- Counterspell (143)
+- Discarding (149)
+- Health reduction (154)
+- Cost abilities (173)
+- View privacy (175)
+- Permanent (033)
+- Take control (Grasping Vine)
+- Range (Staff of The Sage)
+- Cancelling attacks (Bracelet of Deflection)
+- Ethereal (Oil of Etherealness)
+- Elemental mana costs (Gate)
+- Mind blank (Mind Blank)

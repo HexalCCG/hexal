@@ -1,7 +1,7 @@
 import 'package:open_card_game/src/asset_service.dart';
 import 'package:open_card_game/src/localisation.dart';
 
-enum Element { fire, earth, air, water, spirit, real }
+enum Element { fire, earth, air, water, spirit, any }
 enum Type { creature, spell, item, hero }
 enum CardDuration { none, reaction, enchantment, equipment, field, permanent }
 
@@ -36,7 +36,13 @@ class Card {
 
   String get statsLine {
     if (attack != null && health != null) {
-      return attack.toString() + " / " + health.toString();
+      if (type == Type.creature) {
+        return attack.toString() + " / " + health.toString();
+      } else {
+        return (attack >= 0 ? "+" + attack.toString() : attack.toString()) +
+            " / " +
+            (health >= 0 ? "+" + health.toString() : health.toString());
+      }
     } else {
       return "";
     }

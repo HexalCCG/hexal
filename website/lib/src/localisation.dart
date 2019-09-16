@@ -9,7 +9,7 @@ class Localisation {
     Element.air: "Air",
     Element.water: "Water",
     Element.spirit: "Spirit",
-    Element.real: "Real"
+    Element.any: "Any"
   };
   static Map type = {
     Type.creature: "Creature",

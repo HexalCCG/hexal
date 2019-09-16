@@ -153,7 +153,7 @@ class CardService {
         return Element.spirit;
         break;
       case "r":
-        return Element.real;
+        return Element.any;
         break;
       case "a":
         return Element.air;

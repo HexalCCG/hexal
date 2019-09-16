@@ -22,3 +22,4 @@
 
 - Divination
 - Enchantment
+
