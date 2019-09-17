@@ -204,7 +204,7 @@
 202,Novice Firemage,Fire,Creature,,1f,2,1,<Ranged>.
 203,Mageslayer,Fire,Creature,,2r,3,1,Destroy a spell.
 204,Night of the Soulless,Fire,Spell,Field,1f,,,Tokens have +1 / +0.
-205,Poisonous Frog,Water,Creature,,1w,1,1,"When this is attacked and destroyed by an enemy creature, destroy that creature."
+205,Poisonous Bee,Water,Creature,,1w,1,1,"When this is attacked and destroyed by an enemy creature, destroy that creature."
 206,Elemental Familiar,Water,Creature,,,1,1,"When this is destroyed, <search> for a [Water] spell."
 207,Gifted Wanderer,Water,Creature,,1w,1,1,Destroy an enemy creature with 2 or less attack.
 208,Sea Snake,Water,Creature,,,0,1,"When this enters the battlefield, deal 1 damage to your opponent."
@@ -231,7 +231,7 @@
 229,Will-o'-the-wisp,Spirit,Creature,,,1,1,"When this is destroyed, <search> for a [Spirit] item."
 230,Mana Scavenger,Spirit,Creature,,,2,2,You can only play this card if you control a [Spirit] permanent spell.
 231,Animate Memory,Spirit,Creature,,,0,2,"Your other creatures cannot be targeted with attacks. When this is destroyed, you may put it on the top of your deck."
-232,Guardian Stones,Spirit,Creature,,1s,2,2,
+232,Guardian Stone,Spirit,Creature,,1s,2,2,
 233,Mind Snake,Spirit,Creature,,1s,2,1,<Ethereal>.
 234,Mind Breaker,Spirit,Creature,,2s,1,2,Name a non-Hero card. Your opponent must discard a copy of that card if they're holding one.
 235,Spirit Militia,Spirit,Creature,,2r,2,3,
@@ -243,9 +243,9 @@
 241,Mind Blank,Spirit,Spell,Permanent,"1s,1r",,,Your opponent cannot view cards in your hand and deck by any means.
 242,Gate,Spirit,Spell,Permanent,2s,,,You can pay the elemental mana costs of creatures with [Any].
 243,Enthrall,Spirit,Spell,Permanent,,,,"Your creatures have ""cannot be targeted by attacks""."
-244,,Spirit,Item,,,,,
-245,,Spirit,Item,,,,,
-246,,Spirit,Item,,,,,
-247,,Spirit,Item,,,,,
-248,,Spirit,Item,,,,,
-249,Seal World Line,Spirit,Spell,Permanent,,,,"<Search> for a card. Do not reveal it, and place it face-down under this card. When this is destroyed, add the saved card to your hand."
+244,Seal World Line,Spirit,Spell,Permanent,,,,"<Search> for a card. Do not reveal it, and place it face-down under this card. When this is destroyed, add the saved card to your hand."
+245,Haunted Wine Glass,Spirit,Item,Permanent,,,,At the start of your turn you may destroy this to summon a [Spirit] creature with cost 0 from your hand. Give it <ready>.
+246,Peek,Spirit,Item,,,,,"Reveal the top card of your opponent's deck. If it's a spell, draw a card."
+247,Spell Scroll,Spirit,Item,,,,,<Search> for a spell. Replace it with this card.
+248,Smudge Stick,Spirit,Item,,2r,,,Destroy all tokens.
+249,Ethereal Dagger,Spirit,Item,Equipment,,1,0,"Equip to a friendly creature. It gains +1 / +0 and ""can attack creatures with <ethereal>""."
