@@ -1,5 +1,6 @@
 import 'dart:html' hide Location;
 import 'dart:convert';
+import 'dart:typed_data';
 
 import 'package:angular/security.dart';
 import 'package:image/image.dart' as img;
@@ -68,11 +69,35 @@ class PdfComponent implements OnActivate {
     List<Card> cardList = await _deckService
         .unmap(await _deckService.decodeDeck(current.parameters['deck']));
     cardNumber = cardList.length;
-    iframeUrl = await buildPdf(cardList);
-    loaded = true;
+
+    /*
+    iframeUrl = _sanitizationService.bypassSecurityTrustResourceUrl(
+        "data:application/pdf;base64," + base64.encode(await buildPdf(cardList).save()));
+
+        
+    */
+
+    Document a = await buildPdf(cardList);
+
+    final String raw = base64.encode(a.save());
+
+    final List<int> intList = base64.decode(raw);
+    final Int8List int8array = Int8List.fromList(intList);
+    final Blob b = Blob([int8array], 'application/pdf');
+
+    String url = Url.createObjectUrlFromBlob(b);
+
+    AnchorElement link = AnchorElement()
+      ..href = url
+      ..download = 'hexal_deck.pdf'
+      ..text = 'Download';
+
+    // Insert the link into the DOM.
+    var p = querySelector('#link');
+    p.append(link);
   }
 
-  Future<SafeResourceUrl> buildPdf(List<Card> cards) async {
+  Future<Document> buildPdf(List<Card> cards) async {
     pdf = Document(title: pdfName);
     Font firaRegular = await getFont("assets/fonts/FiraSans-Regular.ttf");
     Font firaBold = await getFont("assets/fonts/FiraSans-Bold.ttf");
@@ -104,9 +129,7 @@ class PdfComponent implements OnActivate {
               crossAxisCount: hCards,
               children: pageCards.toList())));
     }
-
-    return _sanitizationService.bypassSecurityTrustResourceUrl(
-        "data:application/pdf;base64," + base64.encode(pdf.save()));
+    return pdf;
   }
 
   Future<Container> buildCard(Card card) async {
