@@ -73,8 +73,6 @@ class PdfComponent implements OnActivate {
     /*
     iframeUrl = _sanitizationService.bypassSecurityTrustResourceUrl(
         "data:application/pdf;base64," + base64.encode(await buildPdf(cardList).save()));
-
-        
     */
 
     Document a = await buildPdf(cardList);
@@ -86,6 +84,8 @@ class PdfComponent implements OnActivate {
     final Blob b = Blob([int8array], 'application/pdf');
 
     String url = Url.createObjectUrlFromBlob(b);
+
+    window.open(url, "PDF");
 
     AnchorElement link = AnchorElement()
       ..href = url

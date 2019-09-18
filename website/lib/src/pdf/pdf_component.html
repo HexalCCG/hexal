@@ -1,7 +1,5 @@
 <div *ngIf="!loaded">
   Loading...<br />
   {{ cardsLoaded }} / {{ cardNumber }} loaded.<br />
-  <span *ngIf="cardNumber > 80">Very high card number! If PDF fails to load, try again with less cards.</span>
 </div>
-<iframe *ngIf="loaded" id="pdf_iframe" frameborder="0" [src]="iframeUrl"></iframe>
 <p id="link"></p>
