@@ -9,6 +9,6 @@ All art for non-Hero cards was created by ImperialOctopus, and available under t
 
 Art for Hero cards was obtained from royalty-free (including commercial use) image websites:
 
-https://www.pexels.com/\
-https://unsplash.com/\
-https://pixabay.com/\
+https://www.pexels.com/ \
+https://unsplash.com/ \
+https://pixabay.com/ \
