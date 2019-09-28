@@ -11,4 +11,4 @@ Art for Hero cards was obtained from royalty-free (including commercial use) ima
 
 https://www.pexels.com/ \
 https://unsplash.com/ \
-https://pixabay.com/ \
+https://pixabay.com/
