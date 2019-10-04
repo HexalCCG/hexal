@@ -108,6 +108,9 @@ class CardService {
       case "hero":
         return Type.hero;
         break;
+      case "token":
+        return Type.token;
+        break;
       default:
         return null;
     }

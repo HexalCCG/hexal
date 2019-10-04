@@ -15,7 +15,8 @@ class Localisation {
     Type.creature: "Creature",
     Type.spell: "Spell",
     Type.item: "Item",
-    Type.hero: "Hero"
+    Type.hero: "Hero",
+    Type.token: "Token Creature"
   };
   static Map cardDuration = {
     CardDuration.none: "",
