@@ -29,7 +29,7 @@ class AssetService {
         ".png";
   }
 
-  static int maxID = 249;
+  static int maxID = 250;
   static String cardDataLocation = "assets/data/cards.csv";
 
   Future<String> getCardData() {

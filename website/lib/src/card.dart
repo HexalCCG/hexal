@@ -36,7 +36,7 @@ class Card {
 
   String get statsLine {
     if (attack != null && health != null) {
-      if (type == Type.creature) {
+      if (type == Type.creature || type == Type.token) {
         return attack.toString() + " / " + health.toString();
       } else {
         return (attack >= 0 ? "+" + attack.toString() : attack.toString()) +
