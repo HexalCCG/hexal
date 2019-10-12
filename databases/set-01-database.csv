@@ -3,7 +3,7 @@
 1   ,Sage Brennas                    ,Earth   ,Hero     ,            ,4e      ,       ,       ,"Whenever you draw a card, you may instead <search> for a card. Do not reveal it."
 2   ,Ash Sprite                      ,Earth   ,Creature ,            ,        ,1      ,1      ,Can provide either [Earth] or [Fire] when channeled.
 3   ,Awakened Vines                  ,Earth   ,Creature ,            ,        ,1      ,2      ,
-4   ,Carnivorous Fern                ,Earth   ,Creature ,            ,        ,2      ,1      ,"At the end of your opponent's turn, if they control a creature, you may summon this from your hand."
+4   ,Carnivorous Fern                ,Earth   ,Creature ,            ,        ,2      ,1      ,<Ready>.
 5   ,Enchanted Pebbles               ,Earth   ,Creature ,            ,        ,2      ,2      ,You may only play this card if you have cast an [Earth] spell this turn.
 6   ,Forest Sprite                   ,Earth   ,Creature ,            ,        ,1      ,1      ,The next [Earth] creature you play this turn costs [Earth] less.
 7   ,Peach Sapling                   ,Earth   ,Creature ,            ,        ,1      ,1      ,Draw a card.
