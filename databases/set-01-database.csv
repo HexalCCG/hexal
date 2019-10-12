@@ -194,7 +194,7 @@
 192 ,Reforestation                   ,Earth   ,Spell    ,            ,1e      ,       ,       ,Destroy all spells.
 193 ,Photosynthesis                  ,Earth   ,Spell    ,            ,1e      ,       ,       ,<Heal> 1 for each [Earth] creature you control.
 194 ,Grasping Vine                   ,Earth   ,Spell    ,            ,        ,       ,       ,Select an item equipped to an enemy creature. Take control of it and equip it to a friendly creature.
-195 ,Twilight Fortification          ,Earth   ,Spell    ,            ,3e      ,       ,       ,Your creatures have +0 / +2.
+195 ,Twilight Fortification          ,Earth   ,Spell    ,Permanent            ,3e      ,       ,       ,Your creatures have +0 / +2.
 196 ,Translocate Cows                ,Earth   ,Spell    ,            ,1e      ,       ,       ,Summon 2 1 / 1 [Earth] Cow creature tokens.
 197 ,Sanguine Rose                   ,Earth   ,Item     ,Permanent   ,3e      ,       ,       ,"Whenever you draw an [Earth] card, you may reveal it to <heal> 1."
 198 ,Staff of The Sage               ,Earth   ,Item     ,Equipment   ,2e      ,       ,       ,Equip to a friendly creature. It gains +2 / +1 and <ranged>.
