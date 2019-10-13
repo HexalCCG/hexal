@@ -246,6 +246,6 @@
 244 ,Seal World Line                 ,Spirit  ,Spell    ,Permanent   ,        ,       ,       ,"<Search> for a card. Do not reveal it, and place it face-down under this card. When this is destroyed, add the saved card to your hand."
 245 ,Haunted Wine Glass              ,Spirit  ,Item     ,Permanent   ,        ,       ,       ,At the start of your turn you may destroy this to summon a [Spirit] creature with cost 0 from your hand. Give it <ready>.
 246 ,Peek                            ,Spirit  ,Spell    ,            ,        ,       ,       ,"Reveal the top card of your opponent's deck. If it's a spell, draw a card."
-247 ,Spell Scroll                    ,Spirit  ,Item     ,            ,        ,       ,       ,<Search> for a spell. Replace it with this card.
+247 ,Spell Scroll                    ,Spirit  ,Item     ,            ,        ,       ,       ,"<Search> for a spell. Shuffle this into your deck. If the search fails, destroy this instead."
 248 ,Smudge Stick                    ,Spirit  ,Item     ,            ,2r      ,       ,       ,Destroy all tokens.
 249 ,Ethereal Dagger                 ,Spirit  ,Item     ,Equipment   ,        ,1      ,0      ,"Equip to a friendly creature. It gains +1 / +0 and ""can attack creatures with <ethereal>""."
