@@ -8,8 +8,8 @@ This repository contains notes and documents relating to the design of cards, an
 ## Images
 
 Art for most non-Hero cards was created by Zoey Child, and is made available under the **CC BY-SA 4.0** licence. \
-Art for cards **[205]** and **[245]** was kindly provided by Emily Drury. \
-Art for card **[250]** was kindly provided by Molly Birch.
+Art for cards **[01][205]** and **[01][245]** was kindly provided by Emily Drury. \
+Art for card **[00][001]** was kindly provided by Molly Birch.
 
 Art for Hero cards was obtained from the following royalty-free (including commercial use) image websites:
 
