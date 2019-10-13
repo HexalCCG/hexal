@@ -3,7 +3,7 @@
 1   ,Sage Brennas                    ,Earth   ,Hero     ,            ,4e      ,       ,       ,"Whenever you draw a card, you may instead <search> for a card. Do not reveal it."
 2   ,Ash Sprite                      ,Earth   ,Creature ,            ,        ,1      ,1      ,Can provide either [Earth] or [Fire] when channeled.
 3   ,Awakened Vines                  ,Earth   ,Creature ,            ,        ,1      ,2      ,
-4   ,Carnivorous Fern                ,Earth   ,Creature ,            ,        ,2      ,1      ,"At the end of your opponent's turn, if they control a creature, you may summon this from your hand."
+4   ,Carnivorous Fern                ,Earth   ,Creature ,            ,        ,2      ,1      ,<Ready>.
 5   ,Enchanted Pebbles               ,Earth   ,Creature ,            ,        ,2      ,2      ,You may only play this card if you have cast an [Earth] spell this turn.
 6   ,Forest Sprite                   ,Earth   ,Creature ,            ,        ,1      ,1      ,The next [Earth] creature you play this turn costs [Earth] less.
 7   ,Peach Sapling                   ,Earth   ,Creature ,            ,        ,1      ,1      ,Draw a card.
@@ -31,7 +31,7 @@
 29  ,Ironskin Runes                  ,Earth   ,Spell    ,Enchantment ,1e      ,       ,       ,"Enchant a creature. It gains ""whenever this would take damage, it takes 1 less""."
 30  ,Sunlight                        ,Earth   ,Spell    ,Field       ,        ,       ,       ,Each player draws an additional card at the start of their turns.
 31  ,Pollinate                       ,Earth   ,Spell    ,            ,"1w,1r" ,       ,       ,<Search> for copies of [Earth] creatures you control.
-32  ,Born From Ash                   ,Earth   ,Spell    ,            ,"1f,1r" ,       ,       ,Reveal the top 3 cards of your deck. Select up to 1 [Fire] creature and summon it. Select up to 1 card and draw it. <Burn> any remaining cards.
+32  ,Born From Ash                   ,Earth   ,Spell    ,            ,"1f,1r" ,       ,       ,Reveal the top 3 cards of your deck. Select up to 1 [Earth] creature and summon it. Select up to 1 card and draw it. <Burn> any remaining cards.
 33  ,Earthen Reclamation             ,Earth   ,Spell    ,            ,2e      ,       ,       ,"If you control an [Earth] creature, destroy a permanent."
 34  ,Forest's Power                  ,Earth   ,Spell    ,Enchantment ,2e      ,3      ,3      ,Enchant a creature. It gains +3 / +3.
 35  ,Sprite's Blessing               ,Earth   ,Spell    ,Enchantment ,2r      ,2      ,2      ,"Enchant a creature. It gains +2 / +2. <Search> for all ""sprite"" creatures."
@@ -194,7 +194,7 @@
 192 ,Reforestation                   ,Earth   ,Spell    ,            ,1e      ,       ,       ,Destroy all spells.
 193 ,Photosynthesis                  ,Earth   ,Spell    ,            ,1e      ,       ,       ,<Heal> 1 for each [Earth] creature you control.
 194 ,Grasping Vine                   ,Earth   ,Spell    ,            ,        ,       ,       ,Select an item equipped to an enemy creature. Take control of it and equip it to a friendly creature.
-195 ,Twilight Fortification          ,Earth   ,Spell    ,            ,3e      ,       ,       ,Your creatures have +0 / +2.
+195 ,Twilight Fortification          ,Earth   ,Spell    ,Permanent            ,3e      ,       ,       ,Your creatures have +0 / +2.
 196 ,Translocate Cows                ,Earth   ,Spell    ,            ,1e      ,       ,       ,Summon 2 1 / 1 [Earth] Cow creature tokens.
 197 ,Sanguine Rose                   ,Earth   ,Item     ,Permanent   ,3e      ,       ,       ,"Whenever you draw an [Earth] card, you may reveal it to <heal> 1."
 198 ,Staff of The Sage               ,Earth   ,Item     ,Equipment   ,2e      ,       ,       ,Equip to a friendly creature. It gains +2 / +1 and <ranged>.
@@ -246,6 +246,6 @@
 244 ,Seal World Line                 ,Spirit  ,Spell    ,Permanent   ,        ,       ,       ,"<Search> for a card. Do not reveal it, and place it face-down under this card. When this is destroyed, add the saved card to your hand."
 245 ,Haunted Wine Glass              ,Spirit  ,Item     ,Permanent   ,        ,       ,       ,At the start of your turn you may destroy this to summon a [Spirit] creature with cost 0 from your hand. Give it <ready>.
 246 ,Peek                            ,Spirit  ,Spell    ,            ,        ,       ,       ,"Reveal the top card of your opponent's deck. If it's a spell, draw a card."
-247 ,Spell Scroll                    ,Spirit  ,Item     ,            ,        ,       ,       ,<Search> for a spell. Replace it with this card.
+247 ,Spell Scroll                    ,Spirit  ,Item     ,            ,        ,       ,       ,"<Search> for a spell. Shuffle this into your deck. If the search fails, destroy this instead."
 248 ,Smudge Stick                    ,Spirit  ,Item     ,            ,2r      ,       ,       ,Destroy all tokens.
 249 ,Ethereal Dagger                 ,Spirit  ,Item     ,Equipment   ,        ,1      ,0      ,"Equip to a friendly creature. It gains +1 / +0 and ""can attack creatures with <ethereal>""."
