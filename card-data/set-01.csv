@@ -1,4 +1,4 @@
-﻿ID,Version,Name,Element,Type,Duration,Cost,Attack,Health,Text
+﻿ID,Version,Name,Element,Type,Speed,Cost,Attack,Health,Text
 0,1,Hivequeen Ngaat,Earth,Hero,,4e,,,"When you summon an [Earth] creature, draw a card."
 1,1,Sage Brennas,Earth,Hero,,4e,,,"Whenever you draw a card, you may instead <search> for a card. Do not reveal it."
 2,1,Ash Sprite,Earth,Creature,,,1,1,Can provide either [Earth] or [Fire] when channeled.
@@ -21,23 +21,23 @@
 19,1,Protector of the Forest,Earth,Creature,,1e.1r,3,3,
 20,1,Blighted Druid,Earth,Creature,,2e.1r,4,2,Your [Earth] creatures cost [Earth] less.
 21,1,Restless Willow,Earth,Creature,,1e.2r,4,4,
-22,1,Evolve Scales,Earth,Spell,Reaction,,,,Cast when a friendly creature is attacked. Give it +0 / +4 until the end of this turn.
-23,1,Savagery,Earth,Spell,Reaction,,,,Cast when you declare a counterattack. Give your creatures +2 / +0 until the end of this turn.
-24,1,Contact Poison,Earth,Spell,Enchantment,,2,-1,Enchant a creature. It gains +2 / -1.
-25,1,Growth,Earth,Spell,Enchantment,,1,1,Enchant a creature. It gains +1 / +1. Draw a card.
+22,1,Evolve Scales,Earth,Spell,Instant,,,,Cast when a friendly creature is attacked. Give it +0 / +4 until the end of this turn.
+23,1,Savagery,Earth,Spell,Instant,,,,Cast when you declare a counterattack. Give your creatures +2 / +0 until the end of this turn.
+24,1,Contact Poison,Earth,Spell,Equip,,2,-1,Enchant a creature. It gains +2 / -1.
+25,1,Growth,Earth,Spell,Equip,,1,1,Enchant a creature. It gains +1 / +1. Draw a card.
 26,1,Alarm Pheromone,Earth,Spell,,1e,,,"If you control an [Earth] creature, draw 2 cards."
 27,1,Recycle,Earth,Spell,,1e,,,Destroy a creature. Your opponent adds the top card of their exile pile to their hand.
-28,1,Entangle,Earth,Spell,Enchantment,,,,"Enchant a creature. It gains ""cannot attack""."
-29,1,Ironskin Runes,Earth,Spell,Enchantment,1e,,,"Enchant a creature. It gains ""whenever this would take damage, it takes 1 less""."
+28,1,Entangle,Earth,Spell,Equip,,,,"Enchant a creature. It gains ""cannot attack""."
+29,1,Ironskin Runes,Earth,Spell,Equip,1e,,,"Enchant a creature. It gains ""whenever this would take damage, it takes 1 less""."
 30,1,Sunlight,Earth,Spell,Field,,,,At the end of each player's turn they draw a card.
 31,1,Pollinate,Earth,Spell,,1w.1r,,,<Search> for copies of all [Earth] creatures you control.
 32,1,Born From Ash,Earth,Spell,,1f.1r,,,Reveal the top 3 cards of your deck. Select up to 1 [Earth] creature and summon it. Select up to 1 card and draw it. <Burn> any remaining cards.
 33,1,Earthen Reclamation,Earth,Spell,,1e,,,"If you control an [Earth] creature, destroy a permanent."
-34,1,Forest's Power,Earth,Spell,Enchantment,2e,3,3,Enchant a creature. It gains +3 / +3.
-35,1,Sprite's Blessing,Earth,Spell,Enchantment,2r,2,2,"Enchant a creature. It gains +2 / +2. <Search> for all ""sprite"" creatures."
-36,1,Flower Crown,Earth,Item,Equipment,,,,Equip to a friendly creature. It becomes [Earth]. Draw a card.
-37,1,Living Spear,Earth,Item,Equipment,,1,0,"Equip to a friendly creature. Equipped creature gains +1 / +0. When equipped creature is destroyed, summon a 1 / 1 [Earth] Living Spear creature token."
-38,1,Phial of Blight,Earth,Item,Equipment,,,,"Equip to a friendly creature. After combat with an enemy creature, destroy this and the enemy creature."
+34,1,Forest's Power,Earth,Spell,Equip,2e,3,3,Enchant a creature. It gains +3 / +3.
+35,1,Sprite's Blessing,Earth,Spell,Equip,2r,2,2,"Enchant a creature. It gains +2 / +2. <Search> for all ""sprite"" creatures."
+36,1,Flower Crown,Earth,Item,Equip,,,,Equip to a friendly creature. It becomes [Earth]. Draw a card.
+37,1,Living Spear,Earth,Item,Equip,,1,0,"Equip to a friendly creature. Equipped creature gains +1 / +0. When equipped creature is destroyed, summon a 1 / 1 [Earth] Living Spear creature token."
+38,1,Phial of Blight,Earth,Item,Equip,,,,"Equip to a friendly creature. After combat with an enemy creature, destroy this and the enemy creature."
 39,1,Fertiliser,Earth,Item,,1e,,,<Search> for an [Earth] enchantment. The next [Earth] enchantment you play this turn costs [Earth] less.
 40,1,Hexed Arrow,Earth,Item,,1e,,,"You cannot play this and a creature on the same turn. Deal 1 damage to a creature, and if it takes damage destroy it."
 41,1,Chevaux de Frise,Earth,Item,Permanent,1e,,,"At the start of your opponent's battle phase, you may select a friendly creature. It gains +1 / +0 and ""cannot counterattack"" until end of turn."
@@ -60,32 +60,32 @@
 58,1,Reckless Stallion,Fire,Creature,,3f,5,3,<Ready>.
 59,1,Fire Crystal,Fire,Item,,,,,Destroy a friendly creature to destroy an enemy creature.
 60,1,Hot Ash,Fire,Item,,,,,"When a friendly creature is destroyed, you may exile this from your hand to return the creature to your hand."
-61,1,Arcane Artillery,Fire,Spell,Reaction,1f,,,Cast when an enemy creature attacks. Destroy the creature.
-62,1,Dark Fire Sacrifice,Fire,Spell,Reaction,,,,Cast when a friendly creature attacks an enemy creature. Destroy both creatures.
-63,1,Kindle,Air,Spell,Reaction,,,,<Ethereal>. Deal 1 damage to a creature to draw a card.
-64,1,Acceleration Runes,Fire,Spell,Enchantment,,,,"Enchant a creature. It gains +1 / +1 and ""<ready>""."
-65,1,Burning Aura,Fire,Spell,Enchantment,,1,1,Enchant a creature. It becomes [Fire] and gains +1 / +1.
+61,1,Arcane Artillery,Fire,Spell,Instant,1f,,,Cast when an enemy creature attacks. Destroy the creature.
+62,1,Dark Fire Sacrifice,Fire,Spell,Instant,,,,Cast when a friendly creature attacks an enemy creature. Destroy both creatures.
+63,1,Kindle,Air,Spell,Instant,,,,<Ethereal>. Deal 1 damage to a creature to draw a card.
+64,1,Acceleration Runes,Fire,Spell,Equip,,,,"Enchant a creature. It gains +1 / +1 and ""<ready>""."
+65,1,Burning Aura,Fire,Spell,Equip,,1,1,Enchant a creature. It becomes [Fire] and gains +1 / +1.
 66,1,Blood Sacrifice,Fire,Spell,,1f,,,<Burn> 1 to draw a card.
-67,1,Electric Shock,Air,Spell,Reaction,,,,Cast when a creature attacks. Cancel the attack and set its attack to 0 until the end of this turn.
-68,1,Firebolt,Fire,Spell,Reaction,,,,Deal 1 damage to a creature.
-69,1,Blaze,Fire,Spell,Enchantment,,2,1,Enchant a friendly [Earth] creature. It gains +2 / +1.
-70,1,Boil Blood,Fire,Spell,Enchantment,,2,0,Enchant a friendly [Water] creature. It becomes [Fire] and gains +2 / +0.
+67,1,Electric Shock,Air,Spell,Instant,,,,Cast when a creature attacks. Cancel the attack and set its attack to 0 until the end of this turn.
+68,1,Firebolt,Fire,Spell,Instant,,,,Deal 1 damage to a creature.
+69,1,Blaze,Fire,Spell,Equip,,2,1,Enchant a friendly [Earth] creature. It gains +2 / +1.
+70,1,Boil Blood,Fire,Spell,Equip,,2,0,Enchant a friendly [Water] creature. It becomes [Fire] and gains +2 / +0.
 71,1,Thunderstorm,Fire,Spell,Field,,,,The first spell each player plays on their turn costs [Any] less.
 72,1,Incinerate,Fire,Spell,,1f.1e,,,Destroy a creature. Draw a card.
 73,1,Fireball,Fire,Spell,,1f,,,Deal 3 damage to an enemy creature.
 74,1,Fireworks,Fire,Spell,,1f,,,"Deal 3 damage to enemy creatures, one at a time, split as you choose."
 75,1,Heat Wave,Fire,Spell,,1f,,,"Deal 1 damage to all enemy creatures. If you control a [Fire] creature, deal 2 instead."
 76,1,Summon,Fire,Spell,,1f,,,"<Burn> 1. If it's a [Fire] creature, summon it."
-77,1,Immolate,Fire,Spell,Reaction,1f,,,"Destroy all items equipped to a creature, then deal 2 damage to it."
+77,1,Immolate,Fire,Spell,Instant,1f,,,"Destroy all items equipped to a creature, then deal 2 damage to it."
 78,1,Greater Summon,Fire,Spell,,2f,,,<Burn> 2. Summon any [Fire] creatures burned.
 79,1,Meteor Shot,Fire,Spell,,2f,,,"Deal 5 damage to an enemy creature, and 1 damage to all other enemy creatures."
 80,1,Fire Star Rising,Fire,Spell,,3f,,,Creatures you control gain +3 / +0 until the end of this turn.
 81,1,Blood to Fire,Fire,Spell,Permanent,3f,,,"Draw until you have 7 cards in hand or your deck is empty, then <burn> the rest of your deck. You cannot draw or <burn> cards."
-82,1,Runic Sabre,Fire,Item,Equipment,,2,0,Equip to a friendly Fire creature. Equipped creature gains +2 / +0.
+82,1,Runic Sabre,Fire,Item,Equip,,2,0,Equip to a friendly Fire creature. Equipped creature gains +2 / +0.
 83,1,Alchemist's Fire,Fire,Item,,,,,"Deal 2 damage to an enemy creature. If that destroys it, burn 1."
-84,1,Magician's Blade,Fire,Item,Equipment,,1,1,"Equip to a friendly creature. Equipped creature gains +1 / +1 and ""cannot be targeted by spells""."
-85,1,Accelerant,Fire,Item,Equipment,1a,,,Equip to a friendly [Fire] creature. Double its attack and set its health to 1.
-86,1,Phoenix Feather,Fire,Item,Equipment,2f,1,1,"Equip to a friendly creature. Equipped creature gains +1 / +1 and ""when this creature is destroyed, resummon it"". When this item is destroyed, <search> your deck for ""Erastas, The Phoenix""."
+84,1,Magician's Blade,Fire,Item,Equip,,1,1,"Equip to a friendly creature. Equipped creature gains +1 / +1 and ""cannot be targeted by spells""."
+85,1,Accelerant,Fire,Item,Equip,1a,,,Equip to a friendly [Fire] creature. Double its attack and set its health to 1.
+86,1,Phoenix Feather,Fire,Item,Equip,2f,1,1,"Equip to a friendly creature. Equipped creature gains +1 / +1 and ""when this creature is destroyed, resummon it"". When this item is destroyed, <search> your deck for ""Erastas, The Phoenix""."
 87,1,Blazing Effigy,Fire,Item,Permanent,1f,,,"At the start of your turn, if you control a [Fire] creature, destroy a friendly [Fire] creature and this to <burn> 3. Summon any [Fire] creatures."
 88,1,"Lissa, Spirit of the Fountain ",Water,Hero,,4w,,,"At the start of your turn, <heal> 2."
 89,1,"Novhu, The Kraken ",Water,Hero,,4w,,,"At the start of your turn, deal 2 damage to your opponent."
@@ -102,21 +102,21 @@
 100,1,Herald of The Kraken,Water,Creature,,3w,3,4,"When this enters the battlefield, <search> for ""Novhu, The Kraken""."
 101,1,Minor Healing,Water,Spell,,,,,<Heal> 1.
 102,1,Refresh,Water,Spell,,,,,Return a [Water] spell from your mana pool to your hand.
-103,1,Ray of Frost,Water,Spell,Reaction,,,,Deal 1 damage to a creature. It cannot attack this turn.
-104,1,Shield,Water,Spell,Reaction,,,,Cast when an enemy creature attacks. Reduce the attack's damage by 3.
-105,1,Freeze,Water,Spell,Enchantment,,,,Enchant a creature. Set its attack to 0.
-106,1,Resistance,Water,Spell,Enchantment,,0,1,"Enchant a friendly creature. It gains +0 / +1. When the equipped creature is destroyed, you may move this enchantment to another friendly creature."
+103,1,Ray of Frost,Water,Spell,Instant,,,,Deal 1 damage to a creature. It cannot attack this turn.
+104,1,Shield,Water,Spell,Instant,,,,Cast when an enemy creature attacks. Reduce the attack's damage by 3.
+105,1,Freeze,Water,Spell,Equip,,,,Enchant a creature. Set its attack to 0.
+106,1,Resistance,Water,Spell,Equip,,0,1,"Enchant a friendly creature. It gains +0 / +1. When the equipped creature is destroyed, you may move this enchantment to another friendly creature."
 107,1,Absorb Life,Water,Spell,,,,,Destroy all friendly [Earth] creatures. <Heal> equal to the total health of creatures destroyed.
-108,1,Geyser,Water,Spell,Reaction,1w,,,Deal 2 damage to all enemy creatures.
+108,1,Geyser,Water,Spell,Instant,1w,,,Deal 2 damage to all enemy creatures.
 109,1,Irrigate,Water,Spell,,1w,,,Draw a card for each [Earth] creature you control.
-110,1,Restoration,Water,Spell,Reaction,,,,Cast when a friendly [Water] creature that costs 1 or less is destroyed. Resummon it.
-111,1,Protection from Energy,Water,Spell,Enchantment,1w,,,"Enchant a friendly creature. It gains ""this takes no damage from spells and cannot be targeted by spells""."
+110,1,Restoration,Water,Spell,Instant,,,,Cast when a friendly [Water] creature that costs 1 or less is destroyed. Resummon it.
+111,1,Protection from Energy,Water,Spell,Equip,1w,,,"Enchant a friendly creature. It gains ""this takes no damage from spells and cannot be targeted by spells""."
 112,1,Arcane Barrier,Water,Spell,Permanent,1r,,,"When you would take damage, you may destroy this to take 0 damage instead."
 113,1,Regenerative Shielding,Water,Spell,Permanent,1w,,,"Whenever you would exile cards due to damage, add the first to your mana pool instead."
 114,1,Rain,Water,Spell,Field,,,,Attacks deal 1 less damage to players.
 115,1,Snowstorm,Water,Spell,Field,,,,"All creatures have -2 / -0. At the start of your turn destroy this, <search> for a [Water] field spell, and put it into play."
 116,1,Imprison,Water,Spell,,1w,,,Exile a creature.
-117,1,Inflict Wounds,Water,Spell,Reaction,1r,,,Deal 3 damage to a creature.
+117,1,Inflict Wounds,Water,Spell,Instant,1r,,,Deal 3 damage to a creature.
 118,1,Lesser Healing,Water,Spell,,1w,,,<Heal> 3.
 119,1,Liquefy,Water,Spell,,1w,,,Destroy a creature with 2 or less attack.
 120,1,Ocean's Grasp,Water,Spell,,1w,,,Destroy all creatures with 2 or less attack.
@@ -124,8 +124,8 @@
 122,1,Mage Armour,Water,Spell,Permanent,1w.1r,,,"Attacks that deal 2 or less damage to you deal 0 damage. When you take damage, destroy this."
 123,1,Greater Healing,Water,Spell,,2w,,,<Heal> 5.
 124,1,Void,Water,Spell,,1w.1r,,,Exile all creatures.
-125,1,Enchanted Trident,Water,Item,Equipment,1r,2,1,"Equip to a friendly creature. It gains +2 / +1. When the creature is destroyed, return this to your hand."
-126,1,Witch's Hat,Water,Item,Equipment,1r,,,"Equip to a friendly creature. It gains ""your spells cost [Water] less""."
+125,1,Enchanted Trident,Water,Item,Equip,1r,2,1,"Equip to a friendly creature. It gains +2 / +1. When the creature is destroyed, return this to your hand."
+126,1,Witch's Hat,Water,Item,Equip,1r,,,"Equip to a friendly creature. It gains ""your spells cost [Water] less""."
 127,1,Holy Water,Water,Item,,1w,,,Deal 2 damage to an enemy creature. <Heal> 2.
 128,1,Lissa's Tear,Water,Item,,1w,,,"Summon a [Water] creature with cost [Water] or less from your exile pile. <Search> for ""Lissa, Spirit of the Fountain""."
 129,1,"Lian, Gem Of The South ",Air,Hero,,4a,,,"Your spells cost [Air] less. Whenever you cast a spell, draw a card."
@@ -142,20 +142,20 @@
 140,1,Air Elemental,Air,Creature,,1a.1r,3,3,"If you've played an [Air] spell this turn, this costs [Air] less."
 141,1,Pegasus,Air,Creature,,2a.1r,3,5,"If you've played an [Air] spell this turn, this costs [Air] less."
 142,1,Dispel Magic,Air,Spell,,,,,Destroy a spell.
-143,1,Counterspell,Air,Spell,Reaction,,,,Cast when your opponent casts a spell. Channel [Any] equal to the spell's converted mana cost to counter it.
-144,1,Planar Redirection,Air,Spell,Reaction,,,,<Ethereal>. Cast when your opponent plays a creature. Exile it.
-145,1,Quicken Spell,Air,Spell,Reaction,,,,"You may immediately cast a spell as though it had ""Reaction"" in reaction to this."
+143,1,Counterspell,Air,Spell,Instant,,,,Cast when your opponent casts a spell. Channel [Any] equal to the spell's converted mana cost to counter it.
+144,1,Planar Redirection,Air,Spell,Instant,,,,<Ethereal>. Cast when your opponent plays a creature. Exile it.
+145,1,Quicken Spell,Air,Spell,Instant,,,,"You may immediately cast a spell as though it had ""Reaction"" in reaction to this."
 146,1,Negate Magic,Air,Spell,Permanent,,,,"When a spell is cast, destroy this to counter it."
 147,1,Overcast,Air,Spell,Field,,,,"When this enters the battlefield, if it destroys an active field spell, draw a card."
 148,1,Barometric Pulse,Air,Spell,,1a,,,Deal 2 damage to all creatures except [Air] creatures.
 149,1,Disable,Air,Spell,,,,,Your opponent discards a card at random.
-150,1,Become Ethereal,Air,Spell,Enchantment,,,,"Enchant a creature. It gains ""<ethereal>""."
-151,1,Force Bindings,Air,Spell,Enchantment,,,,"Enchant a creature. It gains ""cannot attack""."
+150,1,Become Ethereal,Air,Spell,Equip,,,,"Enchant a creature. It gains ""<ethereal>""."
+151,1,Force Bindings,Air,Spell,Equip,,,,"Enchant a creature. It gains ""cannot attack""."
 152,1,Warding Runes,Air,Spell,Permanent,1a,,,"Creatures cannot be summoned. At the start of your turn, destroy this."
 153,1,Hurricane,Air,Spell,Field,1a,,,Creatures cost [Air] less.
 154,1,Sandstorm,Air,Spell,Field,1e,,,"When this enters the battlefield, destroy all other spells."
-155,1,Detonate,Air,Spell,Reaction,1f.1r,,,Destroy a creature. No creatures can attack until the start of your next turn.
-156,1,Mana Drain,Air,Spell,Reaction,1a,,,<Ethereal>. Exile the top 2 cards of your opponent's mana pool.
+155,1,Detonate,Air,Spell,Instant,1f.1r,,,Destroy a creature. No creatures can attack until the start of your next turn.
+156,1,Mana Drain,Air,Spell,Instant,1a,,,<Ethereal>. Exile the top 2 cards of your opponent's mana pool.
 157,1,Thunderwave,Air,Spell,,1a.1r,,,Deal 3 damage to all enemy creatures.
 158,1,Sealing Sigil,Air,Spell,Permanent,2a,,,Cards added to either player's mana pool are exiled instead.
 159,1,Updraught,Air,Spell,Permanent,1f,,,Your [Air] creatures have +1 / +0.
@@ -166,13 +166,13 @@
 164,1,Mana Potion,Air,Item,,1a,,,<Burn> 2.
 165,1,Prophet Valeriya,Spirit,Hero,,4s,,,Your opponent plays with their hand revealed. At the start of your turn you may shuffle any number of cards from your hand into your deck to draw that many cards.
 166,1,Astral Jellyfish,Spirit,Creature,,,1,2,
-167,1,Lunar Squid,Spirit,Creature,,1r,1,1,<Search> for a [Spirit] card.
+167,1,Lunar Squid,Spirit,Creature,,1r,1,1,When this enters the battlefield <search> for a [Spirit] card.
 168,1,Spirit Sprite,Spirit,Creature,,,1,1,When this enters the battlefield reveal a random card from your opponent's hand.
 169,1,Friendly Ghost,Spirit,Creature,,1s,2,2,"When you play a card on your turn that costs at least [Spirit], you may summon this from your hand."
 170,1,Psychic Kitten,Spirit,Creature,,,1,2,When this enters the battlefield reveal a random card from your opponent's hand.
 171,1,Mind Seer,Spirit,Creature,,1s.1r,2,3,When this enters the battlefield view your opponent's hand.
-172,1,Spirit Sage,Spirit,Creature,,1s.1r,3,3,<Search> for a [Spirit] card.
-173,1,Ancient Herald,Spirit,Creature,,1s.2r,4,4,You may pay [Spirit] to <search> for a Hero.
+172,1,Spirit Sage,Spirit,Creature,,1s.1r,3,3,When this enters the battlefield <search> for a [Spirit] card.
+173,1,Ancient Herald,Spirit,Creature,,1s.2r,4,4,When this enters the battlefield you may pay [Spirit] to <search> for a Hero.
 174,1,Locate Object,Spirit,Spell,,,,,Privately view the top 3 cards of your deck. You may reveal an item from among them to draw it. Put the remaining cards on the bottom of your deck.
 175,1,Scry,Spirit,Spell,,,,,Name a card. Reveal the top 3 cards of your deck. Draw any copies of the named card revealed. Put the remaining cards on the bottom of your deck.
 176,1,Sense Emotion,Spirit,Spell,,,,,"Name an element. Reveal the top card of your opponent's deck. If it is the element you named, draw a card."
@@ -181,23 +181,23 @@
 179,1,Command,Spirit,Spell,,1s,,,Select a creature. It attacks a creature of your choice.
 180,1,Lunar Communion,Spirit,Spell,,1r,,,Privately view the top 3 cards of your deck. Draw 1 and put the others on the bottom of your deck.
 181,1,Sense Thoughts,Spirit,Spell,,1s,,,View your opponent's hand.
-182,1,Mind Spike,Spirit,Spell,Reaction,1s,,,Cast when an enemy creature attacks you. Destroy it.
-183,1,Hold Person,Spirit,Spell,Enchantment,,,,Enchant a creature. Set its attack to 0.
+182,1,Mind Spike,Spirit,Spell,Instant,1s,,,Cast when an enemy creature attacks you. Destroy it.
+183,1,Hold Person,Spirit,Spell,Equip,,,,Enchant a creature. Set its attack to 0.
 184,1,Sleep,Spirit,Spell,Permanent,,,,"Creatures cannot attack. At the start of your turn, if the combined attack of all creatures on the battlefield is greater than or equal to 5, destroy this."
-185,1,Power Word Kill,Spirit,Spell,Reaction,1s,,,Destroy a creature. This cannot be countered.
+185,1,Power Word Kill,Spirit,Spell,Instant,1s,,,Destroy a creature. This cannot be countered.
 186,1,Geas,Spirit,Spell,Permanent,1r,,,Name a non-Hero card. Your opponent cannot play cards with that name.
-187,1,Dominate Creature,Spirit,Spell,Enchantment,1s.1r,,,Enchant a creature. Take control of it.
+187,1,Dominate Creature,Spirit,Spell,Equip,1s.1r,,,Enchant a creature. Take control of it.
 188,1,Time Stop,Spirit,Spell,,2s,,,"Creatures cannot attack. At the start of your turn, pay [Spirit] or destroy this."
 189,1,Wish,Spirit,Spell,,4s,,,Exile all creatures. Both players discard their hands. Draw 3 cards.
-190,1,Spirit Blade,Spirit,Item,Equipment,1s,,,"Equip to a friendly creature. It has +X / +0, where X is the amount of [Spirit] in your mana pool."
+190,1,Spirit Blade,Spirit,Item,Equip,1s,,,"Equip to a friendly creature. It has +X / +0, where X is the amount of [Spirit] in your mana pool."
 191,1,Twilight Forest,Earth,Spell,Field,1e.1r,,,Creatures take no damage from spells.
 192,1,Reforestation,Earth,Spell,,1e,,,Destroy all spells.
-193,1,Photosynthesis,Earth,Spell,Reaction,1e,,,Restore all friendly [Earth] creatures to full health.
+193,1,Photosynthesis,Earth,Spell,Instant,1e,,,Restore all friendly [Earth] creatures to full health.
 194,1,Grasping Vine,Earth,Spell,,,,,Select an item equipped to an enemy creature. Take control of it and equip it to a friendly creature.
 195,1,Twilight Fortification,Earth,Spell,Permanent,2e,,,Your creatures have +0 / +2.
 196,1,Translocate Cows,Earth,Spell,,1e,,,Summon 2 1 / 1 [Earth] Cow creature tokens.
 197,1,Sanguine Rose,Earth,Item,Permanent,2e,,,"Whenever you draw an [Earth] card, you may reveal it to <heal> 1."
-198,1,Staff of The Sage,Earth,Item,Equipment,2e,,,"Equip to a friendly creature. It gains +2 / +1 and ""when this attacks and destroys a creature, <search> for 'Sage Brennas'""."
+198,1,Staff of The Sage,Earth,Item,Equip,2e,,,"Equip to a friendly creature. It gains +2 / +1 and ""when this attacks and destroys a creature, <search> for 'Sage Brennas'""."
 199,1,Lava Imp,Fire,Creature,,,2,1,"If you <burn> this card, summon it."
 200,1,Ashen Swordsman,Fire,Creature,,1f,2,2,"If you <burn> this card, summon it."
 201,1,Ash Dancer,Fire,Creature,,1r,1,3,<Ready>.
@@ -208,9 +208,9 @@
 206,1,Elemental Familiar,Water,Creature,,,1,1,When this is destroyed <search> for a [Water] spell.
 207,1,Gifted Wanderer,Water,Creature,,1w,1,1,When this enters the battlefield destroy an enemy creature with 2 or less attack.
 208,1,Sea Snake,Water,Creature,,,0,1,When this enters the battlefield deal 1 damage to your opponent.
-209,1,Healing Touch,Water,Spell,Reaction,,,,Restore a friendly creature to full health.
+209,1,Healing Touch,Water,Spell,Instant,,,,Restore a friendly creature to full health.
 210,1,Relic of the Deep,Water,Item,Permanent,1w,,,At the end of your turn you may pay [Water] to return an enemy creature to its owner's hand.
-211,1,Aquamarine Tiara,Water,Item,Equipment,,2,2,Equip to a creature. It gains +2 / +2 and <ethereal>.
+211,1,Aquamarine Tiara,Water,Item,Equip,,2,2,Equip to a creature. It gains +2 / +2 and <ethereal>.
 212,1,Horn of Reflection,Water,Item,,,,,Summon 2 0 / 1 [Water] Mirror Image creature tokens.
 213,1,Bracelet of Deflection,Water,Item,Permanent,2w,,,"Once per turn, when an enemy creature declares an attack you may cancel the attack."
 214,1,Electric Sprite,Air,Creature,,,1,1,When this enters the battlefield the next [Air] spell you play this turn costs [Air] less.
@@ -218,16 +218,16 @@
 216,1,Stormchaser,Air,Creature,,,1,2,"When this is destroyed, <search> for an [Air] creature."
 217,1,Enraged Sky Serpent,Air,Creature,,1r,3,1,<Ready>.
 218,1,Disenchant,Air,Spell,,,,,Destroy an item to draw a card.
-219,1,Disorient,Air,Spell,Reaction,1a,,,Cast when your opponent plays a card. Cancel its effect and shuffle the card into your opponent's deck. They do not pay its mana cost.
-220,1,Lightning Bolt,Air,Spell,Reaction,1a,,,Deal 3 damage to an enemy creature.
+219,1,Disorient,Air,Spell,Instant,1a,,,Cast when your opponent plays a card. Cancel its effect and shuffle the card into your opponent's deck. They do not pay its mana cost.
+220,1,Lightning Bolt,Air,Spell,Instant,1a,,,Deal 3 damage to an enemy creature.
 221,1,Seal Spells,Air,Spell,Permanent,1a,,,View your opponent's hand and select a card. Place it and a card from your hand face-down under this card. When this leaves the battlefield return the cards to their owners' respective hands.
 222,1,Demonic Chain,Air,Item,Permanent,1a.1r,,,"At the end of your turn, summon a [Fire] creature from your mana pool. When it is destroyed exile it."
-223,1,Ring of Shielding,Air,Item,Equipment,,,,"Equip to a friendly creature. The first time it would take damage, destroy this to reduce the damage to 0."
+223,1,Ring of Shielding,Air,Item,Equip,,,,"Equip to a friendly creature. The first time it would take damage, destroy this to reduce the damage to 0."
 224,1,Pearl of Spell Storing,Air,Item,,1r,,,<Ethereal>. <Search> for an [Air] spell. The next [Air] spell you cast this turn costs [Air] less.
 225,1,Magic Mirror,Air,Item,,1a,,,Play when your opponent casts a spell with a target. Change its target to one of your choice.
 226,1,Astral Huntress,Spirit,Hero,,4s,,,"Whenever an enemy creature is destroyed, <search> for a card."
 227,1,Summoning Stone,Spirit,Item,Permanent,1s.1r,,,"Whenever you cast a spell, <search> for a 0-cost creature. Summon it."
-228,1,Oil of Etherealness,Spirit,Item,Equipment,,,,"Equip to a creature. It gains ""<ethereal>""."
+228,1,Oil of Etherealness,Spirit,Item,Equip,,,,"Equip to a creature. It gains ""<ethereal>""."
 229,1,Will-o'-the-wisp,Spirit,Creature,,,1,1,"When this is destroyed, <search> for a [Spirit] item."
 230,1,Mana Scavenger,Spirit,Creature,,,2,2,You can only play this card if you control a permanent spell.
 231,1,Animate Memory,Spirit,Creature,,,0,2,"Your other creatures cannot be targeted with attacks. When this is destroyed, you may put it on the top of your deck."
@@ -246,6 +246,6 @@
 244,1,Seal World Line,Spirit,Spell,Permanent,,,,"<Search> for a card. Do not reveal it, and place it face-down under this card. When this is destroyed, add the saved card to your hand."
 245,1,Haunted Wine Glass,Spirit,Item,Permanent,,,,At the start of your turn you may destroy this to summon a [Spirit] creature with cost [Spirit] or less from your hand. Give it <ready>.
 246,1,Peek,Spirit,Spell,,,,,"Reveal the top card of your opponent's deck. If it's a spell, draw a card."
-247,1,Spell Scroll,Spirit,Item,,,,,"<Search> for a spell. Shuffle this into your deck. If the search fails, destroy this instead."
+247,1,Spell Scroll,Spirit,Item,,,,,<Ethereal>. <Search> for a [Spirit] spell.
 248,1,Smudge Stick,Spirit,Item,,1s,,,Destroy all tokens.
-249,1,Ethereal Dagger,Spirit,Item,Equipment,,1,0,"<Ethereal>. Equip to a friendly creature. It gains +1 / +0 and ""when this deals combat damage to a creature, that creature gains <ethereal> until the end of this turn""."
+249,1,Ethereal Dagger,Spirit,Item,Equip,,1,0,"<Ethereal>. Equip to a friendly creature. It gains +1 / +0 and ""when this deals combat damage to a creature, that creature gains <ethereal> until the end of this turn""."
