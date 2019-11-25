@@ -1,7 +1,7 @@
 ﻿ID,Version,Name,Element,Type,Speed,Cost,Attack,Health,Text
 0,1,Hivequeen Ngaat,Earth,Hero,,4e,,,"When you summon an [Earth] creature, draw a card."
 1,1,Sage Brennas,Earth,Hero,,4e,,,"Whenever you draw a card, you may instead <search> for a card. Do not reveal it."
-2,1,Ash Sprite,Earth,Creature,,,1,1,Can provide either [Earth] or [Fire] when channeled.
+2,2,Ash Sprite,Earth,Creature,,,1,1,"When a friendly [Earth] creature is destroyed, you may summon this from your hand."
 3,1,Awakened Vines,Earth,Creature,,,1,2,
 4,1,Carnivorous Fern,Earth,Creature,,,2,1,<Ready>.
 5,1,Enchanted Pebbles,Earth,Creature,,,2,2,You may only play this card if you have cast an [Earth] spell this turn.
@@ -12,9 +12,9 @@
 10,1,Mana Sapper,Earth,Creature,,1r,1,2,"When this creature damages an opponent, exile the top card of their mana pool to draw a card."
 11,1,Relentless Eagle,Earth,Creature,,1r,1,1,"The first time this creature is destroyed, resummon it."
 12,1,Spore-Infested Boar,Earth,Creature,,1e,2,1,"When this is destroyed by combat damage, <search> for an [Earth] creature."
-13,1,Sand Elemental,Earth,Creature,,1a.1r,3,3,"When this enters the battlefield, destroy a spell or item."
-14,1,Ash Golem,Earth,Creature,,1f,2,2,"Whenever this creature would take damage, it takes 1 less damage."
-15,1,Ash Elemental,Earth,Creature,,1f.1r,2,3,"When this enters the battlefield, draw a card."
+13,2,Sand Elemental,Earth,Creature,,1e.1r,3,3,"When this enters the battlefield, destroy a spell or item."
+14,2,Ash Golem,Earth,Creature,,1e,2,2,"Whenever this creature would take damage, it takes 1 less damage."
+15,2,Ash Elemental,Earth,Creature,,1e.1r,2,3,"When this enters the battlefield, draw a card."
 16,1,Armoured Crocodile,Earth,Creature,,2r,3,3,
 17,1,Awakened Oak,Earth,Creature,,1e.1r,2,4,"When your opponent casts a spell for which this is a valid target, the spell must target this."
 18,1,Earth Spiritsinger,Earth,Creature,,2e,2,2,"Whenever you summon an [Earth] creature, <search> for an [Earth] spell."
