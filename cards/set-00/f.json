@@ -1,0 +1,74 @@
+[
+  {
+    "﻿ID": "0",
+    "Version": "1",
+    "Name": "Token Creature",
+    "Element": "Any",
+    "Type": "Token",
+    "Duration": null,
+    "Cost": null,
+    "Attack": null,
+    "Health": null,
+    "Text": null
+  },
+  {
+    "﻿ID": "1",
+    "Version": "1",
+    "Name": "Cow",
+    "Element": "Earth",
+    "Type": "Token",
+    "Duration": null,
+    "Cost": null,
+    "Attack": "1",
+    "Health": "1",
+    "Text": "Moo!"
+  },
+  {
+    "﻿ID": "2",
+    "Version": "1",
+    "Name": "Fire Worshipper",
+    "Element": "Fire",
+    "Type": "Token",
+    "Duration": null,
+    "Cost": null,
+    "Attack": "1",
+    "Health": "1",
+    "Text": null
+  },
+  {
+    "﻿ID": "3",
+    "Version": "1",
+    "Name": "Phoenix Wisp",
+    "Element": "Fire",
+    "Type": "Token",
+    "Duration": null,
+    "Cost": null,
+    "Attack": "0",
+    "Health": "1",
+    "Text": "<Ready>."
+  },
+  {
+    "﻿ID": "4",
+    "Version": "1",
+    "Name": "Living Spear",
+    "Element": "Earth",
+    "Type": "Token",
+    "Duration": null,
+    "Cost": null,
+    "Attack": "1",
+    "Health": "1",
+    "Text": null
+  },
+  {
+    "﻿ID": "5",
+    "Version": "1",
+    "Name": "Mirror Image",
+    "Element": "Water",
+    "Type": "Token",
+    "Duration": null,
+    "Cost": null,
+    "Attack": "0",
+    "Health": "1",
+    "Text": null
+  }
+]
