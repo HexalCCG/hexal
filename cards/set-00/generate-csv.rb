@@ -1,14 +1,6 @@
 require 'csv'
 require 'json'
 
-element_keys = {
-  'e' => :earth,
-  'f' => :fire,
-  'a' => :air,
-  'w' => :water,
-  'r' => :any
-}
-
 if ARGV.length != 2
   puts 'Usage: ruby generate-json.rb [csv] [output folder]'
   exit(1)
