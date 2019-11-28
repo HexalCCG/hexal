@@ -10,5 +10,17 @@
     "attack": null,
     "health": null,
     "text": "The first spell each player plays on their turn costs [Any] less."
+  },
+  "2": {
+    "id": "71",
+    "version": "2",
+    "name": "Thunderstorm",
+    "element": "fire",
+    "type": "spell",
+    "duration": "field",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Spells that deal damage deal 1 additional damage."
   }
 }
