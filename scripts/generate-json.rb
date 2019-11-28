@@ -10,7 +10,7 @@ element_keys = {
 }
 
 if ARGV.length != 2
-  puts 'Usage: ruby generate-json.rb [csv] [output folder]'
+  puts 'Usage: ruby generate-json.rb [input.csv] [output folder]'
   exit(1)
 end
 
@@ -35,7 +35,9 @@ lines.each do |line|
     data[:cost] = Hash[list]
   end
 
+  result = { data[:version] => data }
+
   File.open(File.join(ARGV[1], title + '.json'), 'w') do |file|
-    file.puts(JSON.pretty_generate(data))
+    file.puts(JSON.pretty_generate(result))
   end
 end
