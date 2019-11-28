@@ -7,7 +7,7 @@
     "type": "item",
     "duration": "equip",
     "cost": {
-      "": 1
+      "spirit": 1
     },
     "attack": null,
     "health": null,

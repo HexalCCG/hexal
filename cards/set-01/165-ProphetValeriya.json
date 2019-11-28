@@ -7,7 +7,7 @@
     "type": "hero",
     "duration": null,
     "cost": {
-      "": 4
+      "spirit": 4
     },
     "attack": null,
     "health": null,

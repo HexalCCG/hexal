@@ -7,7 +7,7 @@
     "type": "item",
     "duration": "permanent",
     "cost": {
-      "": 1,
+      "spirit": 1,
       "any": 1
     },
     "attack": null,

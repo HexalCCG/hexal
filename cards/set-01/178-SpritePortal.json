@@ -7,7 +7,7 @@
     "type": "spell",
     "duration": "permanent",
     "cost": {
-      "": 2
+      "spirit": 2
     },
     "attack": null,
     "health": null,

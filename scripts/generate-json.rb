@@ -6,6 +6,7 @@ element_keys = {
   'f' => :fire,
   'a' => :air,
   'w' => :water,
+  's' => :spirit,
   'r' => :any
 }
 
