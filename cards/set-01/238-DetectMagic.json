@@ -5,6 +5,18 @@
     "name": "Detect Magic",
     "element": "spirit",
     "type": "spell",
+    "duration": null,
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Your opponent reveals all reaction spells in their hand. They cannot play reaction spells until the end of this turn."
+  },
+  "2": {
+    "id": "238",
+    "version": "2",
+    "name": "Detect Magic",
+    "element": "spirit",
+    "type": "spell",
     "duration": "instant",
     "cost": null,
     "attack": null,
