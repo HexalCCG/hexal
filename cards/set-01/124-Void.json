@@ -13,5 +13,20 @@
     "attack": null,
     "health": null,
     "text": "Exile all creatures."
+  },
+  "2": {
+    "id": "124",
+    "version": "2",
+    "name": "Void",
+    "element": "water",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "water": 2,
+      "any": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Exile all creatures."
   }
 }
