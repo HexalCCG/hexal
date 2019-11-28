@@ -12,5 +12,19 @@
     "attack": null,
     "health": null,
     "text": "Deal 2 damage to an enemy creature. <Heal> 2."
+  },
+  "2": {
+    "id": "127",
+    "version": "2",
+    "name": "Holy Water",
+    "element": "water",
+    "type": "item",
+    "duration": null,
+    "cost": {
+      "water": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Deal 2 damage to an enemy creature, and if this destroys it <heal> 2."
   }
 }
