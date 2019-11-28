@@ -12,6 +12,6 @@
     },
     "attack": null,
     "health": null,
-    "text": "At the end of your turn, summon a [Fire] creature from your mana pool. When it is destroyed exile it."
+    "text": "At the end of your turn, summon a [Fire] creature from your mana pool. Give it <ethereal>."
   }
 }
