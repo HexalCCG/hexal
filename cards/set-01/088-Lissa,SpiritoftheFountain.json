@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "88",
+    "version": "1",
+    "name": "Lissa, Spirit of the Fountain ",
+    "element": "water",
+    "type": "hero",
+    "duration": null,
+    "cost": {
+      "water": 4
+    },
+    "attack": null,
+    "health": null,
+    "text": "At the start of your turn, <heal> 2."
+  }
+}

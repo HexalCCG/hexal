@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "41",
+    "version": "1",
+    "name": "Chevaux de Frise",
+    "element": "earth",
+    "type": "item",
+    "duration": "permanent",
+    "cost": {
+      "earth": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "At the start of your opponent's battle phase, you may select a friendly creature. It gains +1 / +0 and \"cannot counterattack\" until end of turn."
+  }
+}

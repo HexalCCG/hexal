@@ -1,0 +1,17 @@
+{
+  "1": {
+    "id": "93",
+    "version": "1",
+    "name": "Steam Surger",
+    "element": "water",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "water": 1,
+      "fire": 1
+    },
+    "attack": "3",
+    "health": "4",
+    "text": null
+  }
+}

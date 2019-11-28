@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "216",
+    "version": "1",
+    "name": "Stormchaser",
+    "element": "air",
+    "type": "creature",
+    "duration": null,
+    "cost": null,
+    "attack": "1",
+    "health": "2",
+    "text": "When this is destroyed, <search> for an [Air] creature."
+  }
+}

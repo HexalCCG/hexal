@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "38",
+    "version": "1",
+    "name": "Phial of Blight",
+    "element": "earth",
+    "type": "item",
+    "duration": "equip",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Equip to a friendly creature. After combat with an enemy creature, destroy this and the enemy creature."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "153",
+    "version": "1",
+    "name": "Hurricane",
+    "element": "air",
+    "type": "spell",
+    "duration": "field",
+    "cost": {
+      "air": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Creatures cost [Air] less."
+  }
+}

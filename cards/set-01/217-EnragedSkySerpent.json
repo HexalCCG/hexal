@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "217",
+    "version": "1",
+    "name": "Enraged Sky Serpent",
+    "element": "air",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "any": 1
+    },
+    "attack": "3",
+    "health": "1",
+    "text": "<Ready>."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "77",
+    "version": "1",
+    "name": "Immolate",
+    "element": "fire",
+    "type": "spell",
+    "duration": "instant",
+    "cost": {
+      "fire": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Destroy all items equipped to a creature, then deal 2 damage to it."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "1": {
+    "id": "187",
+    "version": "1",
+    "name": "Dominate Creature",
+    "element": "spirit",
+    "type": "spell",
+    "duration": "equip",
+    "cost": {
+      "spirit": 1,
+      "any": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Enchant a creature. Take control of it."
+  }
+}

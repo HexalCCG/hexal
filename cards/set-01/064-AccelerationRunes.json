@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "64",
+    "version": "1",
+    "name": "Acceleration Runes",
+    "element": "fire",
+    "type": "spell",
+    "duration": "equip",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Enchant a creature. It gains +1 / +1 and \"<ready>\"."
+  }
+}

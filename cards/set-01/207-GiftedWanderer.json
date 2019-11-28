@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "207",
+    "version": "1",
+    "name": "Gifted Wanderer",
+    "element": "water",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "water": 1
+    },
+    "attack": "1",
+    "health": "1",
+    "text": "When this enters the battlefield destroy an enemy creature with 2 or less attack."
+  }
+}

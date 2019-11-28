@@ -1,0 +1,17 @@
+{
+  "1": {
+    "id": "157",
+    "version": "1",
+    "name": "Thunderwave",
+    "element": "air",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "air": 1,
+      "any": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Deal 3 damage to all enemy creatures."
+  }
+}

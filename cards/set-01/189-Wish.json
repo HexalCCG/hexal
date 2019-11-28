@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "189",
+    "version": "1",
+    "name": "Wish",
+    "element": "spirit",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "spirit": 4
+    },
+    "attack": null,
+    "health": null,
+    "text": "Exile all creatures. Both players discard their hands. Draw 3 cards."
+  }
+}

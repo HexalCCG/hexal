@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "186",
+    "version": "1",
+    "name": "Geas",
+    "element": "spirit",
+    "type": "spell",
+    "duration": "permanent",
+    "cost": {
+      "any": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Name a non-Hero card. Your opponent cannot play cards with that name."
+  }
+}

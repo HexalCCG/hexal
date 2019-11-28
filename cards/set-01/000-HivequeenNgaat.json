@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "0",
+    "version": "1",
+    "name": "Hivequeen Ngaat",
+    "element": "earth",
+    "type": "hero",
+    "duration": null,
+    "cost": {
+      "earth": 4
+    },
+    "attack": null,
+    "health": null,
+    "text": "When you summon an [Earth] creature, draw a card."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "221",
+    "version": "1",
+    "name": "Seal Spells",
+    "element": "air",
+    "type": "spell",
+    "duration": "permanent",
+    "cost": {
+      "air": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "View your opponent's hand and select a card. Place it and a card from your hand face-down under this card. When this leaves the battlefield return the cards to their owners' respective hands."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "192",
+    "version": "1",
+    "name": "Reforestation",
+    "element": "earth",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "earth": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Destroy all spells."
+  }
+}

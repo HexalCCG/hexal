@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "102",
+    "version": "1",
+    "name": "Refresh",
+    "element": "water",
+    "type": "spell",
+    "duration": null,
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Return a [Water] spell from your mana pool to your hand."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "174",
+    "version": "1",
+    "name": "Locate Object",
+    "element": "spirit",
+    "type": "spell",
+    "duration": null,
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Privately view the top 3 cards of your deck. You may reveal an item from among them to draw it. Put the remaining cards on the bottom of your deck."
+  }
+}

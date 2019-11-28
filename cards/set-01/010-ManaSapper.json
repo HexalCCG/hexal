@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "10",
+    "version": "1",
+    "name": "Mana Sapper",
+    "element": "earth",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "any": 1
+    },
+    "attack": "1",
+    "health": "2",
+    "text": "When this creature damages an opponent, exile the top card of their mana pool to draw a card."
+  }
+}

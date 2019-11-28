@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "209",
+    "version": "1",
+    "name": "Healing Touch",
+    "element": "water",
+    "type": "spell",
+    "duration": "instant",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Restore a friendly creature to full health."
+  }
+}

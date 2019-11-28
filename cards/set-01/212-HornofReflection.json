@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "212",
+    "version": "1",
+    "name": "Horn of Reflection",
+    "element": "water",
+    "type": "item",
+    "duration": null,
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Summon 2 0 / 1 [Water] Mirror Image creature tokens."
+  }
+}

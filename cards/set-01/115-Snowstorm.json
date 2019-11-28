@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "115",
+    "version": "1",
+    "name": "Snowstorm",
+    "element": "water",
+    "type": "spell",
+    "duration": "field",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "All creatures have -2 / -0. At the start of your turn destroy this, <search> for a [Water] field spell, and put it into play."
+  }
+}

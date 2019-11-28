@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "164",
+    "version": "1",
+    "name": "Mana Potion",
+    "element": "air",
+    "type": "item",
+    "duration": null,
+    "cost": {
+      "air": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "<Burn> 2."
+  }
+}

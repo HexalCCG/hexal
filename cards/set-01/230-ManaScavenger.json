@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "230",
+    "version": "1",
+    "name": "Mana Scavenger",
+    "element": "spirit",
+    "type": "creature",
+    "duration": null,
+    "cost": null,
+    "attack": "2",
+    "health": "2",
+    "text": "You can only play this card if you control a permanent spell."
+  }
+}

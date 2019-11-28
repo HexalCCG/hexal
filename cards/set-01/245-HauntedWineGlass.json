@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "245",
+    "version": "1",
+    "name": "Haunted Wine Glass",
+    "element": "spirit",
+    "type": "item",
+    "duration": "permanent",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "At the start of your turn you may destroy this to summon a [Spirit] creature with cost [Spirit] or less from your hand. Give it <ready>."
+  }
+}

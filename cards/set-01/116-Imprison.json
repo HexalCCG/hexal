@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "116",
+    "version": "1",
+    "name": "Imprison",
+    "element": "water",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "water": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Exile a creature."
+  }
+}

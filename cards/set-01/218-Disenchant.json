@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "218",
+    "version": "1",
+    "name": "Disenchant",
+    "element": "air",
+    "type": "spell",
+    "duration": null,
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Destroy an item to draw a card."
+  }
+}

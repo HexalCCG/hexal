@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "80",
+    "version": "1",
+    "name": "Fire Star Rising",
+    "element": "fire",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "fire": 3
+    },
+    "attack": null,
+    "health": null,
+    "text": "Creatures you control gain +3 / +0 until the end of this turn."
+  }
+}

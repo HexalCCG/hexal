@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "129",
+    "version": "1",
+    "name": "Lian, Gem Of The South ",
+    "element": "air",
+    "type": "hero",
+    "duration": null,
+    "cost": {
+      "air": 4
+    },
+    "attack": null,
+    "health": null,
+    "text": "Your spells cost [Air] less. Whenever you cast a spell, draw a card."
+  }
+}

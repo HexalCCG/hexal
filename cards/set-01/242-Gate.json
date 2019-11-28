@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "242",
+    "version": "1",
+    "name": "Gate",
+    "element": "spirit",
+    "type": "spell",
+    "duration": "permanent",
+    "cost": {
+      "spirit": 3
+    },
+    "attack": null,
+    "health": null,
+    "text": "Your creatures cost [Any] less."
+  }
+}

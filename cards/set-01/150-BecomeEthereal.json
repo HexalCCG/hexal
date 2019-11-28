@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "150",
+    "version": "1",
+    "name": "Become Ethereal",
+    "element": "air",
+    "type": "spell",
+    "duration": "equip",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Enchant a creature. It gains \"<ethereal>\"."
+  }
+}

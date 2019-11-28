@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "149",
+    "version": "1",
+    "name": "Disable",
+    "element": "air",
+    "type": "spell",
+    "duration": null,
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Your opponent discards a card at random."
+  }
+}

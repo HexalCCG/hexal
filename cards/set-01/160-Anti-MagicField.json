@@ -1,0 +1,17 @@
+{
+  "1": {
+    "id": "160",
+    "version": "1",
+    "name": "Anti-Magic Field",
+    "element": "air",
+    "type": "spell",
+    "duration": "field",
+    "cost": {
+      "air": 2,
+      "any": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Spells cost [Any] more."
+  }
+}

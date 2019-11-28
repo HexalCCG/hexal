@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "40",
+    "version": "1",
+    "name": "Hexed Arrow",
+    "element": "earth",
+    "type": "item",
+    "duration": null,
+    "cost": {
+      "earth": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "You cannot play this and a creature on the same turn. Deal 1 damage to a creature, and if it takes damage destroy it."
+  }
+}

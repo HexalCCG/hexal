@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "233",
+    "version": "1",
+    "name": "Mind Snake",
+    "element": "spirit",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "spirit": 1
+    },
+    "attack": "2",
+    "health": "1",
+    "text": "<Ethereal>."
+  }
+}

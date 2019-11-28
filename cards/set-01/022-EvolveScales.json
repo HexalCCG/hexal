@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "22",
+    "version": "1",
+    "name": "Evolve Scales",
+    "element": "earth",
+    "type": "spell",
+    "duration": "instant",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Cast when a friendly creature is attacked. Give it +0 / +4 until the end of this turn."
+  }
+}

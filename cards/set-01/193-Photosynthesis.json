@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "193",
+    "version": "1",
+    "name": "Photosynthesis",
+    "element": "earth",
+    "type": "spell",
+    "duration": "instant",
+    "cost": {
+      "earth": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Restore all friendly [Earth] creatures to full health."
+  }
+}

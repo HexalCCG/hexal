@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "166",
+    "version": "1",
+    "name": "Astral Jellyfish",
+    "element": "spirit",
+    "type": "creature",
+    "duration": null,
+    "cost": null,
+    "attack": "1",
+    "health": "2",
+    "text": null
+  }
+}

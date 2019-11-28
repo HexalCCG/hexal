@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "175",
+    "version": "1",
+    "name": "Scry",
+    "element": "spirit",
+    "type": "spell",
+    "duration": null,
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Name a card. Reveal the top 3 cards of your deck. Draw any copies of the named card revealed. Put the remaining cards on the bottom of your deck."
+  }
+}

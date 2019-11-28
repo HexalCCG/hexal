@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "235",
+    "version": "1",
+    "name": "Spirit Militia",
+    "element": "spirit",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "any": 1
+    },
+    "attack": "2",
+    "health": "3",
+    "text": "<Ethereal>."
+  }
+}

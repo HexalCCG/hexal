@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "11",
+    "version": "1",
+    "name": "Relentless Eagle",
+    "element": "earth",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "any": 1
+    },
+    "attack": "1",
+    "health": "1",
+    "text": "The first time this creature is destroyed, resummon it."
+  }
+}

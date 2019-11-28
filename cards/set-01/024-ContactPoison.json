@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "24",
+    "version": "1",
+    "name": "Contact Poison",
+    "element": "earth",
+    "type": "spell",
+    "duration": "equip",
+    "cost": null,
+    "attack": "2",
+    "health": "-1",
+    "text": "Enchant a creature. It gains +2 / -1."
+  }
+}

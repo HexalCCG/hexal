@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "45",
+    "version": "1",
+    "name": "Haunted Armour",
+    "element": "fire",
+    "type": "creature",
+    "duration": null,
+    "cost": null,
+    "attack": "1",
+    "health": "2",
+    "text": null
+  }
+}

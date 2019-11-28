@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "9",
+    "version": "1",
+    "name": "Large Worm",
+    "element": "earth",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "any": 1
+    },
+    "attack": "2",
+    "health": "2",
+    "text": null
+  }
+}

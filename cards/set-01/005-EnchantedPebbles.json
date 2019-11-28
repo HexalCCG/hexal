@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "5",
+    "version": "1",
+    "name": "Enchanted Pebbles",
+    "element": "earth",
+    "type": "creature",
+    "duration": null,
+    "cost": null,
+    "attack": "2",
+    "health": "2",
+    "text": "You may only play this card if you have cast an [Earth] spell this turn."
+  }
+}

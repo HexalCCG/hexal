@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "28",
+    "version": "1",
+    "name": "Entangle",
+    "element": "earth",
+    "type": "spell",
+    "duration": "equip",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Enchant a creature. It gains \"cannot attack\"."
+  }
+}

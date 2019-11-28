@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "43",
+    "version": "1",
+    "name": "Erastas, The Phoenix   ",
+    "element": "fire",
+    "type": "hero",
+    "duration": null,
+    "cost": {
+      "fire": 4
+    },
+    "attack": null,
+    "health": null,
+    "text": "Your [Fire] creatures have +1 / +0. When a friendly [Fire] non-token creature is destroyed, summon a 0 / 1 [Fire] Phoenix Wisp token with <ready>."
+  }
+}

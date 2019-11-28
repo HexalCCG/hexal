@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "8",
+    "version": "1",
+    "name": "Evolving Shrub",
+    "element": "earth",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "any": 1
+    },
+    "attack": "0",
+    "health": "3",
+    "text": "[Earth] spells you cast targeting this cost nothing."
+  }
+}

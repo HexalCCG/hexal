@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "84",
+    "version": "1",
+    "name": "Magician's Blade",
+    "element": "fire",
+    "type": "item",
+    "duration": "equip",
+    "cost": null,
+    "attack": "1",
+    "health": "1",
+    "text": "Equip to a friendly creature. Equipped creature gains +1 / +1 and \"cannot be targeted by spells\"."
+  }
+}

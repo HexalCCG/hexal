@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "219",
+    "version": "1",
+    "name": "Disorient",
+    "element": "air",
+    "type": "spell",
+    "duration": "instant",
+    "cost": {
+      "air": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Cast when your opponent plays a card. Cancel its effect and shuffle the card into your opponent's deck. They do not pay its mana cost."
+  }
+}

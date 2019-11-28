@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "142",
+    "version": "1",
+    "name": "Dispel Magic",
+    "element": "air",
+    "type": "spell",
+    "duration": null,
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Destroy a spell."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "98",
+    "version": "1",
+    "name": "Water Witch",
+    "element": "water",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "water": 2
+    },
+    "attack": "3",
+    "health": "3",
+    "text": "After this creature attacks, restore all friendly creatures to full health."
+  }
+}
