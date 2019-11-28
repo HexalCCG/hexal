@@ -12,5 +12,19 @@
     "attack": null,
     "health": null,
     "text": "When you would die, destroy this to gain \"you cannot die until the end of your next turn\"."
+  },
+  "2": {
+    "id": "121",
+    "version": "2",
+    "name": "Death Ward",
+    "element": "water",
+    "type": "spell",
+    "duration": "permanent",
+    "cost": {
+      "water": 2
+    },
+    "attack": null,
+    "health": null,
+    "text": "When you would die, you may destroy this to gain \"you cannot die until the end of your next turn\"."
   }
 }
