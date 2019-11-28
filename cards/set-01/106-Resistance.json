@@ -10,5 +10,17 @@
     "attack": "0",
     "health": "1",
     "text": "Enchant a friendly creature. It gains +0 / +1. When the equipped creature is destroyed, you may move this enchantment to another friendly creature."
+  },
+  "2": {
+    "id": "106",
+    "version": "2",
+    "name": "Resistance",
+    "element": "water",
+    "type": "spell",
+    "duration": "equip",
+    "cost": null,
+    "attack": "0",
+    "health": "2",
+    "text": "Enchant a friendly creature. It gains +0 / +2."
   }
 }
