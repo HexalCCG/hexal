@@ -12,5 +12,19 @@
     "attack": null,
     "health": null,
     "text": "Creatures cost [Air] less."
+  },
+  "2": {
+    "id": "153",
+    "version": "2",
+    "name": "Hurricane",
+    "element": "air",
+    "type": "spell",
+    "duration": "field",
+    "cost": {
+      "air": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "[Air] creatures have +1 / +0."
   }
 }
