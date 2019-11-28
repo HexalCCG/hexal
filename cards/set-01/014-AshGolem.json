@@ -25,6 +25,6 @@
     },
     "attack": "2",
     "health": "2",
-    "text": "Whenever this creature would take damage, it takes 1 less damage."
+    "text": "Whenever this creature would take damage, it takes 1 less damage. If you <burn> this card, summon it."
   }
 }
