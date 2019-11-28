@@ -1,4 +1,19 @@
 {
+  "1": {
+    "id": "13",
+    "version": "1",
+    "name": "Sand Elemental",
+    "element": "earth",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "air": 1,
+      "any": 1
+    },
+    "attack": "3",
+    "health": "3",
+    "text": "When this enters the battlefield, destroy a spell or item."
+  },
   "2": {
     "id": "13",
     "version": "2",
