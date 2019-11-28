@@ -13,5 +13,20 @@
     "attack": "3",
     "health": "4",
     "text": "<Heal> 3."
+  },
+  "2": {
+    "id": "99",
+    "version": "2",
+    "name": "Enchanted Seahorse",
+    "element": "water",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "water": 2,
+      "any": 1
+    },
+    "attack": "3",
+    "health": "4",
+    "text": "When this enters the battlefield, <heal> 3."
   }
 }
