@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "71",
+    "version": "1",
+    "name": "Thunderstorm",
+    "element": "fire",
+    "type": "spell",
+    "duration": "field",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "The first spell each player plays on their turn costs [Any] less."
+  }
+}

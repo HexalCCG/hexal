@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "181",
+    "version": "1",
+    "name": "Sense Thoughts",
+    "element": "spirit",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "View your opponent's hand."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "201",
+    "version": "1",
+    "name": "Ash Dancer",
+    "element": "fire",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "any": 1
+    },
+    "attack": "1",
+    "health": "3",
+    "text": "<Ready>."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "143",
+    "version": "1",
+    "name": "Counterspell",
+    "element": "air",
+    "type": "spell",
+    "duration": "instant",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Cast when your opponent casts a spell. Channel [Any] equal to the spell's converted mana cost to counter it."
+  }
+}

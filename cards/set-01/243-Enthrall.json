@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "243",
+    "version": "1",
+    "name": "Enthrall",
+    "element": "spirit",
+    "type": "spell",
+    "duration": "permanent",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Your creatures have \"cannot be targeted by attacks\"."
+  }
+}

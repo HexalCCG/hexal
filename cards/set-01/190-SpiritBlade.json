@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "190",
+    "version": "1",
+    "name": "Spirit Blade",
+    "element": "spirit",
+    "type": "item",
+    "duration": "equip",
+    "cost": {
+      "": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Equip to a friendly creature. It has +X / +0, where X is the amount of [Spirit] in your mana pool."
+  }
+}

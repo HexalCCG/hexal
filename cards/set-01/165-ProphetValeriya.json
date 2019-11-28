@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "165",
+    "version": "1",
+    "name": "Prophet Valeriya",
+    "element": "spirit",
+    "type": "hero",
+    "duration": null,
+    "cost": {
+      "": 4
+    },
+    "attack": null,
+    "health": null,
+    "text": "Your opponent plays with their hand revealed. At the start of your turn you may shuffle any number of cards from your hand into your deck to draw that many cards."
+  }
+}

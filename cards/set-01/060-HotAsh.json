@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "60",
+    "version": "1",
+    "name": "Hot Ash",
+    "element": "fire",
+    "type": "item",
+    "duration": null,
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "When a friendly creature is destroyed, you may exile this from your hand to return the creature to your hand."
+  }
+}

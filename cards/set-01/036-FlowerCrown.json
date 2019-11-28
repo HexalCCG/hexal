@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "36",
+    "version": "1",
+    "name": "Flower Crown",
+    "element": "earth",
+    "type": "item",
+    "duration": "equip",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Equip to a friendly creature. It becomes [Earth]. Draw a card."
+  }
+}

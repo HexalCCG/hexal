@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "89",
+    "version": "1",
+    "name": "Novhu, The Kraken ",
+    "element": "water",
+    "type": "hero",
+    "duration": null,
+    "cost": {
+      "water": 4
+    },
+    "attack": null,
+    "health": null,
+    "text": "At the start of your turn, deal 2 damage to your opponent."
+  }
+}

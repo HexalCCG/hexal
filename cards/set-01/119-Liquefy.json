@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "119",
+    "version": "1",
+    "name": "Liquefy",
+    "element": "water",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "water": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Destroy a creature with 2 or less attack."
+  }
+}

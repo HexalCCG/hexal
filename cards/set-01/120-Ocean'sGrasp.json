@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "120",
+    "version": "1",
+    "name": "Ocean's Grasp",
+    "element": "water",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "water": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Destroy all creatures with 2 or less attack."
+  }
+}

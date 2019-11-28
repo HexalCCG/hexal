@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "159",
+    "version": "1",
+    "name": "Updraught",
+    "element": "air",
+    "type": "spell",
+    "duration": "permanent",
+    "cost": {
+      "fire": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Your [Air] creatures have +1 / +0."
+  }
+}

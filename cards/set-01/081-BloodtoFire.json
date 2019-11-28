@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "81",
+    "version": "1",
+    "name": "Blood to Fire",
+    "element": "fire",
+    "type": "spell",
+    "duration": "permanent",
+    "cost": {
+      "fire": 3
+    },
+    "attack": null,
+    "health": null,
+    "text": "Draw until you have 7 cards in hand or your deck is empty, then <burn> the rest of your deck. You cannot draw or <burn> cards."
+  }
+}

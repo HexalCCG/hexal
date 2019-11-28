@@ -1,0 +1,17 @@
+{
+  "1": {
+    "id": "20",
+    "version": "1",
+    "name": "Blighted Druid",
+    "element": "earth",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "earth": 2,
+      "any": 1
+    },
+    "attack": "4",
+    "health": "2",
+    "text": "Your [Earth] creatures cost [Earth] less."
+  }
+}

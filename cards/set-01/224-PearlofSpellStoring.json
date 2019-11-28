@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "224",
+    "version": "1",
+    "name": "Pearl of Spell Storing",
+    "element": "air",
+    "type": "item",
+    "duration": null,
+    "cost": {
+      "any": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "<Ethereal>. <Search> for an [Air] spell. The next [Air] spell you cast this turn costs [Air] less."
+  }
+}

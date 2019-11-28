@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "128",
+    "version": "1",
+    "name": "Lissa's Tear",
+    "element": "water",
+    "type": "item",
+    "duration": null,
+    "cost": {
+      "water": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Summon a [Water] creature with cost [Water] or less from your exile pile. <Search> for \"Lissa, Spirit of the Fountain\"."
+  }
+}

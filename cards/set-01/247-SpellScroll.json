@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "247",
+    "version": "1",
+    "name": "Spell Scroll",
+    "element": "spirit",
+    "type": "item",
+    "duration": null,
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "<Ethereal>. <Search> for a [Spirit] spell."
+  }
+}

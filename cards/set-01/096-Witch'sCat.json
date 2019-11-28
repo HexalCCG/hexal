@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "96",
+    "version": "1",
+    "name": "Witch's Cat",
+    "element": "water",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "any": 1
+    },
+    "attack": "2",
+    "health": "2",
+    "text": null
+  }
+}

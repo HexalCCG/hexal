@@ -1,0 +1,16 @@
+{
+  "2": {
+    "id": "14",
+    "version": "2",
+    "name": "Ash Golem",
+    "element": "earth",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "earth": 1
+    },
+    "attack": "2",
+    "health": "2",
+    "text": "Whenever this creature would take damage, it takes 1 less damage."
+  }
+}

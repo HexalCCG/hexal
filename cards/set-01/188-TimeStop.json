@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "188",
+    "version": "1",
+    "name": "Time Stop",
+    "element": "spirit",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "": 2
+    },
+    "attack": null,
+    "health": null,
+    "text": "Creatures cannot attack. At the start of your turn, pay [Spirit] or destroy this."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "225",
+    "version": "1",
+    "name": "Magic Mirror",
+    "element": "air",
+    "type": "item",
+    "duration": null,
+    "cost": {
+      "air": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Play when your opponent casts a spell with a target. Change its target to one of your choice."
+  }
+}

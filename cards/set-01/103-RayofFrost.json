@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "103",
+    "version": "1",
+    "name": "Ray of Frost",
+    "element": "water",
+    "type": "spell",
+    "duration": "instant",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Deal 1 damage to a creature. It cannot attack this turn."
+  }
+}

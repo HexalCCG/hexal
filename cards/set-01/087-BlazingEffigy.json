@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "87",
+    "version": "1",
+    "name": "Blazing Effigy",
+    "element": "fire",
+    "type": "item",
+    "duration": "permanent",
+    "cost": {
+      "fire": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "At the start of your turn, if you control a [Fire] creature, destroy a friendly [Fire] creature and this to <burn> 3. Summon any [Fire] creatures."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "139",
+    "version": "1",
+    "name": "Storm Mage",
+    "element": "air",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "air": 2
+    },
+    "attack": "2",
+    "health": "3",
+    "text": "Your [Air] spells cost [Air] less."
+  }
+}

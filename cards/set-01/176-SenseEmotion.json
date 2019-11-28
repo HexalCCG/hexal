@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "176",
+    "version": "1",
+    "name": "Sense Emotion",
+    "element": "spirit",
+    "type": "spell",
+    "duration": null,
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Name an element. Reveal the top card of your opponent's deck. If it is the element you named, draw a card."
+  }
+}

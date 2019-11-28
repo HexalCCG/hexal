@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "144",
+    "version": "1",
+    "name": "Planar Redirection",
+    "element": "air",
+    "type": "spell",
+    "duration": "instant",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "<Ethereal>. Cast when your opponent plays a creature. Exile it."
+  }
+}

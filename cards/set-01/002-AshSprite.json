@@ -1,0 +1,14 @@
+{
+  "2": {
+    "id": "2",
+    "version": "2",
+    "name": "Ash Sprite",
+    "element": "earth",
+    "type": "creature",
+    "duration": null,
+    "cost": null,
+    "attack": "1",
+    "health": "1",
+    "text": "When a friendly [Earth] creature is destroyed, you may summon this from your hand."
+  }
+}

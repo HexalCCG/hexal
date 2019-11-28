@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "183",
+    "version": "1",
+    "name": "Hold Person",
+    "element": "spirit",
+    "type": "spell",
+    "duration": "equip",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Enchant a creature. Set its attack to 0."
+  }
+}

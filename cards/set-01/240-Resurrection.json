@@ -1,0 +1,17 @@
+{
+  "1": {
+    "id": "240",
+    "version": "1",
+    "name": "Resurrection",
+    "element": "spirit",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "": 2,
+      "any": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Summon a creature from your mana pool or exile pile."
+  }
+}

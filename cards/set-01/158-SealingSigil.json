@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "158",
+    "version": "1",
+    "name": "Sealing Sigil",
+    "element": "air",
+    "type": "spell",
+    "duration": "permanent",
+    "cost": {
+      "air": 2
+    },
+    "attack": null,
+    "health": null,
+    "text": "Cards added to either player's mana pool are exiled instead."
+  }
+}

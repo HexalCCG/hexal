@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "74",
+    "version": "1",
+    "name": "Fireworks",
+    "element": "fire",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "fire": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Deal 3 damage to enemy creatures, one at a time, split as you choose."
+  }
+}

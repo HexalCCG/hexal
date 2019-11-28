@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "52",
+    "version": "1",
+    "name": "Zealous Knight",
+    "element": "fire",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "any": 1
+    },
+    "attack": "2",
+    "health": "2",
+    "text": null
+  }
+}

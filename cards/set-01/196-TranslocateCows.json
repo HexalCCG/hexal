@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "196",
+    "version": "1",
+    "name": "Translocate Cows",
+    "element": "earth",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "earth": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Summon 2 1 / 1 [Earth] Cow creature tokens."
+  }
+}

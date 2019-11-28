@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "79",
+    "version": "1",
+    "name": "Meteor Shot",
+    "element": "fire",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "fire": 2
+    },
+    "attack": null,
+    "health": null,
+    "text": "Deal 5 damage to an enemy creature, and 1 damage to all other enemy creatures."
+  }
+}

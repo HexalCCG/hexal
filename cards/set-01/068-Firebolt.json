@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "68",
+    "version": "1",
+    "name": "Firebolt",
+    "element": "fire",
+    "type": "spell",
+    "duration": "instant",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Deal 1 damage to a creature."
+  }
+}

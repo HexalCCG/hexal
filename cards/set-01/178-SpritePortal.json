@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "178",
+    "version": "1",
+    "name": "Sprite Portal",
+    "element": "spirit",
+    "type": "spell",
+    "duration": "permanent",
+    "cost": {
+      "": 2
+    },
+    "attack": null,
+    "health": null,
+    "text": "At the end of your turn, add all \"sprite\" cards from your mana pool to your hand."
+  }
+}

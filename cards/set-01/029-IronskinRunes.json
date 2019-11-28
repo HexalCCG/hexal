@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "29",
+    "version": "1",
+    "name": "Ironskin Runes",
+    "element": "earth",
+    "type": "spell",
+    "duration": "equip",
+    "cost": {
+      "earth": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Enchant a creature. It gains \"whenever this would take damage, it takes 1 less\"."
+  }
+}

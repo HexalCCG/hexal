@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "234",
+    "version": "1",
+    "name": "Mind Breaker",
+    "element": "spirit",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "": 1
+    },
+    "attack": "1",
+    "health": "2",
+    "text": "Name a non-Hero card. Your opponent must discard a copy of that card if they're holding one."
+  }
+}

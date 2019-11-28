@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "147",
+    "version": "1",
+    "name": "Overcast",
+    "element": "air",
+    "type": "spell",
+    "duration": "field",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "When this enters the battlefield, if it destroys an active field spell, draw a card."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "154",
+    "version": "1",
+    "name": "Sandstorm",
+    "element": "air",
+    "type": "spell",
+    "duration": "field",
+    "cost": {
+      "earth": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "When this enters the battlefield, destroy all other spells."
+  }
+}

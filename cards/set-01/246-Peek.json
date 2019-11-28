@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "246",
+    "version": "1",
+    "name": "Peek",
+    "element": "spirit",
+    "type": "spell",
+    "duration": null,
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Reveal the top card of your opponent's deck. If it's a spell, draw a card."
+  }
+}

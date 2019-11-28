@@ -1,0 +1,17 @@
+{
+  "1": {
+    "id": "31",
+    "version": "1",
+    "name": "Pollinate",
+    "element": "earth",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "water": 1,
+      "any": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "<Search> for copies of all [Earth] creatures you control."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "1": {
+    "id": "236",
+    "version": "1",
+    "name": "Manifest Dreams",
+    "element": "spirit",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "": 1,
+      "any": 2
+    },
+    "attack": null,
+    "health": null,
+    "text": "Privately view the top 3 cards of your deck. Summon them face down as 1 / 1 [Spirit] Dream creature tokens. When one is destroyed, add it to your hand."
+  }
+}

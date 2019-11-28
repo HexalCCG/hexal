@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "145",
+    "version": "1",
+    "name": "Quicken Spell",
+    "element": "air",
+    "type": "spell",
+    "duration": "instant",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "You may immediately cast a spell as though it had \"Reaction\" in reaction to this."
+  }
+}

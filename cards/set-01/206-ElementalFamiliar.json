@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "206",
+    "version": "1",
+    "name": "Elemental Familiar",
+    "element": "water",
+    "type": "creature",
+    "duration": null,
+    "cost": null,
+    "attack": "1",
+    "health": "1",
+    "text": "When this is destroyed <search> for a [Water] spell."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "162",
+    "version": "1",
+    "name": "Bottled Storm",
+    "element": "air",
+    "type": "item",
+    "duration": null,
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Deal 1 damage to all creatures."
+  }
+}

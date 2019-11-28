@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "138",
+    "version": "1",
+    "name": "Flying Cat",
+    "element": "air",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "any": 2
+    },
+    "attack": "2",
+    "health": "3",
+    "text": null
+  }
+}

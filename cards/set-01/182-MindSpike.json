@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "182",
+    "version": "1",
+    "name": "Mind Spike",
+    "element": "spirit",
+    "type": "spell",
+    "duration": "instant",
+    "cost": {
+      "": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Cast when an enemy creature attacks you. Destroy it."
+  }
+}

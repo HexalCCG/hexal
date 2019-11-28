@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "135",
+    "version": "1",
+    "name": "Mischievous Monkey",
+    "element": "air",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "any": 1
+    },
+    "attack": "1",
+    "health": "1",
+    "text": "When this enters the battlefield your opponent discards a card at random."
+  }
+}

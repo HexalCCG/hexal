@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "33",
+    "version": "1",
+    "name": "Earthen Reclamation",
+    "element": "earth",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "earth": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "If you control an [Earth] creature, destroy a permanent."
+  }
+}

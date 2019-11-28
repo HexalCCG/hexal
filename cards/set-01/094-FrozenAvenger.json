@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "94",
+    "version": "1",
+    "name": "Frozen Avenger",
+    "element": "water",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "any": 1
+    },
+    "attack": "3",
+    "health": "1",
+    "text": "When a friendly creature is destroyed, you may summon this from your hand."
+  }
+}

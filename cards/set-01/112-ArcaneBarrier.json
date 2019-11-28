@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "112",
+    "version": "1",
+    "name": "Arcane Barrier",
+    "element": "water",
+    "type": "spell",
+    "duration": "permanent",
+    "cost": {
+      "any": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "When you would take damage, you may destroy this to take 0 damage instead."
+  }
+}

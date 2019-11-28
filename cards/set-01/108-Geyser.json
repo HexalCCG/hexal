@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "108",
+    "version": "1",
+    "name": "Geyser",
+    "element": "water",
+    "type": "spell",
+    "duration": "instant",
+    "cost": {
+      "water": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Deal 2 damage to all enemy creatures."
+  }
+}

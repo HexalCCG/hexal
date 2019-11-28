@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "42",
+    "version": "1",
+    "name": "Commander Adela",
+    "element": "fire",
+    "type": "hero",
+    "duration": null,
+    "cost": {
+      "fire": 4
+    },
+    "attack": null,
+    "health": null,
+    "text": "When this enters the battlefield, and at the start of your turn, <burn> 1. If it's a [Fire] creature, summon it and give it <ready>."
+  }
+}

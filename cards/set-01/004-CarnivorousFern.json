@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "4",
+    "version": "1",
+    "name": "Carnivorous Fern",
+    "element": "earth",
+    "type": "creature",
+    "duration": null,
+    "cost": null,
+    "attack": "2",
+    "health": "1",
+    "text": "<Ready>."
+  }
+}

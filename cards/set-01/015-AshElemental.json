@@ -1,0 +1,17 @@
+{
+  "2": {
+    "id": "15",
+    "version": "2",
+    "name": "Ash Elemental",
+    "element": "earth",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "earth": 1,
+      "any": 1
+    },
+    "attack": "2",
+    "health": "3",
+    "text": "When this enters the battlefield, draw a card."
+  }
+}
