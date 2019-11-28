@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "195",
+    "version": "1",
+    "name": "Twilight Fortification",
+    "element": "earth",
+    "type": "spell",
+    "duration": "permanent",
+    "cost": {
+      "earth": 2
+    },
+    "attack": null,
+    "health": null,
+    "text": "Your creatures have +0 / +2."
+  }
+}

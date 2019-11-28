@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "55",
+    "version": "1",
+    "name": "Serpent of the Forge",
+    "element": "fire",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "fire": 2
+    },
+    "attack": "3",
+    "health": "3",
+    "text": "When this enters the battlefield, destroy an item."
+  }
+}

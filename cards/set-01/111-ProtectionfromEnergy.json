@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "111",
+    "version": "1",
+    "name": "Protection from Energy",
+    "element": "water",
+    "type": "spell",
+    "duration": "equip",
+    "cost": {
+      "water": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Enchant a friendly creature. It gains \"this takes no damage from spells and cannot be targeted by spells\"."
+  }
+}

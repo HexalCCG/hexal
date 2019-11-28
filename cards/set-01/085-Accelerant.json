@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "85",
+    "version": "1",
+    "name": "Accelerant",
+    "element": "fire",
+    "type": "item",
+    "duration": "equip",
+    "cost": {
+      "air": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Equip to a friendly [Fire] creature. Double its attack and set its health to 1."
+  }
+}

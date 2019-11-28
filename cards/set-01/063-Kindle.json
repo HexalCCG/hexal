@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "63",
+    "version": "1",
+    "name": "Kindle",
+    "element": "air",
+    "type": "spell",
+    "duration": "instant",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "<Ethereal>. Deal 1 damage to a creature to draw a card."
+  }
+}

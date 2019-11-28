@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "1",
+    "version": "1",
+    "name": "Sage Brennas",
+    "element": "earth",
+    "type": "hero",
+    "duration": null,
+    "cost": {
+      "earth": 4
+    },
+    "attack": null,
+    "health": null,
+    "text": "Whenever you draw a card, you may instead <search> for a card. Do not reveal it."
+  }
+}

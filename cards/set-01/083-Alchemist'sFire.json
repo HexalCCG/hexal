@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "83",
+    "version": "1",
+    "name": "Alchemist's Fire",
+    "element": "fire",
+    "type": "item",
+    "duration": null,
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Deal 2 damage to an enemy creature. If that destroys it, burn 1."
+  }
+}

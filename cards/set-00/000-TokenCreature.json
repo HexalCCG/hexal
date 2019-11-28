@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "0",
+    "version": "1",
+    "name": "Token Creature",
+    "element": "any",
+    "type": "token",
+    "duration": null,
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "161",
+    "version": "1",
+    "name": "Air Talisman",
+    "element": "air",
+    "type": "item",
+    "duration": null,
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Play when one of your creatures is attacked. Cancel the attack. That creature cannot be targeted by attacks until the end of the turn."
+  }
+}

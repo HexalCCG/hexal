@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "110",
+    "version": "1",
+    "name": "Restoration",
+    "element": "water",
+    "type": "spell",
+    "duration": "instant",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Cast when a friendly [Water] creature that costs 1 or less is destroyed. Resummon it."
+  }
+}

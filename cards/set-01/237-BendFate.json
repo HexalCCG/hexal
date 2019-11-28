@@ -1,0 +1,17 @@
+{
+  "1": {
+    "id": "237",
+    "version": "1",
+    "name": "Bend Fate",
+    "element": "spirit",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "spirit": 1,
+      "any": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Privately view the top 3 cards of your opponent's deck and put them back in any order. Privately view the top 3 cards of your deck and put them back in any order."
+  }
+}

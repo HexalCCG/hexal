@@ -1,0 +1,17 @@
+{
+  "1": {
+    "id": "227",
+    "version": "1",
+    "name": "Summoning Stone",
+    "element": "spirit",
+    "type": "item",
+    "duration": "permanent",
+    "cost": {
+      "spirit": 1,
+      "any": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Whenever you cast a spell, <search> for a 0-cost creature. Summon it."
+  }
+}

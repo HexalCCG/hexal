@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "117",
+    "version": "1",
+    "name": "Inflict Wounds",
+    "element": "water",
+    "type": "spell",
+    "duration": "instant",
+    "cost": {
+      "any": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Deal 3 damage to a creature."
+  }
+}

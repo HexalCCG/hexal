@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "86",
+    "version": "1",
+    "name": "Phoenix Feather",
+    "element": "fire",
+    "type": "item",
+    "duration": "equip",
+    "cost": {
+      "fire": 2
+    },
+    "attack": "1",
+    "health": "1",
+    "text": "Equip to a friendly creature. Equipped creature gains +1 / +1 and \"when this creature is destroyed, resummon it\". When this item is destroyed, <search> your deck for \"Erastas, The Phoenix\"."
+  }
+}

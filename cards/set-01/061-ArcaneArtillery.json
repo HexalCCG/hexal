@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "61",
+    "version": "1",
+    "name": "Arcane Artillery",
+    "element": "fire",
+    "type": "spell",
+    "duration": "instant",
+    "cost": {
+      "fire": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Cast when an enemy creature attacks. Destroy the creature."
+  }
+}

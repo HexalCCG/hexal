@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "156",
+    "version": "1",
+    "name": "Mana Drain",
+    "element": "air",
+    "type": "spell",
+    "duration": "instant",
+    "cost": {
+      "air": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "<Ethereal>. Exile the top 2 cards of your opponent's mana pool."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "23",
+    "version": "1",
+    "name": "Savagery",
+    "element": "earth",
+    "type": "spell",
+    "duration": "instant",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Cast when you declare a counterattack. Give your creatures +2 / +0 until the end of this turn."
+  }
+}

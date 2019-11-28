@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "113",
+    "version": "1",
+    "name": "Regenerative Shielding",
+    "element": "water",
+    "type": "spell",
+    "duration": "permanent",
+    "cost": {
+      "water": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Whenever you would exile cards due to damage, add the first to your mana pool instead."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "37",
+    "version": "1",
+    "name": "Living Spear",
+    "element": "earth",
+    "type": "item",
+    "duration": "equip",
+    "cost": null,
+    "attack": "1",
+    "health": "0",
+    "text": "Equip to a friendly creature. Equipped creature gains +1 / +0. When equipped creature is destroyed, summon a 1 / 1 [Earth] Living Spear creature token."
+  }
+}

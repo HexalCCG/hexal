@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "90",
+    "version": "1",
+    "name": "Arcane Defender",
+    "element": "water",
+    "type": "creature",
+    "duration": null,
+    "cost": null,
+    "attack": "0",
+    "health": "3",
+    "text": "Your other creatures cannot be targeted with attacks."
+  }
+}

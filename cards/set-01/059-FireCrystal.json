@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "59",
+    "version": "1",
+    "name": "Fire Crystal",
+    "element": "fire",
+    "type": "item",
+    "duration": null,
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Destroy a friendly creature to destroy an enemy creature."
+  }
+}

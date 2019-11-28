@@ -1,0 +1,17 @@
+{
+  "1": {
+    "id": "54",
+    "version": "1",
+    "name": "Pyromancer",
+    "element": "fire",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "fire": 1,
+      "any": 1
+    },
+    "attack": "3",
+    "health": "2",
+    "text": "When this is destroyed, deal 1 damage to all creatures."
+  }
+}

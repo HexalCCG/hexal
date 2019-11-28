@@ -1,0 +1,17 @@
+{
+  "1": {
+    "id": "17",
+    "version": "1",
+    "name": "Awakened Oak",
+    "element": "earth",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "earth": 1,
+      "any": 1
+    },
+    "attack": "2",
+    "health": "4",
+    "text": "When your opponent casts a spell for which this is a valid target, the spell must target this."
+  }
+}

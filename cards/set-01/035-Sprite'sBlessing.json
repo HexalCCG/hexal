@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "35",
+    "version": "1",
+    "name": "Sprite's Blessing",
+    "element": "earth",
+    "type": "spell",
+    "duration": "equip",
+    "cost": {
+      "any": 2
+    },
+    "attack": "2",
+    "health": "2",
+    "text": "Enchant a creature. It gains +2 / +2. <Search> for all \"sprite\" creatures."
+  }
+}

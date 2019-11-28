@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "78",
+    "version": "1",
+    "name": "Greater Summon",
+    "element": "fire",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "fire": 2
+    },
+    "attack": null,
+    "health": null,
+    "text": "<Burn> 2. Summon any [Fire] creatures burned."
+  }
+}

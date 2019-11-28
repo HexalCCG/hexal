@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "148",
+    "version": "1",
+    "name": "Barometric Pulse",
+    "element": "air",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "air": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Deal 2 damage to all creatures except [Air] creatures."
+  }
+}

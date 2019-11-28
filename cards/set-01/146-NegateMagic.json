@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "146",
+    "version": "1",
+    "name": "Negate Magic",
+    "element": "air",
+    "type": "spell",
+    "duration": "permanent",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "When a spell is cast, destroy this to counter it."
+  }
+}

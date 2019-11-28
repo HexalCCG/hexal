@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "226",
+    "version": "1",
+    "name": "Astral Huntress",
+    "element": "spirit",
+    "type": "hero",
+    "duration": null,
+    "cost": {
+      "spirit": 4
+    },
+    "attack": null,
+    "health": null,
+    "text": "Whenever an enemy creature is destroyed, <search> for a card."
+  }
+}

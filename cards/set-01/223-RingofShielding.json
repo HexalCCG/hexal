@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "223",
+    "version": "1",
+    "name": "Ring of Shielding",
+    "element": "air",
+    "type": "item",
+    "duration": "equip",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Equip to a friendly creature. The first time it would take damage, destroy this to reduce the damage to 0."
+  }
+}

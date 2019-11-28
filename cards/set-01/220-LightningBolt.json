@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "220",
+    "version": "1",
+    "name": "Lightning Bolt",
+    "element": "air",
+    "type": "spell",
+    "duration": "instant",
+    "cost": {
+      "air": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Deal 3 damage to an enemy creature."
+  }
+}

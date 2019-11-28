@@ -1,0 +1,17 @@
+{
+  "1": {
+    "id": "222",
+    "version": "1",
+    "name": "Demonic Chain",
+    "element": "air",
+    "type": "item",
+    "duration": "permanent",
+    "cost": {
+      "air": 1,
+      "any": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "At the end of your turn, summon a [Fire] creature from your mana pool. When it is destroyed exile it."
+  }
+}

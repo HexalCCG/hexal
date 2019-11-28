@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "1",
+    "version": "1",
+    "name": "Cow",
+    "element": "earth",
+    "type": "token",
+    "duration": null,
+    "cost": null,
+    "attack": "1",
+    "health": "1",
+    "text": "Moo!"
+  }
+}

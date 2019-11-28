@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "39",
+    "version": "1",
+    "name": "Fertiliser",
+    "element": "earth",
+    "type": "item",
+    "duration": null,
+    "cost": {
+      "earth": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "<Search> for an [Earth] enchantment. The next [Earth] enchantment you play this turn costs [Earth] less."
+  }
+}

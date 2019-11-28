@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "197",
+    "version": "1",
+    "name": "Sanguine Rose",
+    "element": "earth",
+    "type": "item",
+    "duration": "permanent",
+    "cost": {
+      "earth": 2
+    },
+    "attack": null,
+    "health": null,
+    "text": "Whenever you draw an [Earth] card, you may reveal it to <heal> 1."
+  }
+}

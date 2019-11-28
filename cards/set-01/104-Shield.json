@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "104",
+    "version": "1",
+    "name": "Shield",
+    "element": "water",
+    "type": "spell",
+    "duration": "instant",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Cast when an enemy creature attacks. Reduce the attack's damage by 3."
+  }
+}

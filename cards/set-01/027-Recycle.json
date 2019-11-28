@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "27",
+    "version": "1",
+    "name": "Recycle",
+    "element": "earth",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "earth": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Destroy a creature. Your opponent adds the top card of their exile pile to their hand."
+  }
+}

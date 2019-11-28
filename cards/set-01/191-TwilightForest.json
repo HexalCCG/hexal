@@ -1,0 +1,17 @@
+{
+  "1": {
+    "id": "191",
+    "version": "1",
+    "name": "Twilight Forest",
+    "element": "earth",
+    "type": "spell",
+    "duration": "field",
+    "cost": {
+      "earth": 1,
+      "any": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Creatures take no damage from spells."
+  }
+}

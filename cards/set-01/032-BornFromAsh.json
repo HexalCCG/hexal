@@ -1,0 +1,17 @@
+{
+  "1": {
+    "id": "32",
+    "version": "1",
+    "name": "Born From Ash",
+    "element": "earth",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "fire": 1,
+      "any": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Reveal the top 3 cards of your deck. Select up to 1 [Earth] creature and summon it. Select up to 1 card and draw it. <Burn> any remaining cards."
+  }
+}

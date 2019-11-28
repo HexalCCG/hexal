@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "204",
+    "version": "1",
+    "name": "Night of the Soulless",
+    "element": "fire",
+    "type": "spell",
+    "duration": "field",
+    "cost": {
+      "fire": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Tokens have +1 / +0."
+  }
+}

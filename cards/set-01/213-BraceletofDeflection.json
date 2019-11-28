@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "213",
+    "version": "1",
+    "name": "Bracelet of Deflection",
+    "element": "water",
+    "type": "item",
+    "duration": "permanent",
+    "cost": {
+      "water": 2
+    },
+    "attack": null,
+    "health": null,
+    "text": "Once per turn, when an enemy creature declares an attack you may cancel the attack."
+  }
+}

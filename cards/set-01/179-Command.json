@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "179",
+    "version": "1",
+    "name": "Command",
+    "element": "spirit",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "spirit": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Select a creature. It attacks a creature of your choice."
+  }
+}

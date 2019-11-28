@@ -1,0 +1,17 @@
+{
+  "1": {
+    "id": "155",
+    "version": "1",
+    "name": "Detonate",
+    "element": "air",
+    "type": "spell",
+    "duration": "instant",
+    "cost": {
+      "fire": 1,
+      "any": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Destroy a creature. No creatures can attack until the start of your next turn."
+  }
+}

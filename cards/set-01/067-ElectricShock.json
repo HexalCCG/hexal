@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "67",
+    "version": "1",
+    "name": "Electric Shock",
+    "element": "air",
+    "type": "spell",
+    "duration": "instant",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Cast when a creature attacks. Cancel the attack and set its attack to 0 until the end of this turn."
+  }
+}

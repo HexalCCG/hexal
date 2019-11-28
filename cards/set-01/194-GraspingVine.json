@@ -1,0 +1,14 @@
+{
+  "1": {
+    "id": "194",
+    "version": "1",
+    "name": "Grasping Vine",
+    "element": "earth",
+    "type": "spell",
+    "duration": null,
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Select an item equipped to an enemy creature. Take control of it and equip it to a friendly creature."
+  }
+}

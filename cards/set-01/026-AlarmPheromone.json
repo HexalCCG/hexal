@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "26",
+    "version": "1",
+    "name": "Alarm Pheromone",
+    "element": "earth",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "earth": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "If you control an [Earth] creature, draw 2 cards."
+  }
+}

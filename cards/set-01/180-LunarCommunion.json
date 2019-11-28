@@ -1,0 +1,16 @@
+{
+  "1": {
+    "id": "180",
+    "version": "1",
+    "name": "Lunar Communion",
+    "element": "spirit",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "any": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Privately view the top 3 cards of your deck. Draw 1 and put the others on the bottom of your deck."
+  }
+}
