@@ -10,5 +10,17 @@
     "attack": null,
     "health": null,
     "text": "<Heal> 1."
+  },
+  "2": {
+    "id": "101",
+    "version": "2",
+    "name": "Minor Healing",
+    "element": "water",
+    "type": "spell",
+    "duration": "instant",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Cast after you take damage from an attack. <Heal> 1."
   }
 }
