@@ -12,5 +12,19 @@
     "attack": null,
     "health": null,
     "text": "Equip to a friendly creature. It gains \"your spells cost [Water] less\"."
+  },
+  "2": {
+    "id": "126",
+    "version": "2",
+    "name": "Witch's Hat",
+    "element": "water",
+    "type": "item",
+    "duration": "equip",
+    "cost": {
+      "any": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Equip to a friendly creature. It gains \"whenever you cast a [Water] spell, draw a card\"."
   }
 }
