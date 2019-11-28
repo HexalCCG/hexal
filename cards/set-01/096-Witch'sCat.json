@@ -12,5 +12,19 @@
     "attack": "2",
     "health": "2",
     "text": null
+  },
+  "2": {
+    "id": "96",
+    "version": "2",
+    "name": "Witch's Cat",
+    "element": "water",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "any": 1
+    },
+    "attack": "2",
+    "health": "2",
+    "text": "If you've cast a spell this turn, this costs nothing."
   }
 }
