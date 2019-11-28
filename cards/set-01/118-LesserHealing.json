@@ -5,12 +5,12 @@
     "name": "Lesser Healing",
     "element": "water",
     "type": "spell",
-    "duration": null,
+    "duration": "instant",
     "cost": {
       "water": 1
     },
     "attack": null,
     "health": null,
-    "text": "<Heal> 3."
+    "text": "Cast after you take damage. <Heal> 3."
   }
 }
