@@ -13,5 +13,20 @@
     "attack": null,
     "health": null,
     "text": "Destroy a creature. Draw a card."
+  },
+  "2": {
+    "id": "72",
+    "version": "2",
+    "name": "Incinerate",
+    "element": "fire",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "fire": 1,
+      "any": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Destroy a creature. Draw a card."
   }
 }
