@@ -9,3 +9,5 @@ Cycling healing is not a good idea
 - Remove cheap healing
 - Remove healing from outside water
 
+Worried about:
+008 Evolving Shrub

@@ -13,5 +13,19 @@
     "attack": "4",
     "health": "2",
     "text": "Your [Earth] creatures cost [Earth] less."
+  },
+  "2": {
+    "id": "20",
+    "version": "2",
+    "name": "Blighted Druid",
+    "element": "earth",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "earth": 1
+    },
+    "attack": "1",
+    "health": "2",
+    "text": "If you control another [Earth] creature, this has +2 / +0."
   }
 }
