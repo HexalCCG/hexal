@@ -9,6 +9,6 @@
     "cost": null,
     "attack": null,
     "health": null,
-    "text": "Cast when you declare a counterattack. Give your creatures +2 / +0 until the end of this turn."
+    "text": "You may only cast this when you declare a counterattack. Give your creatures +2 / +0 until the end of this turn."
   }
 }
