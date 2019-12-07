@@ -9,6 +9,6 @@
     "cost": null,
     "attack": null,
     "health": null,
-    "text": "When a spell is cast, destroy this to counter it."
+    "text": "When a spell is cast, you must destroy this to counter it."
   }
 }
