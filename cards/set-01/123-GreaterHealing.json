@@ -12,5 +12,19 @@
     "attack": null,
     "health": null,
     "text": "<Heal> 5."
+  },
+  "2": {
+    "id": "123",
+    "version": "2",
+    "name": "Greater Healing",
+    "element": "water",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "water": 2
+    },
+    "attack": null,
+    "health": null,
+    "text": "<Heal> 3. Draw 2 cards."
   }
 }
