@@ -12,5 +12,19 @@
     "attack": null,
     "health": null,
     "text": "Cast after you take damage. <Heal> 3."
+  },
+  "2": {
+    "id": "118",
+    "version": "2",
+    "name": "Lesser Healing",
+    "element": "water",
+    "type": "spell",
+    "duration": "instant",
+    "cost": {
+      "water": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "<Heal> 2. Draw a card."
   }
 }
