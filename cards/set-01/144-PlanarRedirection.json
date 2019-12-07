@@ -9,6 +9,6 @@
     "cost": null,
     "attack": null,
     "health": null,
-    "text": "<Ethereal>. Cast when your opponent plays a creature. Exile it."
+    "text": "<Ethereal>. Cast when your opponent plays a creature. Exile it. They do not pay its mana cost"
   }
 }
