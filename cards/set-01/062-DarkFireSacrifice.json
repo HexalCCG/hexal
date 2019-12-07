@@ -10,5 +10,17 @@
     "attack": null,
     "health": null,
     "text": "Cast when a friendly creature attacks an enemy creature. Destroy both creatures."
+  },
+  "2": {
+    "id": "62",
+    "version": "2",
+    "name": "Dark Fire Sacrifice",
+    "element": "fire",
+    "type": "spell",
+    "duration": "instant",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Cast when a creature attacks another creature. Destroy both creatures."
   }
 }
