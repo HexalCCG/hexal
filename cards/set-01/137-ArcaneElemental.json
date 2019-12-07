@@ -11,20 +11,6 @@
     },
     "attack": "3",
     "health": "3",
-    "text": "When this enters the battlefield destroy a spell. Unless a spell is destroyed by this effect destroy this."
-  },
-  "2": {
-    "id": "137",
-    "version": "2",
-    "name": "Arcane Elemental",
-    "element": "air",
-    "type": "creature",
-    "duration": null,
-    "cost": {
-      "air": 2
-    },
-    "attack": "3",
-    "health": "3",
     "text": "When this enters the battlefield, destroy a spell. If this enters the battlefield but does not destroy a spell, exile this card."
   }
 }
