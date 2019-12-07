@@ -12,5 +12,17 @@
     "attack": null,
     "health": null,
     "text": "Creatures cannot be summoned. At the start of your turn, destroy this."
+  },
+  "2": {
+    "id": "152",
+    "version": "2",
+    "name": "Warding Runes",
+    "element": "air",
+    "type": "spell",
+    "duration": "permanent",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Creatures cannot be summoned. At the end of your next turn, destroy this."
   }
 }
