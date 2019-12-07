@@ -12,5 +12,19 @@
     "attack": null,
     "health": null,
     "text": "Your [Air] creatures have +1 / +0."
+  },
+  "2": {
+    "id": "159",
+    "version": "2",
+    "name": "Updraught",
+    "element": "air",
+    "type": "spell",
+    "duration": "permanent",
+    "cost": {
+      "air": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Your [Air] creatures have +1 / +0."
   }
 }

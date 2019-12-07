@@ -11,3 +11,4 @@ Cycling healing is not a good idea
 
 Worried about:
 008 Evolving Shrub
+158 Sealing Sigil
