@@ -13,5 +13,19 @@
     "attack": null,
     "health": null,
     "text": "Spells cost [Any] more."
+  },
+  "2": {
+    "id": "160",
+    "version": "2",
+    "name": "Anti-Magic Field",
+    "element": "air",
+    "type": "spell",
+    "duration": "field",
+    "cost": {
+      "air": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "At the end of each player's turn, destroy all other spells."
   }
 }
