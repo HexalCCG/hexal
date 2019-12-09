@@ -27,6 +27,6 @@
     },
     "attack": null,
     "health": null,
-    "text": "At the end of your turn, summon a [Fire] creature from your mana pool. Give it <ethereal>."
+    "text": "At the end of your turn, summon a [Fire] creature from your mana pool. Give it <ethereal>. When this card leaves the battlefield, exile all creatures summoned with this effect."
   }
 }
