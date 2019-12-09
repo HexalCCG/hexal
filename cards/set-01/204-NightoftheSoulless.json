@@ -12,5 +12,17 @@
     "attack": null,
     "health": null,
     "text": "Tokens have +1 / +0."
+  },
+  "2": {
+    "id": "204",
+    "version": "2",
+    "name": "Night of the Soulless",
+    "element": "fire",
+    "type": "spell",
+    "duration": "field",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "Tokens have +1 / +0."
   }
 }
