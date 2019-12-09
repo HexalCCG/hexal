@@ -9,6 +9,6 @@
     "cost": null,
     "attack": "1",
     "health": "1",
-    "text": "When this enters the battlefield reveal a random card from your opponent's hand."
+    "text": "When this enters the battlefield, reveal a random card from your opponent's hand."
   }
 }
