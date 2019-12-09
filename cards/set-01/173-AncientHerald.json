@@ -12,6 +12,6 @@
     },
     "attack": "4",
     "health": "4",
-    "text": "When this enters the battlefield you may pay [Spirit] to <search> for a Hero."
+    "text": "When this enters the battlefield, you may pay [Spirit] to <search> for a Hero."
   }
 }
