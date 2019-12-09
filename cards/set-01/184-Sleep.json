@@ -10,5 +10,17 @@
     "attack": null,
     "health": null,
     "text": "Creatures cannot attack. At the start of your turn, if the combined attack of all creatures on the battlefield is greater than or equal to 5, destroy this."
+  },
+  "2": {
+    "id": "184",
+    "version": "2",
+    "name": "Sleep",
+    "element": "spirit",
+    "type": "spell",
+    "duration": "permanent",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "The creature or creatures with the highest attack on the battlefield cannot attack."
   }
 }
