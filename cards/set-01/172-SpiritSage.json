@@ -12,6 +12,6 @@
     },
     "attack": "3",
     "health": "3",
-    "text": "When this enters the battlefield <search> for a [Spirit] card."
+    "text": "When this enters the battlefield, <search> for a [Spirit] card."
   }
 }
