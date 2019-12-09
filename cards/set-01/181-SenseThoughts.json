@@ -12,5 +12,19 @@
     "attack": null,
     "health": null,
     "text": "View your opponent's hand."
+  },
+  "2": {
+    "id": "181",
+    "version": "2",
+    "name": "Sense Thoughts",
+    "element": "spirit",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "spirit": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Name a card. View your opponent's hand. If their hand contains the named card, draw 2 cards."
   }
 }
