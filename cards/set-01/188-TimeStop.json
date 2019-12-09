@@ -12,5 +12,19 @@
     "attack": null,
     "health": null,
     "text": "Creatures cannot attack. At the start of your turn, pay [Spirit] or destroy this."
+  },
+  "2": {
+    "id": "188",
+    "version": "2",
+    "name": "Time Stop",
+    "element": "spirit",
+    "type": "spell",
+    "duration": null,
+    "cost": {
+      "spirit": 3
+    },
+    "attack": null,
+    "health": null,
+    "text": "Set aside your hand. Draw 3 cards. You may play any of the 3 cards without paying their costs. Discard any remaining cards then take your hand back. Your opponent may not activate card effects in reaction to cards played during this spell."
   }
 }
