@@ -11,6 +11,6 @@
     },
     "attack": null,
     "health": null,
-    "text": "Play when your opponent casts a spell with a target. Change its target to one of your choice."
+    "text": "Play when your opponent casts a spell with a target. Change its target a valid target of your choice."
   }
 }
