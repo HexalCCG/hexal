@@ -12,5 +12,19 @@
     "attack": "3",
     "health": "1",
     "text": "<Ready>."
+  },
+  "2": {
+    "id": "217",
+    "version": "2",
+    "name": "Enraged Sky Serpent",
+    "element": "air",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "any": 1
+    },
+    "attack": "3",
+    "health": "1",
+    "text": "<Ready>. When your opponent destroys a spell you control, you may summon this from your hand."
   }
 }
