@@ -12,5 +12,19 @@
     "attack": "2",
     "health": "1",
     "text": "<Ethereal>."
+  },
+  "2": {
+    "id": "233",
+    "version": "2",
+    "name": "Mind Snake",
+    "element": "spirit",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "spirit": 1
+    },
+    "attack": "3",
+    "health": "1",
+    "text": "<Ethereal>. <Ready>. When this creature is destroyed, exile the top card of your opponent's mana pool."
   }
 }
