@@ -9,6 +9,6 @@
     "cost": null,
     "attack": "1",
     "health": "1",
-    "text": "When this is destroyed <search> for a [Water] spell."
+    "text": "When this is destroyed, <search> for a [Water] spell."
   }
 }
