@@ -12,5 +12,19 @@
     "attack": null,
     "health": null,
     "text": "Whenever you draw an [Earth] card, you may reveal it to <heal> 1."
+  },
+  "2": {
+    "id": "197",
+    "version": "2",
+    "name": "Sanguine Rose",
+    "element": "earth",
+    "type": "item",
+    "duration": "permanent",
+    "cost": {
+      "earth": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Whenever a creature you control is destroyed, draw a card."
   }
 }
