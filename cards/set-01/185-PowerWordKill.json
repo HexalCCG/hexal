@@ -12,5 +12,19 @@
     "attack": null,
     "health": null,
     "text": "Destroy a creature. This cannot be countered."
+  },
+  "2": {
+    "id": "185",
+    "version": "2",
+    "name": "Power Word Kill",
+    "element": "spirit",
+    "type": "spell",
+    "duration": "instant",
+    "cost": {
+      "spirit": 2
+    },
+    "attack": null,
+    "health": null,
+    "text": "Destroy a creature. This cannot be countered."
   }
 }
