@@ -11,6 +11,20 @@
     },
     "attack": "1",
     "health": "2",
-    "text": "When this enters the battlefield return an [Air] spell from your mana pool to your hand."
+    "text": "When this enters the battlefield, return an [Air] spell from your mana pool to your hand."
+  },
+  "2": {
+    "id": "215",
+    "version": "2",
+    "name": "Petal Dancer",
+    "element": "air",
+    "type": "creature",
+    "duration": null,
+    "cost": {
+      "air": 1
+    },
+    "attack": "1",
+    "health": "2",
+    "text": "<Ready>. When this enters the battlefield, return an [Air] spell from your mana pool to your hand."
   }
 }
