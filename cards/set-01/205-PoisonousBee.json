@@ -11,6 +11,6 @@
     },
     "attack": "1",
     "health": "1",
-    "text": "When this deals damage to another creature in combat destroy that creature."
+    "text": "When this deals damage to another creature in combat, destroy that creature."
   }
 }
