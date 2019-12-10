@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "159",
-    "version": "1",
+    "id": 159,
+    "version": 1,
     "name": "Updraught",
     "element": "air",
     "type": "spell",
@@ -14,8 +14,8 @@
     "text": "Your [Air] creatures have +1 / +0."
   },
   "2": {
-    "id": "159",
-    "version": "2",
+    "id": 159,
+    "version": 2,
     "name": "Updraught",
     "element": "air",
     "type": "spell",

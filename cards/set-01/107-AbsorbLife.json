@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "107",
-    "version": "1",
+    "id": 107,
+    "version": 1,
     "name": "Absorb Life",
     "element": "water",
     "type": "spell",
@@ -12,8 +12,8 @@
     "text": "Destroy all friendly [Earth] creatures. <Heal> equal to the total health of creatures destroyed."
   },
   "2": {
-    "id": "107",
-    "version": "2",
+    "id": 107,
+    "version": 2,
     "name": "Absorb Life",
     "element": "water",
     "type": "spell",

@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "219",
-    "version": "1",
+    "id": 219,
+    "version": 1,
     "name": "Disorient",
     "element": "air",
     "type": "spell",

@@ -1,14 +1,14 @@
 {
   "1": {
-    "id": "46",
-    "version": "1",
+    "id": 46,
+    "version": 1,
     "name": "Magma Wyrm",
     "element": "fire",
     "type": "creature",
     "duration": null,
     "cost": null,
-    "attack": "2",
-    "health": "2",
+    "attack": 2,
+    "health": 2,
     "text": "At the start of your turn, <burn> 1."
   }
 }

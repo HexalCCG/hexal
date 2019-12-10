@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "198",
-    "version": "1",
+    "id": 198,
+    "version": 1,
     "name": "Staff of The Sage",
     "element": "earth",
     "type": "item",
@@ -14,8 +14,8 @@
     "text": "Equip to a friendly creature. It gains +2 / +1 and \"when this attacks and destroys a creature, <search> for 'Sage Brennas'\"."
   },
   "2": {
-    "id": "198",
-    "version": "2",
+    "id": 198,
+    "version": 2,
     "name": "Staff of The Sage",
     "element": "earth",
     "type": "item",

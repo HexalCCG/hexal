@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "184",
-    "version": "1",
+    "id": 184,
+    "version": 1,
     "name": "Sleep",
     "element": "spirit",
     "type": "spell",
@@ -12,8 +12,8 @@
     "text": "Creatures cannot attack. At the start of your turn, if the combined attack of all creatures on the battlefield is greater than or equal to 5, destroy this."
   },
   "2": {
-    "id": "184",
-    "version": "2",
+    "id": 184,
+    "version": 2,
     "name": "Sleep",
     "element": "spirit",
     "type": "spell",

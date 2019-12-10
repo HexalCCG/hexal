@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "149",
-    "version": "1",
+    "id": 149,
+    "version": 1,
     "name": "Disable",
     "element": "air",
     "type": "spell",

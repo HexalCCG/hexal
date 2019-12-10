@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "21",
-    "version": "1",
+    "id": 21,
+    "version": 1,
     "name": "Restless Willow",
     "element": "earth",
     "type": "creature",
@@ -10,8 +10,8 @@
       "earth": 1,
       "any": 2
     },
-    "attack": "4",
-    "health": "4",
+    "attack": 4,
+    "health": 4,
     "text": null
   }
 }

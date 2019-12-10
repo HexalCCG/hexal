@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "123",
-    "version": "1",
+    "id": 123,
+    "version": 1,
     "name": "Greater Healing",
     "element": "water",
     "type": "spell",
@@ -14,8 +14,8 @@
     "text": "<Heal> 5."
   },
   "2": {
-    "id": "123",
-    "version": "2",
+    "id": 123,
+    "version": 2,
     "name": "Greater Healing",
     "element": "water",
     "type": "spell",

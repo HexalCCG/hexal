@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "80",
-    "version": "1",
+    "id": 80,
+    "version": 1,
     "name": "Fire Star Rising",
     "element": "fire",
     "type": "spell",
@@ -14,8 +14,8 @@
     "text": "Creatures you control gain +3 / +0 until the end of this turn."
   },
   "2": {
-    "id": "80",
-    "version": "2",
+    "id": 80,
+    "version": 2,
     "name": "Fire Star Rising",
     "element": "fire",
     "type": "spell",

@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "203",
-    "version": "1",
+    "id": 203,
+    "version": 1,
     "name": "Mageslayer",
     "element": "fire",
     "type": "creature",
@@ -9,8 +9,8 @@
     "cost": {
       "any": 2
     },
-    "attack": "3",
-    "health": "1",
+    "attack": 3,
+    "health": 1,
     "text": "When this enters the battlefield, destroy a spell."
   }
 }

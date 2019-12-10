@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "100",
-    "version": "1",
+    "id": 100,
+    "version": 1,
     "name": "Herald of The Kraken",
     "element": "water",
     "type": "creature",
@@ -9,8 +9,8 @@
     "cost": {
       "water": 3
     },
-    "attack": "3",
-    "health": "4",
+    "attack": 3,
+    "health": 4,
     "text": "When this enters the battlefield, <search> for \"Novhu, The Kraken\"."
   }
 }

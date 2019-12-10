@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "156",
-    "version": "1",
+    "id": 156,
+    "version": 1,
     "name": "Mana Drain",
     "element": "air",
     "type": "spell",

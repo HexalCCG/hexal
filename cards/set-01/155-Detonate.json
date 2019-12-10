@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "155",
-    "version": "1",
+    "id": 155,
+    "version": 1,
     "name": "Detonate",
     "element": "air",
     "type": "spell",
@@ -15,8 +15,8 @@
     "text": "Destroy a creature. No creatures can attack until the start of your next turn."
   },
   "2": {
-    "id": "155",
-    "version": "2",
+    "id": 155,
+    "version": 2,
     "name": "Detonate",
     "element": "air",
     "type": "spell",

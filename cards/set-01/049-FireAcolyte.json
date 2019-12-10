@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "49",
-    "version": "1",
+    "id": 49,
+    "version": 1,
     "name": "Fire Acolyte",
     "element": "fire",
     "type": "creature",
@@ -9,8 +9,8 @@
     "cost": {
       "fire": 1
     },
-    "attack": "1",
-    "health": "1",
+    "attack": 1,
+    "health": 1,
     "text": "When this enters the battlefield, summon a 1 / 1 [Fire] Fire Worshipper token."
   }
 }

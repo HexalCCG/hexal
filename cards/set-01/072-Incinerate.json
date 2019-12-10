@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "72",
-    "version": "1",
+    "id": 72,
+    "version": 1,
     "name": "Incinerate",
     "element": "fire",
     "type": "spell",
@@ -15,8 +15,8 @@
     "text": "Destroy a creature. Draw a card."
   },
   "2": {
-    "id": "72",
-    "version": "2",
+    "id": 72,
+    "version": 2,
     "name": "Incinerate",
     "element": "fire",
     "type": "spell",

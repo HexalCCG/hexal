@@ -1,14 +1,14 @@
 {
   "1": {
-    "id": "132",
-    "version": "1",
+    "id": 132,
+    "version": 1,
     "name": "Cloud Sprite",
     "element": "air",
     "type": "creature",
     "duration": null,
     "cost": null,
-    "attack": "1",
-    "health": "1",
+    "attack": 1,
+    "health": 1,
     "text": "When your opponent casts a spell with a target, you may summon this creature from your hand as the new target."
   }
 }

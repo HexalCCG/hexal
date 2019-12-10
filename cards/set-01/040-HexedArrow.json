@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "40",
-    "version": "1",
+    "id": 40,
+    "version": 1,
     "name": "Hexed Arrow",
     "element": "earth",
     "type": "item",

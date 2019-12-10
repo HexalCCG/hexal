@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "220",
-    "version": "1",
+    "id": 220,
+    "version": 1,
     "name": "Lightning Bolt",
     "element": "air",
     "type": "spell",

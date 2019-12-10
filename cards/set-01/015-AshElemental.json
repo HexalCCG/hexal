@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "15",
-    "version": "1",
+    "id": 15,
+    "version": 1,
     "name": "Ash Elemental",
     "element": "earth",
     "type": "creature",
@@ -10,13 +10,13 @@
       "fire": 1,
       "any": 1
     },
-    "attack": "2",
-    "health": "3",
+    "attack": 2,
+    "health": 3,
     "text": "When this enters the battlefield, draw a card."
   },
   "2": {
-    "id": "15",
-    "version": "2",
+    "id": 15,
+    "version": 2,
     "name": "Ash Elemental",
     "element": "earth",
     "type": "creature",
@@ -25,8 +25,8 @@
       "earth": 1,
       "any": 1
     },
-    "attack": "2",
-    "health": "3",
+    "attack": 2,
+    "health": 3,
     "text": "When this enters the battlefield, draw a card."
   }
 }

@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "110",
-    "version": "1",
+    "id": 110,
+    "version": 1,
     "name": "Restoration",
     "element": "water",
     "type": "spell",

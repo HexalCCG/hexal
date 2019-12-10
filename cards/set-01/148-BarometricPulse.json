@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "148",
-    "version": "1",
+    "id": 148,
+    "version": 1,
     "name": "Barometric Pulse",
     "element": "air",
     "type": "spell",

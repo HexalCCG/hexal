@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "57",
-    "version": "1",
+    "id": 57,
+    "version": 1,
     "name": "Fire Warlock",
     "element": "fire",
     "type": "creature",
@@ -10,8 +10,8 @@
       "fire": 2,
       "any": 1
     },
-    "attack": "3",
-    "health": "3",
+    "attack": 3,
+    "health": 3,
     "text": "Whenever you play a card, <burn> 1."
   }
 }

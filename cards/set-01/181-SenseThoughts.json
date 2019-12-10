@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "181",
-    "version": "1",
+    "id": 181,
+    "version": 1,
     "name": "Sense Thoughts",
     "element": "spirit",
     "type": "spell",
@@ -14,8 +14,8 @@
     "text": "View your opponent's hand."
   },
   "2": {
-    "id": "181",
-    "version": "2",
+    "id": 181,
+    "version": 2,
     "name": "Sense Thoughts",
     "element": "spirit",
     "type": "spell",

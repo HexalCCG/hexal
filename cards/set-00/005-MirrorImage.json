@@ -1,14 +1,14 @@
 {
   "1": {
-    "id": "5",
-    "version": "1",
+    "id": 5,
+    "version": 1,
     "name": "Mirror Image",
     "element": "water",
     "type": "token",
     "duration": null,
     "cost": null,
-    "attack": "0",
-    "health": "1",
+    "attack": 0,
+    "health": 1,
     "text": null
   }
 }

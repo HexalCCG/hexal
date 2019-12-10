@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "93",
-    "version": "1",
+    "id": 93,
+    "version": 1,
     "name": "Steam Surger",
     "element": "water",
     "type": "creature",
@@ -10,13 +10,13 @@
       "water": 1,
       "fire": 1
     },
-    "attack": "3",
-    "health": "4",
+    "attack": 3,
+    "health": 4,
     "text": null
   },
   "2": {
-    "id": "93",
-    "version": "2",
+    "id": 93,
+    "version": 2,
     "name": "Steam Surger",
     "element": "water",
     "type": "creature",
@@ -25,8 +25,8 @@
       "water": 1,
       "any": 1
     },
-    "attack": "3",
-    "health": "3",
+    "attack": 3,
+    "health": 3,
     "text": "If you pay for this with [Fire], this gains <ready>."
   }
 }

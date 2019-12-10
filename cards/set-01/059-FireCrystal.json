@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "59",
-    "version": "1",
+    "id": 59,
+    "version": 1,
     "name": "Fire Crystal",
     "element": "fire",
     "type": "item",

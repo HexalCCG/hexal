@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "152",
-    "version": "1",
+    "id": 152,
+    "version": 1,
     "name": "Warding Runes",
     "element": "air",
     "type": "spell",
@@ -14,8 +14,8 @@
     "text": "Creatures cannot be summoned. At the start of your turn, destroy this."
   },
   "2": {
-    "id": "152",
-    "version": "2",
+    "id": 152,
+    "version": 2,
     "name": "Warding Runes",
     "element": "air",
     "type": "spell",

@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "246",
-    "version": "1",
+    "id": 246,
+    "version": 1,
     "name": "Peek",
     "element": "spirit",
     "type": "spell",

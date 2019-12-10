@@ -1,14 +1,14 @@
 {
   "1": {
-    "id": "82",
-    "version": "1",
+    "id": 82,
+    "version": 1,
     "name": "Runic Sabre",
     "element": "fire",
     "type": "item",
     "duration": "equip",
     "cost": null,
-    "attack": "2",
-    "health": "0",
+    "attack": 2,
+    "health": 0,
     "text": "Equip to a friendly Fire creature. Equipped creature gains +2 / +0."
   }
 }

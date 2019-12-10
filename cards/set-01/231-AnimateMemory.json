@@ -1,14 +1,14 @@
 {
   "1": {
-    "id": "231",
-    "version": "1",
+    "id": 231,
+    "version": 1,
     "name": "Animate Memory",
     "element": "spirit",
     "type": "creature",
     "duration": null,
     "cost": null,
-    "attack": "0",
-    "health": "2",
+    "attack": 0,
+    "health": 2,
     "text": "Your other creatures cannot be targeted with attacks. When this is destroyed, you may put it on the top of your deck."
   }
 }

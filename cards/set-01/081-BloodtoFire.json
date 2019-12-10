@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "81",
-    "version": "1",
+    "id": 81,
+    "version": 1,
     "name": "Blood to Fire",
     "element": "fire",
     "type": "spell",

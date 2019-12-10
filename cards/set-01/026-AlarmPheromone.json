@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "26",
-    "version": "1",
+    "id": 26,
+    "version": 1,
     "name": "Alarm Pheromone",
     "element": "earth",
     "type": "spell",

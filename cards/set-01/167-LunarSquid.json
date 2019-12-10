@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "167",
-    "version": "1",
+    "id": 167,
+    "version": 1,
     "name": "Lunar Squid",
     "element": "spirit",
     "type": "creature",
@@ -9,8 +9,8 @@
     "cost": {
       "any": 1
     },
-    "attack": "1",
-    "health": "1",
+    "attack": 1,
+    "health": 1,
     "text": "When this enters the battlefield, <search> for a [Spirit] card."
   }
 }

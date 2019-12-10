@@ -1,14 +1,14 @@
 {
   "1": {
-    "id": "92",
-    "version": "1",
+    "id": 92,
+    "version": 1,
     "name": "Water Sprite",
     "element": "water",
     "type": "creature",
     "duration": null,
     "cost": null,
-    "attack": "1",
-    "health": "1",
+    "attack": 1,
+    "health": 1,
     "text": "When your opponent declares an attack, you may summon this from your hand as the new target."
   }
 }

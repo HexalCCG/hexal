@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "212",
-    "version": "1",
+    "id": 212,
+    "version": 1,
     "name": "Horn of Reflection",
     "element": "water",
     "type": "item",

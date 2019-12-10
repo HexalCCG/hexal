@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "169",
-    "version": "1",
+    "id": 169,
+    "version": 1,
     "name": "Friendly Ghost",
     "element": "spirit",
     "type": "creature",
@@ -9,8 +9,8 @@
     "cost": {
       "spirit": 1
     },
-    "attack": "2",
-    "health": "2",
+    "attack": 2,
+    "health": 2,
     "text": "When you play a card on your turn that costs at least [Spirit], you may summon this from your hand."
   }
 }

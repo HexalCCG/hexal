@@ -1,14 +1,14 @@
 {
   "1": {
-    "id": "211",
-    "version": "1",
+    "id": 211,
+    "version": 1,
     "name": "Aquamarine Tiara",
     "element": "water",
     "type": "item",
     "duration": "equip",
     "cost": null,
-    "attack": "2",
-    "health": "2",
+    "attack": 2,
+    "health": 2,
     "text": "Equip to a creature. It gains +2 / +2 and <ethereal>."
   }
 }

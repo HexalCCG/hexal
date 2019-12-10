@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "173",
-    "version": "1",
+    "id": 173,
+    "version": 1,
     "name": "Ancient Herald",
     "element": "spirit",
     "type": "creature",
@@ -10,8 +10,8 @@
       "spirit": 1,
       "any": 2
     },
-    "attack": "4",
-    "health": "4",
+    "attack": 4,
+    "health": 4,
     "text": "When this enters the battlefield, you may pay [Spirit] to <search> for a Hero."
   }
 }

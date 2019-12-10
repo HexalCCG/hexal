@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "209",
-    "version": "1",
+    "id": 209,
+    "version": 1,
     "name": "Healing Touch",
     "element": "water",
     "type": "spell",

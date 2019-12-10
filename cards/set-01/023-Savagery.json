@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "23",
-    "version": "1",
+    "id": 23,
+    "version": 1,
     "name": "Savagery",
     "element": "earth",
     "type": "spell",

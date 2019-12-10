@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "174",
-    "version": "1",
+    "id": 174,
+    "version": 1,
     "name": "Locate Object",
     "element": "spirit",
     "type": "spell",

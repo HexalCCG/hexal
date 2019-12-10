@@ -1,14 +1,14 @@
 {
   "1": {
-    "id": "70",
-    "version": "1",
+    "id": 70,
+    "version": 1,
     "name": "Boil Blood",
     "element": "fire",
     "type": "spell",
     "duration": "equip",
     "cost": null,
-    "attack": "2",
-    "health": "0",
+    "attack": 2,
+    "health": 0,
     "text": "Enchant a friendly [Water] creature. It becomes [Fire] and gains +2 / +0."
   }
 }

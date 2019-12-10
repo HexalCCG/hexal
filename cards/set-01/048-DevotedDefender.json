@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "48",
-    "version": "1",
+    "id": 48,
+    "version": 1,
     "name": "Devoted Defender",
     "element": "fire",
     "type": "creature",
@@ -9,8 +9,8 @@
     "cost": {
       "any": 1
     },
-    "attack": "1",
-    "health": "3",
+    "attack": 1,
+    "health": 3,
     "text": "Your other creatures cannot be targeted with attacks."
   }
 }

@@ -1,14 +1,14 @@
 {
   "1": {
-    "id": "249",
-    "version": "1",
+    "id": 249,
+    "version": 1,
     "name": "Ethereal Dagger",
     "element": "spirit",
     "type": "item",
     "duration": "equip",
     "cost": null,
-    "attack": "1",
-    "health": "0",
+    "attack": 1,
+    "health": 0,
     "text": "<Ethereal>. Equip to a friendly creature. It gains +1 / +0 and \"when this deals combat damage to a creature, that creature gains <ethereal> until the end of this turn\"."
   }
 }

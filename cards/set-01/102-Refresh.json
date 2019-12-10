@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "102",
-    "version": "1",
+    "id": 102,
+    "version": 1,
     "name": "Refresh",
     "element": "water",
     "type": "spell",

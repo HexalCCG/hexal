@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "117",
-    "version": "1",
+    "id": 117,
+    "version": 1,
     "name": "Inflict Wounds",
     "element": "water",
     "type": "spell",

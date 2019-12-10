@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "74",
-    "version": "1",
+    "id": 74,
+    "version": 1,
     "name": "Fireworks",
     "element": "fire",
     "type": "spell",

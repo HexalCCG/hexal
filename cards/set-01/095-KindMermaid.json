@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "95",
-    "version": "1",
+    "id": 95,
+    "version": 1,
     "name": "Kind Mermaid",
     "element": "water",
     "type": "creature",
@@ -9,8 +9,8 @@
     "cost": {
       "water": 1
     },
-    "attack": "1",
-    "health": "3",
+    "attack": 1,
+    "health": 3,
     "text": "When this is destroyed, summon a 0 cost [Water] creature from your exile pile."
   }
 }

@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "14",
-    "version": "1",
+    "id": 14,
+    "version": 1,
     "name": "Ash Golem",
     "element": "earth",
     "type": "creature",
@@ -9,13 +9,13 @@
     "cost": {
       "fire": 1
     },
-    "attack": "2",
-    "health": "2",
+    "attack": 2,
+    "health": 2,
     "text": "Whenever this creature would take damage, it takes 1 less damage."
   },
   "2": {
-    "id": "14",
-    "version": "2",
+    "id": 14,
+    "version": 2,
     "name": "Ash Golem",
     "element": "earth",
     "type": "creature",
@@ -23,8 +23,8 @@
     "cost": {
       "earth": 1
     },
-    "attack": "2",
-    "health": "2",
+    "attack": 2,
+    "health": 2,
     "text": "Whenever this creature would take damage, it takes 1 less damage. If you <burn> this card, summon it."
   }
 }

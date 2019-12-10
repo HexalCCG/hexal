@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "223",
-    "version": "1",
+    "id": 223,
+    "version": 1,
     "name": "Ring of Shielding",
     "element": "air",
     "type": "item",

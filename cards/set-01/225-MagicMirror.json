@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "225",
-    "version": "1",
+    "id": 225,
+    "version": 1,
     "name": "Magic Mirror",
     "element": "air",
     "type": "item",

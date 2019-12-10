@@ -1,26 +1,26 @@
 {
   "1": {
-    "id": "2",
-    "version": "1",
+    "id": 2,
+    "version": 1,
     "name": "Ash Sprite",
     "element": "earth",
     "type": "creature",
     "duration": null,
     "cost": null,
-    "attack": "1",
-    "health": "1",
+    "attack": 1,
+    "health": 1,
     "text": "Can provide either [Earth] or [Fire] when channeled."
   },
   "2": {
-    "id": "2",
-    "version": "2",
+    "id": 2,
+    "version": 2,
     "name": "Ash Sprite",
     "element": "earth",
     "type": "creature",
     "duration": null,
     "cost": null,
-    "attack": "1",
-    "health": "1",
+    "attack": 1,
+    "health": 1,
     "text": "If you <burn> this card, summon it and draw a card."
   }
 }

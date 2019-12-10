@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "204",
-    "version": "1",
+    "id": 204,
+    "version": 1,
     "name": "Night of the Soulless",
     "element": "fire",
     "type": "spell",
@@ -14,8 +14,8 @@
     "text": "Tokens have +1 / +0."
   },
   "2": {
-    "id": "204",
-    "version": "2",
+    "id": 204,
+    "version": 2,
     "name": "Night of the Soulless",
     "element": "fire",
     "type": "spell",
