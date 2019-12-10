@@ -25,9 +25,15 @@ lines.each do |line|
   data = Hash[keys.zip(line)]
   title = data[:id].to_s.rjust(3, '0') + '-' + data[:name].gsub(' ', '')
 
+  data[:id] = data[:id].to_i
+  data[:version] = data[:version].to_i
+
   data[:element].downcase!
   data[:type].downcase!
   data[:duration]&.downcase!
+
+  data[:attack] = data[:attack]&.to_i
+  data[:health] = data[:health]&.to_i
   
   unless data[:cost].nil?
     list = data[:cost].split('.').map do |item|
