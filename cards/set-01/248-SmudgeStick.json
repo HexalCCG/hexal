@@ -12,5 +12,19 @@
     "attack": null,
     "health": null,
     "text": "Destroy all tokens."
+  },
+  "2": {
+    "id": "248",
+    "version": "2",
+    "name": "Smudge Stick",
+    "element": "spirit",
+    "type": "item",
+    "duration": null,
+    "cost": {
+      "spirit": 1
+    },
+    "attack": null,
+    "health": null,
+    "text": "Destroy all tokens and <ethereal> creatures."
   }
 }
