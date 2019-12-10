@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "143",
-    "version": "1",
+    "id": 143,
+    "version": 1,
     "name": "Counterspell",
     "element": "air",
     "type": "spell",

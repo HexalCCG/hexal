@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "12",
-    "version": "1",
+    "id": 12,
+    "version": 1,
     "name": "Spore-Infested Boar",
     "element": "earth",
     "type": "creature",
@@ -9,8 +9,8 @@
     "cost": {
       "earth": 1
     },
-    "attack": "2",
-    "health": "1",
+    "attack": 2,
+    "health": 1,
     "text": "When this is destroyed by combat damage, <search> for an [Earth] creature."
   }
 }

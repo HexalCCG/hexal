@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "144",
-    "version": "1",
+    "id": 144,
+    "version": 1,
     "name": "Planar Redirection",
     "element": "air",
     "type": "spell",

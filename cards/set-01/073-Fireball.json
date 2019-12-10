@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "73",
-    "version": "1",
+    "id": 73,
+    "version": 1,
     "name": "Fireball",
     "element": "fire",
     "type": "spell",

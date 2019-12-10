@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "221",
-    "version": "1",
+    "id": 221,
+    "version": 1,
     "name": "Seal Spells",
     "element": "air",
     "type": "spell",

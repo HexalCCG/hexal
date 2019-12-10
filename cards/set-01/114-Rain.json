@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "114",
-    "version": "1",
+    "id": 114,
+    "version": 1,
     "name": "Rain",
     "element": "water",
     "type": "spell",
@@ -12,8 +12,8 @@
     "text": "Attacks deal 1 less damage to players."
   },
   "2": {
-    "id": "114",
-    "version": "2",
+    "id": 114,
+    "version": 2,
     "name": "Rain",
     "element": "water",
     "type": "spell",

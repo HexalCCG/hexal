@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "142",
-    "version": "1",
+    "id": 142,
+    "version": 1,
     "name": "Dispel Magic",
     "element": "air",
     "type": "spell",

@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "196",
-    "version": "1",
+    "id": 196,
+    "version": 1,
     "name": "Translocate Cows",
     "element": "earth",
     "type": "spell",

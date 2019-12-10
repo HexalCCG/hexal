@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "248",
-    "version": "1",
+    "id": 248,
+    "version": 1,
     "name": "Smudge Stick",
     "element": "spirit",
     "type": "item",
@@ -14,8 +14,8 @@
     "text": "Destroy all tokens."
   },
   "2": {
-    "id": "248",
-    "version": "2",
+    "id": 248,
+    "version": 2,
     "name": "Smudge Stick",
     "element": "spirit",
     "type": "item",

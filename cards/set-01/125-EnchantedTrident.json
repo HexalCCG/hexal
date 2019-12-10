@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "125",
-    "version": "1",
+    "id": 125,
+    "version": 1,
     "name": "Enchanted Trident",
     "element": "water",
     "type": "item",
@@ -9,8 +9,8 @@
     "cost": {
       "any": 1
     },
-    "attack": "2",
-    "health": "1",
+    "attack": 2,
+    "health": 1,
     "text": "Equip to a friendly creature. It gains +2 / +1. When the creature is destroyed, return this to your hand."
   }
 }

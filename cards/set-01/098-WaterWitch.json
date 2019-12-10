@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "98",
-    "version": "1",
+    "id": 98,
+    "version": 1,
     "name": "Water Witch",
     "element": "water",
     "type": "creature",
@@ -9,13 +9,13 @@
     "cost": {
       "water": 2
     },
-    "attack": "3",
-    "health": "3",
+    "attack": 3,
+    "health": 3,
     "text": "After this creature attacks, restore all friendly creatures to full health."
   },
   "2": {
-    "id": "98",
-    "version": "2",
+    "id": 98,
+    "version": 2,
     "name": "Water Witch",
     "element": "water",
     "type": "creature",
@@ -23,8 +23,8 @@
     "cost": {
       "water": 2
     },
-    "attack": "3",
-    "health": "3",
+    "attack": 3,
+    "health": 3,
     "text": "Once per turn, when a friendly creature would take damage you may reduce the damage to 0."
   }
 }

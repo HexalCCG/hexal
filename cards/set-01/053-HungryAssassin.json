@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "53",
-    "version": "1",
+    "id": 53,
+    "version": 1,
     "name": "Hungry Assassin",
     "element": "fire",
     "type": "creature",
@@ -10,8 +10,8 @@
       "fire": 1,
       "any": 1
     },
-    "attack": "4",
-    "health": "2",
+    "attack": 4,
+    "health": 2,
     "text": null
   }
 }

@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "147",
-    "version": "1",
+    "id": 147,
+    "version": 1,
     "name": "Overcast",
     "element": "air",
     "type": "spell",

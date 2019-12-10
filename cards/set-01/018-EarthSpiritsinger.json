@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "18",
-    "version": "1",
+    "id": 18,
+    "version": 1,
     "name": "Earth Spiritsinger",
     "element": "earth",
     "type": "creature",
@@ -9,8 +9,8 @@
     "cost": {
       "earth": 2
     },
-    "attack": "2",
-    "health": "2",
+    "attack": 2,
+    "health": 2,
     "text": "Whenever you summon an [Earth] creature, <search> for an [Earth] spell."
   }
 }

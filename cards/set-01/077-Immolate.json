@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "77",
-    "version": "1",
+    "id": 77,
+    "version": 1,
     "name": "Immolate",
     "element": "fire",
     "type": "spell",

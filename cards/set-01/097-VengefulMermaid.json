@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "97",
-    "version": "1",
+    "id": 97,
+    "version": 1,
     "name": "Vengeful Mermaid",
     "element": "water",
     "type": "creature",
@@ -10,8 +10,8 @@
       "water": 1,
       "any": 1
     },
-    "attack": "3",
-    "health": "2",
+    "attack": 3,
+    "health": 2,
     "text": "When this enters the battlefield, destroy a damaged creature."
   }
 }

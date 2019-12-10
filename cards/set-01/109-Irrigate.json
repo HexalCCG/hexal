@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "109",
-    "version": "1",
+    "id": 109,
+    "version": 1,
     "name": "Irrigate",
     "element": "water",
     "type": "spell",
@@ -14,8 +14,8 @@
     "text": "Draw a card for each [Earth] creature you control."
   },
   "2": {
-    "id": "109",
-    "version": "2",
+    "id": 109,
+    "version": 2,
     "name": "Irrigate",
     "element": "water",
     "type": "spell",

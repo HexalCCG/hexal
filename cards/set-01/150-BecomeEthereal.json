@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "150",
-    "version": "1",
+    "id": 150,
+    "version": 1,
     "name": "Become Ethereal",
     "element": "air",
     "type": "spell",

@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "146",
-    "version": "1",
+    "id": 146,
+    "version": 1,
     "name": "Negate Magic",
     "element": "air",
     "type": "spell",

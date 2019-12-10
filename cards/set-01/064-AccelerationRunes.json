@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "64",
-    "version": "1",
+    "id": 64,
+    "version": 1,
     "name": "Acceleration Runes",
     "element": "fire",
     "type": "spell",

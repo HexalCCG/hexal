@@ -1,14 +1,14 @@
 {
   "1": {
-    "id": "2",
-    "version": "1",
+    "id": 2,
+    "version": 1,
     "name": "Fire Worshipper",
     "element": "fire",
     "type": "token",
     "duration": null,
     "cost": null,
-    "attack": "1",
-    "health": "1",
+    "attack": 1,
+    "health": 1,
     "text": null
   }
 }

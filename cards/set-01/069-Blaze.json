@@ -1,14 +1,14 @@
 {
   "1": {
-    "id": "69",
-    "version": "1",
+    "id": 69,
+    "version": 1,
     "name": "Blaze",
     "element": "fire",
     "type": "spell",
     "duration": "equip",
     "cost": null,
-    "attack": "2",
-    "health": "1",
+    "attack": 2,
+    "health": 1,
     "text": "Enchant a friendly [Earth] creature. It gains +2 / +1."
   }
 }

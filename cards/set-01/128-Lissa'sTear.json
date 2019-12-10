@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "128",
-    "version": "1",
+    "id": 128,
+    "version": 1,
     "name": "Lissa's Tear",
     "element": "water",
     "type": "item",

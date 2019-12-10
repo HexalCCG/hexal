@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "112",
-    "version": "1",
+    "id": 112,
+    "version": 1,
     "name": "Arcane Barrier",
     "element": "water",
     "type": "spell",
@@ -14,8 +14,8 @@
     "text": "When you would take damage, you may destroy this to take 0 damage instead."
   },
   "2": {
-    "id": "112",
-    "version": "2",
+    "id": 112,
+    "version": 2,
     "name": "Arcane Barrier",
     "element": "water",
     "type": "spell",

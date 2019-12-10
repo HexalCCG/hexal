@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "120",
-    "version": "1",
+    "id": 120,
+    "version": 1,
     "name": "Ocean's Grasp",
     "element": "water",
     "type": "spell",
@@ -14,8 +14,8 @@
     "text": "Destroy all creatures with 2 or less attack."
   },
   "2": {
-    "id": "120",
-    "version": "2",
+    "id": 120,
+    "version": 2,
     "name": "Ocean's Grasp",
     "element": "water",
     "type": "spell",

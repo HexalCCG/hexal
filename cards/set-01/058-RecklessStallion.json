@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "58",
-    "version": "1",
+    "id": 58,
+    "version": 1,
     "name": "Reckless Stallion",
     "element": "fire",
     "type": "creature",
@@ -9,8 +9,8 @@
     "cost": {
       "fire": 3
     },
-    "attack": "5",
-    "health": "3",
+    "attack": 5,
+    "health": 3,
     "text": "<Ready>."
   }
 }

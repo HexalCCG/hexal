@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "27",
-    "version": "1",
+    "id": 27,
+    "version": 1,
     "name": "Recycle",
     "element": "earth",
     "type": "spell",

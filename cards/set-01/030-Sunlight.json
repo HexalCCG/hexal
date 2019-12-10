@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "30",
-    "version": "1",
+    "id": 30,
+    "version": 1,
     "name": "Sunlight",
     "element": "earth",
     "type": "spell",

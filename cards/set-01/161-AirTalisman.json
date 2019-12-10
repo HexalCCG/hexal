@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "161",
-    "version": "1",
+    "id": 161,
+    "version": 1,
     "name": "Air Talisman",
     "element": "air",
     "type": "item",

@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "28",
-    "version": "1",
+    "id": 28,
+    "version": 1,
     "name": "Entangle",
     "element": "earth",
     "type": "spell",

@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "85",
-    "version": "1",
+    "id": 85,
+    "version": 1,
     "name": "Accelerant",
     "element": "fire",
     "type": "item",

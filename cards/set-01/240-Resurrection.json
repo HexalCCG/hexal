@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "240",
-    "version": "1",
+    "id": 240,
+    "version": 1,
     "name": "Resurrection",
     "element": "spirit",
     "type": "spell",

@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "108",
-    "version": "1",
+    "id": 108,
+    "version": 1,
     "name": "Geyser",
     "element": "water",
     "type": "spell",

@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "222",
-    "version": "1",
+    "id": 222,
+    "version": 1,
     "name": "Demonic Chain",
     "element": "air",
     "type": "item",
@@ -15,8 +15,8 @@
     "text": "At the end of your turn, summon a [Fire] creature from your mana pool. When it is destroyed exile it."
   },
   "2": {
-    "id": "222",
-    "version": "2",
+    "id": 222,
+    "version": 2,
     "name": "Demonic Chain",
     "element": "air",
     "type": "item",

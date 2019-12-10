@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "210",
-    "version": "1",
+    "id": 210,
+    "version": 1,
     "name": "Relic of the Deep",
     "element": "water",
     "type": "item",

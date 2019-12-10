@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "1",
-    "version": "1",
+    "id": 1,
+    "version": 1,
     "name": "Sage Brennas",
     "element": "earth",
     "type": "hero",

@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "42",
-    "version": "1",
+    "id": 42,
+    "version": 1,
     "name": "Commander Adela",
     "element": "fire",
     "type": "hero",

@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "118",
-    "version": "1",
+    "id": 118,
+    "version": 1,
     "name": "Lesser Healing",
     "element": "water",
     "type": "spell",
@@ -14,8 +14,8 @@
     "text": "Cast after you take damage. <Heal> 3."
   },
   "2": {
-    "id": "118",
-    "version": "2",
+    "id": 118,
+    "version": 2,
     "name": "Lesser Healing",
     "element": "water",
     "type": "spell",

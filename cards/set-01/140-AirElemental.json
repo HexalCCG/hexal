@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "140",
-    "version": "1",
+    "id": 140,
+    "version": 1,
     "name": "Air Elemental",
     "element": "air",
     "type": "creature",
@@ -10,8 +10,8 @@
       "air": 1,
       "any": 1
     },
-    "attack": "3",
-    "health": "3",
+    "attack": 3,
+    "health": 3,
     "text": "If you've played an [Air] spell this turn, this costs [Air] less."
   }
 }

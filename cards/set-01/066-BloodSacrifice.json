@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "66",
-    "version": "1",
+    "id": 66,
+    "version": 1,
     "name": "Blood Sacrifice",
     "element": "fire",
     "type": "spell",
@@ -14,8 +14,8 @@
     "text": "<Burn> 1 to draw a card."
   },
   "2": {
-    "id": "66",
-    "version": "2",
+    "id": 66,
+    "version": 2,
     "name": "Blood Sacrifice",
     "element": "fire",
     "type": "spell",

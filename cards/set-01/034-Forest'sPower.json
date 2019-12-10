@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "34",
-    "version": "1",
+    "id": 34,
+    "version": 1,
     "name": "Forest's Power",
     "element": "earth",
     "type": "spell",
@@ -9,8 +9,8 @@
     "cost": {
       "earth": 2
     },
-    "attack": "3",
-    "health": "3",
+    "attack": 3,
+    "health": 3,
     "text": "Enchant a creature. It gains +3 / +3."
   }
 }

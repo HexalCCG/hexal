@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "116",
-    "version": "1",
+    "id": 116,
+    "version": 1,
     "name": "Imprison",
     "element": "water",
     "type": "spell",
@@ -14,8 +14,8 @@
     "text": "Exile a creature."
   },
   "2": {
-    "id": "116",
-    "version": "2",
+    "id": 116,
+    "version": 2,
     "name": "Imprison",
     "element": "water",
     "type": "spell",

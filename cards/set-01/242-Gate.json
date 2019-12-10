@@ -1,7 +1,7 @@
 {
   "1": {
-    "id": "242",
-    "version": "1",
+    "id": 242,
+    "version": 1,
     "name": "Gate",
     "element": "spirit",
     "type": "spell",
@@ -14,8 +14,8 @@
     "text": "Your creatures cost [Any] less."
   },
   "2": {
-    "id": "242",
-    "version": "2",
+    "id": 242,
+    "version": 2,
     "name": "Gate",
     "element": "spirit",
     "type": "spell",
