@@ -12,5 +12,19 @@
     "attack": null,
     "health": null,
     "text": "Your creatures cost [Any] less."
+  },
+  "2": {
+    "id": "242",
+    "version": "2",
+    "name": "Gate",
+    "element": "spirit",
+    "type": "spell",
+    "duration": "permanent",
+    "cost": {
+      "spirit": 3
+    },
+    "attack": null,
+    "health": null,
+    "text": "When this enters the battlefield, and at the start of your turn, you may summon a creature from your hand without paying its mana cost."
   }
 }
