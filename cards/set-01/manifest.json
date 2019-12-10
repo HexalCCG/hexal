@@ -1,4 +1,5 @@
 {
-  "id": "01",
-  "name": "Basic Set"
+  "id": 1,
+  "name": "Basic Set",
+  "description": "A basic set of cards to try out a range of game mechanics. Includes one-per-deck Hero cards that provide permanent abilities for a high cost."
 }
