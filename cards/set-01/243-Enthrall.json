@@ -9,6 +9,6 @@
     "cost": null,
     "attack": null,
     "health": null,
-    "text": "Your creatures have \"cannot be targeted by attacks\"."
+    "text": "Your creatures cannot be targeted by attacks; enemy attacks must target you directly instead."
   }
 }
