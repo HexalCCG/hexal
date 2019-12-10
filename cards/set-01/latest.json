@@ -1,7 +1,9 @@
 {
   "meta": {
-    "info": "one",
-    "banana": "aaaaaa"
+    "id": "01",
+    "name": "Basic Set",
+    "length": 250,
+    "version": 56
   },
   "cards": {
     "0": {
