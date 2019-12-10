@@ -10,5 +10,17 @@
     "attack": null,
     "health": null,
     "text": "<Search> for a card. Do not reveal it, and place it face-down under this card. When this is destroyed, add the saved card to your hand."
+  },
+  "2": {
+    "id": "244",
+    "version": "2",
+    "name": "Seal World Line",
+    "element": "spirit",
+    "type": "spell",
+    "duration": "permanent",
+    "cost": null,
+    "attack": null,
+    "health": null,
+    "text": "<Search> for up to three cards. Do not reveal them, and place them face-down under this card. When this leaves the battlefield, shuffle the saved cards into your deck."
   }
 }
