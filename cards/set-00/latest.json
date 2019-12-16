@@ -1,11 +1,9 @@
 {
-  "meta": {
-    "id": 0,
-    "name": "Tokens",
-    "description": "A set containing optional token cards used to represent tokens summoned by other card effects.",
-    "length": 6,
-    "version": 0
-  },
+  "id": 0,
+  "name": "Tokens",
+  "description": "A set containing optional token cards used to represent tokens summoned by other card effects.",
+  "length": 6,
+  "version": 0,
   "cards": [
     {
       "id": 0,
