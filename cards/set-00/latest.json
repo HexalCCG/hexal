@@ -6,8 +6,8 @@
     "length": 6,
     "version": 0
   },
-  "cards": {
-    "0": {
+  "cards": [
+    {
       "id": 0,
       "version": 1,
       "name": "Token Creature",
@@ -19,7 +19,7 @@
       "health": null,
       "text": null
     },
-    "1": {
+    {
       "id": 1,
       "version": 1,
       "name": "Cow",
@@ -31,7 +31,7 @@
       "health": 1,
       "text": "Moo!"
     },
-    "2": {
+    {
       "id": 2,
       "version": 1,
       "name": "Fire Worshipper",
@@ -43,7 +43,7 @@
       "health": 1,
       "text": null
     },
-    "3": {
+    {
       "id": 3,
       "version": 1,
       "name": "Phoenix Wisp",
@@ -55,7 +55,7 @@
       "health": 1,
       "text": "<Ready>."
     },
-    "4": {
+    {
       "id": 4,
       "version": 1,
       "name": "Living Spear",
@@ -67,7 +67,7 @@
       "health": 1,
       "text": null
     },
-    "5": {
+    {
       "id": 5,
       "version": 1,
       "name": "Mirror Image",
@@ -79,5 +79,5 @@
       "health": 1,
       "text": null
     }
-  }
+  ]
 }
