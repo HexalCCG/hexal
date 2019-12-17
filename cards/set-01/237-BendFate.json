@@ -1,5 +1,6 @@
 {
   "1": {
+    "set": 1,
     "id": 237,
     "version": 1,
     "name": "Bend Fate",
@@ -15,6 +16,7 @@
     "text": "Privately view the top 3 cards of your opponent's deck and put them back in any order. Privately view the top 3 cards of your deck and put them back in any order."
   },
   "2": {
+    "set": 1,
     "id": 237,
     "version": 2,
     "name": "Bend Fate",

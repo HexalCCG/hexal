@@ -1,5 +1,6 @@
 {
   "1": {
+    "set": 1,
     "id": 107,
     "version": 1,
     "name": "Absorb Life",
@@ -12,6 +13,7 @@
     "text": "Destroy all friendly [Earth] creatures. <Heal> equal to the total health of creatures destroyed."
   },
   "2": {
+    "set": 1,
     "id": 107,
     "version": 2,
     "name": "Absorb Life",

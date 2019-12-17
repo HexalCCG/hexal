@@ -1,5 +1,6 @@
 {
   "1": {
+    "set": 1,
     "id": 114,
     "version": 1,
     "name": "Rain",
@@ -12,6 +13,7 @@
     "text": "Attacks deal 1 less damage to players."
   },
   "2": {
+    "set": 1,
     "id": 114,
     "version": 2,
     "name": "Rain",

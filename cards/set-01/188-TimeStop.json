@@ -1,5 +1,6 @@
 {
   "1": {
+    "set": 1,
     "id": 188,
     "version": 1,
     "name": "Time Stop",
@@ -14,6 +15,7 @@
     "text": "Creatures cannot attack. At the start of your turn, pay [Spirit] or destroy this."
   },
   "2": {
+    "set": 1,
     "id": 188,
     "version": 2,
     "name": "Time Stop",

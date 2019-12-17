@@ -1,5 +1,6 @@
 {
   "1": {
+    "set": 1,
     "id": 122,
     "version": 1,
     "name": "Mage Armour",
@@ -15,6 +16,7 @@
     "text": "Attacks that deal 2 or less damage to you deal 0 damage. When you take damage, destroy this."
   },
   "2": {
+    "set": 1,
     "id": 122,
     "version": 2,
     "name": "Mage Armour",

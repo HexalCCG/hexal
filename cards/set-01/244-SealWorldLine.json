@@ -1,5 +1,6 @@
 {
   "1": {
+    "set": 1,
     "id": 244,
     "version": 1,
     "name": "Seal World Line",
@@ -12,6 +13,7 @@
     "text": "<Search> for a card. Do not reveal it, and place it face-down under this card. When this is destroyed, add the saved card to your hand."
   },
   "2": {
+    "set": 1,
     "id": 244,
     "version": 2,
     "name": "Seal World Line",

@@ -1,5 +1,6 @@
 {
   "1": {
+    "set": 1,
     "id": 204,
     "version": 1,
     "name": "Night of the Soulless",
@@ -14,6 +15,7 @@
     "text": "Tokens have +1 / +0."
   },
   "2": {
+    "set": 1,
     "id": 204,
     "version": 2,
     "name": "Night of the Soulless",

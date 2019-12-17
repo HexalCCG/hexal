@@ -1,5 +1,6 @@
 {
   "1": {
+    "set": 1,
     "id": 213,
     "version": 1,
     "name": "Bracelet of Deflection",
@@ -14,6 +15,7 @@
     "text": "Once per turn, when an enemy creature declares an attack you may cancel the attack."
   },
   "2": {
+    "set": 1,
     "id": 213,
     "version": 2,
     "name": "Bracelet of Deflection",

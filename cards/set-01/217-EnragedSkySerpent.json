@@ -1,5 +1,6 @@
 {
   "1": {
+    "set": 1,
     "id": 217,
     "version": 1,
     "name": "Enraged Sky Serpent",
@@ -14,6 +15,7 @@
     "text": "<Ready>."
   },
   "2": {
+    "set": 1,
     "id": 217,
     "version": 2,
     "name": "Enraged Sky Serpent",

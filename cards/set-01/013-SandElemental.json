@@ -1,5 +1,6 @@
 {
   "1": {
+    "set": 1,
     "id": 13,
     "version": 1,
     "name": "Sand Elemental",
@@ -15,6 +16,7 @@
     "text": "When this enters the battlefield, destroy a spell or item."
   },
   "2": {
+    "set": 1,
     "id": 13,
     "version": 2,
     "name": "Sand Elemental",

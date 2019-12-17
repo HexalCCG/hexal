@@ -1,5 +1,6 @@
 {
   "1": {
+    "set": 1,
     "id": 15,
     "version": 1,
     "name": "Ash Elemental",
@@ -15,6 +16,7 @@
     "text": "When this enters the battlefield, draw a card."
   },
   "2": {
+    "set": 1,
     "id": 15,
     "version": 2,
     "name": "Ash Elemental",

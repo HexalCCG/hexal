@@ -1,5 +1,6 @@
 {
   "1": {
+    "set": 1,
     "id": 160,
     "version": 1,
     "name": "Anti-Magic Field",
@@ -15,6 +16,7 @@
     "text": "Spells cost [Any] more."
   },
   "2": {
+    "set": 1,
     "id": 160,
     "version": 2,
     "name": "Anti-Magic Field",

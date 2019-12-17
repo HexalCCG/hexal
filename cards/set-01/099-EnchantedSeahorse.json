@@ -1,5 +1,6 @@
 {
   "1": {
+    "set": 1,
     "id": 99,
     "version": 1,
     "name": "Enchanted Seahorse",
@@ -15,6 +16,7 @@
     "text": "<Heal> 3."
   },
   "2": {
+    "set": 1,
     "id": 99,
     "version": 2,
     "name": "Enchanted Seahorse",

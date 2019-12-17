@@ -1,5 +1,6 @@
 {
   "1": {
+    "set": 1,
     "id": 185,
     "version": 1,
     "name": "Power Word Kill",
@@ -14,6 +15,7 @@
     "text": "Destroy a creature. This cannot be countered."
   },
   "2": {
+    "set": 1,
     "id": 185,
     "version": 2,
     "name": "Power Word Kill",

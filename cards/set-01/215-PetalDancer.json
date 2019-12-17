@@ -1,5 +1,6 @@
 {
   "1": {
+    "set": 1,
     "id": 215,
     "version": 1,
     "name": "Petal Dancer",
@@ -14,6 +15,7 @@
     "text": "When this enters the battlefield, return an [Air] spell from your mana pool to your hand."
   },
   "2": {
+    "set": 1,
     "id": 215,
     "version": 2,
     "name": "Petal Dancer",

@@ -1,5 +1,6 @@
 {
   "1": {
+    "set": 1,
     "id": 126,
     "version": 1,
     "name": "Witch's Hat",
@@ -14,6 +15,7 @@
     "text": "Equip to a friendly creature. It gains \"your spells cost [Water] less\"."
   },
   "2": {
+    "set": 1,
     "id": 126,
     "version": 2,
     "name": "Witch's Hat",

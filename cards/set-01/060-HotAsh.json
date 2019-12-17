@@ -1,5 +1,6 @@
 {
   "1": {
+    "set": 1,
     "id": 60,
     "version": 1,
     "name": "Hot Ash",
@@ -12,6 +13,7 @@
     "text": "When a friendly creature is destroyed, you may exile this from your hand to return the creature to your hand."
   },
   "2": {
+    "set": 1,
     "id": 60,
     "version": 2,
     "name": "Hot Ash",

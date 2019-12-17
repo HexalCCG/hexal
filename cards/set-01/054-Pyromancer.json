@@ -1,5 +1,6 @@
 {
   "1": {
+    "set": 1,
     "id": 54,
     "version": 1,
     "name": "Pyromancer",
@@ -15,6 +16,7 @@
     "text": "When this is destroyed, deal 1 damage to all creatures."
   },
   "2": {
+    "set": 1,
     "id": 54,
     "version": 2,
     "name": "Pyromancer",

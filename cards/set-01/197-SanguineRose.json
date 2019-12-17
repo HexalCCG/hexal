@@ -1,5 +1,6 @@
 {
   "1": {
+    "set": 1,
     "id": 197,
     "version": 1,
     "name": "Sanguine Rose",
@@ -14,6 +15,7 @@
     "text": "Whenever you draw an [Earth] card, you may reveal it to <heal> 1."
   },
   "2": {
+    "set": 1,
     "id": 197,
     "version": 2,
     "name": "Sanguine Rose",

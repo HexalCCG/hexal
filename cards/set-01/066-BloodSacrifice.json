@@ -1,5 +1,6 @@
 {
   "1": {
+    "set": 1,
     "id": 66,
     "version": 1,
     "name": "Blood Sacrifice",
@@ -14,6 +15,7 @@
     "text": "<Burn> 1 to draw a card."
   },
   "2": {
+    "set": 1,
     "id": 66,
     "version": 2,
     "name": "Blood Sacrifice",

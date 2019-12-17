@@ -1,5 +1,6 @@
 {
   "1": {
+    "set": 1,
     "id": 20,
     "version": 1,
     "name": "Blighted Druid",
@@ -15,6 +16,7 @@
     "text": "Your [Earth] creatures cost [Earth] less."
   },
   "2": {
+    "set": 1,
     "id": 20,
     "version": 2,
     "name": "Blighted Druid",

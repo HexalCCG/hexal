@@ -1,5 +1,6 @@
 {
   "1": {
+    "set": 1,
     "id": 2,
     "version": 1,
     "name": "Ash Sprite",
@@ -12,6 +13,7 @@
     "text": "Can provide either [Earth] or [Fire] when channeled."
   },
   "2": {
+    "set": 1,
     "id": 2,
     "version": 2,
     "name": "Ash Sprite",

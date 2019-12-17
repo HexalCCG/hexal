@@ -1,5 +1,6 @@
 {
   "1": {
+    "set": 1,
     "id": 93,
     "version": 1,
     "name": "Steam Surger",
@@ -15,6 +16,7 @@
     "text": null
   },
   "2": {
+    "set": 1,
     "id": 93,
     "version": 2,
     "name": "Steam Surger",

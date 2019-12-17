@@ -1,5 +1,6 @@
 {
   "1": {
+    "set": 1,
     "id": 124,
     "version": 1,
     "name": "Void",
@@ -15,6 +16,7 @@
     "text": "Exile all creatures."
   },
   "2": {
+    "set": 1,
     "id": 124,
     "version": 2,
     "name": "Void",
